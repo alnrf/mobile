@@ -149,6 +149,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - ReactNativeExceptionHandler (2.10.8):
+    - React
   - ReactNativeLocalization (2.1.0):
     - React
   - ReactNativePermissions (1.1.1):
@@ -202,6 +204,7 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - ReactNativeExceptionHandler (from `../node_modules/react-native-exception-handler`)
   - ReactNativeLocalization (from `../node_modules/react-native-localization`)
   - ReactNativePermissions (from `../node_modules/react-native-permissions`)
   - rn-fetch-blob (from `../node_modules/rn-fetch-blob`)
@@ -260,6 +263,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-video"
   react-native-webview:
     :path: "../node_modules/react-native-webview"
+  ReactNativeExceptionHandler:
+    :path: "../node_modules/react-native-exception-handler"
   ReactNativeLocalization:
     :path: "../node_modules/react-native-localization"
   ReactNativePermissions:
@@ -313,6 +318,7 @@ SPEC CHECKSUMS:
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   react-native-video: 9aecbfc4628128838187df9d9c9f630670cfb1d1
   react-native-webview: d388bd8c7f3499640feb60f776b4c89f9c069961
+  ReactNativeExceptionHandler: 8025d98049c25f186835a3af732dd7c9974d6dce
   ReactNativeLocalization: 0ef9ccdb2800fe7974c255ae2b9d4e5496dea509
   ReactNativePermissions: b64e084dff6a5cad51587d38c306f09246246384
   rn-fetch-blob: 766f85cabd2992300dfa1be2bc9e4e258abc6f04
@@ -325,6 +331,6 @@ SPEC CHECKSUMS:
   RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: f7a2d5c24f10835d5fe83ee821eb860a9a9bea38
+PODFILE CHECKSUM: beb3f685926447e4f68fae2866755d991ebfddaa
 
 COCOAPODS: 1.6.1
