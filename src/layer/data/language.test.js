@@ -173,4 +173,12 @@ describe('Language', () => {
       expect(result).toEqual(expected);
     });
   });
+
+  describe('setLanguage', () => {
+    it('should set language', () => {
+      const {setLanguage} = require('./language');
+      const result = setLanguage('vi');
+      expect(result).toEqual(undefined);
+    });
+  });
 });

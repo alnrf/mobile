@@ -4,6 +4,10 @@ import {createChapterCard} from '../__fixtures__/cards';
 import type {DataLayer} from '../layer/data';
 
 describe('Hero service', () => {
+  beforeEach(() => {
+    jest.resetModules();
+  });
+
   it('should get card', async () => {
     const createService = require('./hero').default;
 
@@ -36,6 +40,31 @@ describe('Hero service', () => {
     // $FlowFixMe datalayer doesn't need to be filled with mocks for this test
     const heroService = createService({fetchCard, fetchRecommendation, getHeroContent});
     const result = await heroService.get();
-    return expect(result).toEqual(card);
+    expect(result).toEqual(card);
+    expect(getHeroContent).toHaveBeenCalledTimes(1);
+  });
+
+  it('should return undefined if no aggregation is found', async () => {
+    const createService = require('./hero').default;
+
+    jest.mock('../layer/data/progressions', () => {
+      return {
+        getAggregationsByContent: jest.fn(() => Promise.resolve([]))
+      };
+    });
+
+    const fetchCard = jest.fn();
+    const fetchRecommendation = jest.fn();
+    const getHeroContent = jest.fn();
+
+    // $FlowFixMe datalayer doesn't need to be filled with mocks for this test
+    const heroService = createService({fetchCard, fetchRecommendation, getHeroContent});
+    const result = await heroService.get();
+    expect(result).toEqual(undefined);
+    expect(getHeroContent).toHaveBeenCalledTimes(0);
+  });
+
+  afterAll(() => {
+    jest.resetAllMocks();
   });
 });
