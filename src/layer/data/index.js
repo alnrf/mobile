@@ -23,7 +23,7 @@ import {fetchRecommendation} from './recommendations';
 import {findById as findLevelById, getNextLevel} from './levels';
 import {getCorrectAnswer} from './answers';
 import {getClue} from './clues';
-import {getHeroContent} from './hero-content';
+import {getHero} from './hero';
 import {logEvent} from './analytics';
 import {fetchLanguage, setLanguage, getInterfaceLanguage} from './language';
 import {fetchSections} from './sections';
@@ -47,7 +47,7 @@ export type DataLayer = {
   getAllProgressions: typeof getAllProgressions,
   fetchRecommendation: typeof fetchRecommendation,
   findBestOf: () => Promise<number>,
-  getHeroContent: typeof getHeroContent,
+  getHero: typeof getHero,
   getNextChapter: (ref: string) => Promise<ChapterAPI | void>,
   getNextLevel: (ref: string) => Promise<LevelAPI | void>,
   logEvent: typeof logEvent,
@@ -89,7 +89,7 @@ const createDataLayer = (): DataLayer => ({
   getCardFromLocalStorage,
   // @todo implement it
   getChapterRulesByContent: () => [],
-  getHeroContent,
+  getHero,
   fetchBundle,
   storeBundle,
   logEvent

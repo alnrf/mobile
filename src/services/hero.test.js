@@ -27,21 +27,21 @@ describe('Hero service', () => {
     const fetchCard = jest.fn();
     const fetchRecommendation = jest.fn();
 
-    const getHeroContent = jest.fn();
-    getHeroContent.mockImplementationOnce(
+    const getHero = jest.fn();
+    getHero.mockImplementationOnce(
       ((_aggregations, _fetchRecommendation, _fetchCard) => {
         expect(_aggregations).toEqual(['a', 'b', 'c']);
         expect(_fetchRecommendation).toEqual(fetchRecommendation);
         expect(_fetchCard).toEqual(_fetchCard);
         return Promise.resolve(card);
-      }: $PropertyType<DataLayer, 'getHeroContent'>)
+      }: $PropertyType<DataLayer, 'getHero'>)
     );
 
     // $FlowFixMe datalayer doesn't need to be filled with mocks for this test
-    const heroService = createService({fetchCard, fetchRecommendation, getHeroContent});
+    const heroService = createService({fetchCard, fetchRecommendation, getHero});
     const result = await heroService.get();
     expect(result).toEqual(card);
-    expect(getHeroContent).toHaveBeenCalledTimes(1);
+    expect(getHero).toHaveBeenCalledTimes(1);
   });
 
   it('should return undefined if no aggregation is found', async () => {
@@ -55,13 +55,13 @@ describe('Hero service', () => {
 
     const fetchCard = jest.fn();
     const fetchRecommendation = jest.fn();
-    const getHeroContent = jest.fn();
+    const getHero = jest.fn();
 
     // $FlowFixMe datalayer doesn't need to be filled with mocks for this test
-    const heroService = createService({fetchCard, fetchRecommendation, getHeroContent});
+    const heroService = createService({fetchCard, fetchRecommendation, getHero});
     const result = await heroService.get();
     expect(result).toEqual(undefined);
-    expect(getHeroContent).toHaveBeenCalledTimes(0);
+    expect(getHero).toHaveBeenCalledTimes(0);
   });
 
   afterAll(() => {

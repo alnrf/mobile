@@ -4,9 +4,9 @@ import Promise from 'bluebird';
 import noop from 'lodash/fp/noop';
 import {createChapterCard} from '../../__fixtures__/cards';
 import type {ChapterCard, ProgressionAggregationByContent} from './_types';
-import {getHeroContent} from './hero-content';
+import {getHero} from './hero';
 
-type DefaultAggregationSetup = {|
+type PartialHeroRecommendation = {|
   success?: boolean,
   contentRef?: string,
   latestNbQuestions?: number,
@@ -20,7 +20,7 @@ const createAggregation = ({
   latestNbQuestions = 10,
   stars = 0,
   updatedAt = '2019-05-23T16:10:38.486Z'
-}: DefaultAggregationSetup = {}): ProgressionAggregationByContent => ({
+}: PartialHeroRecommendation = {}): ProgressionAggregationByContent => ({
   content: {
     ref: contentRef,
     type: 'chapter',
@@ -36,7 +36,7 @@ describe('HeroContent', () => {
   describe('Recommendation', () => {
     it('should fetchRecommendations when no progression is provided', async () => {
       const fetchRecommendations = jest.fn();
-      expect(await getHeroContent([], fetchRecommendations, noop)).toEqual(undefined);
+      expect(await getHero([], fetchRecommendations, noop)).toEqual(undefined);
       expect(fetchRecommendations).toHaveBeenCalledTimes(1);
     });
 
@@ -49,7 +49,7 @@ describe('HeroContent', () => {
       });
 
       const fetchRecommendations = jest.fn(() => Promise.resolve(reco));
-      const hero = await getHeroContent(
+      const hero = await getHero(
         [
           createAggregation({
             contentRef: 'foo',
@@ -96,7 +96,7 @@ describe('HeroContent', () => {
       const fetchRecommendations = jest.fn(() => Promise.resolve(reco));
       const fetchCard = jest.fn();
 
-      const hero = await getHeroContent(completions, fetchRecommendations, fetchCard);
+      const hero = await getHero(completions, fetchRecommendations, fetchCard);
 
       expect(fetchRecommendations).toHaveBeenCalledTimes(1);
       expect(fetchCard).toHaveBeenCalledTimes(0);
@@ -108,28 +108,28 @@ describe('HeroContent', () => {
     it('should return "the most recent content", not finished, having 3 or more questions answered', async () => {
       const completions: Array<ProgressionAggregationByContent> = [
         createAggregation({
-          contentRef: 'notMe | success: true',
+          contentRef: 'should not be selected because success: true',
           success: true
         }),
         createAggregation({
-          contentRef: 'notMeEither | latestNbQuestions < 3',
+          contentRef: 'should not be selected because latestNbQuestions < 3',
           latestNbQuestions: 2,
           success: false
         }),
         createAggregation({
-          contentRef: 'stillNotMe | date 2018',
+          contentRef: 'should not be selected because date 2018',
           updatedAt: '2018-05-23T16:10:38.486Z',
           latestNbQuestions: 12,
           success: false
         }),
         createAggregation({
-          contentRef: 'me!',
+          contentRef: 'should be selected',
           updatedAt: '2019-05-23T16:10:38.486Z',
           latestNbQuestions: 10,
           success: false
         }),
         createAggregation({
-          contentRef: 'stillNotMe | date 2017',
+          contentRef: 'should not be selected because date 2017',
           updatedAt: '2017-05-23T16:10:38.486Z',
           latestNbQuestions: 8,
           success: false
@@ -139,11 +139,11 @@ describe('HeroContent', () => {
       const fetchRecommendation = jest.fn();
       const fetchCard = jest.fn();
 
-      await getHeroContent(completions, fetchRecommendation, fetchCard);
+      await getHero(completions, fetchRecommendation, fetchCard);
       expect(fetchRecommendation).toHaveBeenCalledTimes(0);
       expect(fetchCard).toHaveBeenCalledTimes(1);
       expect(fetchCard).toHaveBeenCalledWith({
-        ref: 'me!',
+        ref: 'should be selected',
         type: 'chapter',
         version: '1'
       });

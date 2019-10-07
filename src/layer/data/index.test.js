@@ -32,7 +32,7 @@ describe('Data layer', () => {
       getClue: expect.any(Function),
       getCorrectAnswer: expect.any(Function),
       getExitNode: expect.any(Function),
-      getHeroContent: expect.any(Function),
+      getHero: expect.any(Function),
       getNextChapter: expect.any(Function),
       getNextLevel: expect.any(Function),
       logEvent: expect.any(Function),

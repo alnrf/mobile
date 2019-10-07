@@ -8,9 +8,7 @@ export type HeroService = {|
   get: () => Promise<DisciplineCard | ChapterCard | void>
 |};
 
-const get = (
-  dataLayer: DataLayer
-): (() => Promise<DisciplineCard | ChapterCard | void>) => async (): Promise<
+const get = (dataLayer: DataLayer): $PropertyType<HeroService, 'get'> => async (): Promise<
   DisciplineCard | ChapterCard | void
 > => {
   const aggregations = await getAggregationsByContent();
@@ -18,8 +16,8 @@ const get = (
     return undefined;
   }
 
-  const {fetchCard, fetchRecommendation, getHeroContent} = dataLayer;
-  return getHeroContent(aggregations, fetchRecommendation, fetchCard);
+  const {fetchCard, fetchRecommendation, getHero} = dataLayer;
+  return getHero(aggregations, fetchRecommendation, fetchCard);
 };
 
 const service = (dataLayer: DataLayer): HeroService => ({

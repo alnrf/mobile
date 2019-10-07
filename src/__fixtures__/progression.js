@@ -71,7 +71,7 @@ export const createProgression = ({
   actions?: Array<Action>
 }): Progression => {
   return {
-    _id: _id || undefined,
+    _id,
     engine: {
       ref: engine,
       version: '2'
@@ -80,7 +80,7 @@ export const createProgression = ({
     engineOptions: {
       version: '2'
     },
-    actions: actions || undefined,
+    actions,
     state: state && createState(state)
   };
 };

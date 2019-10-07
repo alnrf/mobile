@@ -12,7 +12,7 @@ const isNotFinished = (aggregation: ProgressionAggregationByContent): boolean =>
 const isOnGoing = (aggregation: ProgressionAggregationByContent): boolean =>
   isStepGreaterThan3(aggregation) && isNotFinished(aggregation);
 
-export const getHeroContent = (
+export const getHero = (
   aggregations: Array<ProgressionAggregationByContent>,
   fetchRecommendation: () => Promise<DisciplineCard | ChapterCard | void>,
   fetchCard: Content => Promise<DisciplineCard | ChapterCard | void>
