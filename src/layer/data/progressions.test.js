@@ -709,6 +709,15 @@ describe('aggregation by content', () => {
       progressionContent: {
         ref: 'foo',
         type: CONTENT_TYPE.CHAPTER
+      }
+    });
+
+    const progression2 = createProgression({
+      _id: 'progression2',
+      engine: ENGINE.LEARNER,
+      progressionContent: {
+        ref: 'foo',
+        type: CONTENT_TYPE.CHAPTER
       },
       state: {
         nextContent: {
@@ -721,25 +730,16 @@ describe('aggregation by content', () => {
       }
     });
 
-    const progression2 = createProgression({
-      _id: 'progression2',
-      engine: ENGINE.LEARNER,
-      progressionContent: {
-        ref: 'foo',
-        type: CONTENT_TYPE.CHAPTER
-      }
-    });
-
     const progressions = [progression1, progression2];
     mockProgressionsStorage(progressions);
 
     const result = await getAggregationsByContent();
     const expected: Array<HeroRecommendation> = [
       {
-        progressionId: 'progression1',
+        progressionId: 'progression2',
         content: {version: '1', ref: 'foo', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        nbSlides: progression1.state.step.current - 1,
+        nbSlides: progression2.state.step.current - 1,
         success: true,
         updatedAt: OLDEST_DATE
       }
@@ -944,7 +944,7 @@ describe('aggregation by content', () => {
         progressionId: 'progression1',
         content: {version: '1', ref: 'foo', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        nbSlides: progression0.state.step.current - 1,
+        nbSlides: progression1.state.step.current - 1,
         success: true,
         // $FlowFixMe actions[2] IS defined
         updatedAt: progression1.actions[2].createdAt
