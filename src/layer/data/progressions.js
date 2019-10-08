@@ -5,12 +5,12 @@ import type {Progression, Action} from '@coorpacademy/progression-engine';
 
 import {groupBy} from 'lodash/fp';
 
-import {content as aggregationByContent} from '@coorpacademy/progression-aggregations';
+import {heroRecommendation} from '@coorpacademy/progression-aggregations';
 import fetch from '../../modules/fetch';
 import {getCreatedAt, getUpdatedAt, isDone, isFailure} from '../../utils/progressions';
 import {CONTENT_TYPE, SPECIFIC_CONTENT_REF} from '../../const';
 import type {SupportedLanguage} from '../../translations/_types';
-import type {Record, Completion, ProgressionAggregationByContent} from './_types';
+import type {Record, Completion, HeroRecommendation} from './_types';
 import {getItem} from './core';
 
 export const buildCompletionKey = (engineRef: string, contentRef: string) =>
@@ -186,7 +186,7 @@ const findBestOf = (language: SupportedLanguage) => async (
   return card && card.stars;
 };
 
-const getAggregationsByContent = async (): Promise<Array<ProgressionAggregationByContent>> => {
+const getAggregationsByContent = async (): Promise<Array<HeroRecommendation>> => {
   const progressions: Array<Progression> = await getAll();
   const allRecords: Array<Record> = progressions.map(p => ({
     content: {
@@ -197,19 +197,14 @@ const getAggregationsByContent = async (): Promise<Array<ProgressionAggregationB
       }
     }
   }));
-  const recordsByContent: {[string]: Array<Record>} = groupBy(
-    aggregationByContent.mapId,
-    allRecords
-  );
+  const recordsByContent: {[string]: Array<Record>} = groupBy(heroRecommendation.mapId, allRecords);
 
   // $FlowFixMe values are Array<Record> and not 'mixed'
   const _records: Array<[string, Array<Record>]> = Object.entries(recordsByContent);
   const aggregations = _records.reduce((acc, [id: string, records: Array<Record>]) => {
     // $FlowFixMe records is Array<Record> and no 'mixed'
-    const values: Array<ProgressionAggregationByContent> = records.map(
-      aggregationByContent.mapValue
-    );
-    acc.push(values.reduce(aggregationByContent.reduce, undefined));
+    const values: Array<HeroRecommendation> = records.map(heroRecommendation.mapValue);
+    acc.push(values.reduce(heroRecommendation.reduce, undefined));
     return acc;
   }, []);
 

@@ -34,6 +34,7 @@ describe('Language', () => {
 
     it('should fetch config and keep phone language', async () => {
       const translations = require('../../translations');
+      // $FlowFixMe _translations.getLanguage is defined
       const phoneLanguage = translations.getLanguage();
       const fetch = require('cross-fetch');
 
@@ -188,7 +189,9 @@ describe('Language', () => {
       const {setLanguage} = require('./language');
 
       setLanguage('vi');
+      // $FlowFixMe _translations.setLanguage is defined
       expect(_translations.setLanguage).toHaveBeenCalledTimes(1);
+      // $FlowFixMe _translations.setLanguage is defined
       expect(_translations.setLanguage).toHaveBeenCalledWith('vi');
     });
     afterAll(() => {

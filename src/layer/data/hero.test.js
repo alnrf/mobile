@@ -3,34 +3,9 @@
 import Promise from 'bluebird';
 import noop from 'lodash/fp/noop';
 import {createChapterCard} from '../../__fixtures__/cards';
-import type {ChapterCard, ProgressionAggregationByContent} from './_types';
+import {createHeroRecommendation} from '../../__fixtures__/hero-recommendation';
+import type {ChapterCard, HeroRecommendation} from './_types';
 import {getHero} from './hero';
-
-type PartialHeroRecommendation = {|
-  success?: boolean,
-  contentRef?: string,
-  latestNbQuestions?: number,
-  stars?: number,
-  updatedAt?: string
-|};
-
-const createAggregation = ({
-  success = true,
-  contentRef = 'foo',
-  latestNbQuestions = 10,
-  stars = 0,
-  updatedAt = '2019-05-23T16:10:38.486Z'
-}: PartialHeroRecommendation = {}): ProgressionAggregationByContent => ({
-  content: {
-    ref: contentRef,
-    type: 'chapter',
-    version: '1'
-  },
-  stars,
-  success,
-  latestNbQuestions,
-  updatedAt
-});
 
 describe('HeroContent', () => {
   describe('Recommendation', () => {
@@ -51,11 +26,13 @@ describe('HeroContent', () => {
       const fetchRecommendations = jest.fn(() => Promise.resolve(reco));
       const hero = await getHero(
         [
-          createAggregation({
+          createHeroRecommendation({
+            progressionId: 'foo_p',
             contentRef: 'foo',
             success: true
           }),
-          createAggregation({
+          createHeroRecommendation({
+            progressionId: 'bar_p',
             contentRef: 'bar',
             success: true
           })
@@ -69,20 +46,23 @@ describe('HeroContent', () => {
     });
 
     it('should return "recommendation" if no started content have at least 3 questions answered', async () => {
-      const completions: Array<ProgressionAggregationByContent> = [
-        createAggregation({
+      const completions: Array<HeroRecommendation> = [
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should not be selected because  success: true',
           success: true
         }),
-        createAggregation({
-          contentRef: 'should not be selected because  latestNbQuestions < 3',
-          latestNbQuestions: 2,
+        createHeroRecommendation({
+          progressionId: 'foo',
+          contentRef: 'should not be selected because  nbSlides < 3',
+          nbSlides: 2,
           success: false
         }),
-        createAggregation({
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should not be selected because | date 2018',
           updatedAt: '2018-05-23T16:10:38.486Z',
-          latestNbQuestions: 1,
+          nbSlides: 1,
           success: false
         })
       ];
@@ -106,32 +86,37 @@ describe('HeroContent', () => {
 
   describe('Recent content', () => {
     it('should return "the most recent content", not finished, having 3 or more questions answered', async () => {
-      const completions: Array<ProgressionAggregationByContent> = [
-        createAggregation({
+      const completions: Array<HeroRecommendation> = [
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should not be selected because success: true',
           success: true
         }),
-        createAggregation({
-          contentRef: 'should not be selected because latestNbQuestions < 3',
-          latestNbQuestions: 2,
+        createHeroRecommendation({
+          progressionId: 'foo',
+          contentRef: 'should not be selected because nbSlides < 3',
+          nbSlides: 2,
           success: false
         }),
-        createAggregation({
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should not be selected because date 2018',
           updatedAt: '2018-05-23T16:10:38.486Z',
-          latestNbQuestions: 12,
+          nbSlides: 12,
           success: false
         }),
-        createAggregation({
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should be selected',
           updatedAt: '2019-05-23T16:10:38.486Z',
-          latestNbQuestions: 10,
+          nbSlides: 10,
           success: false
         }),
-        createAggregation({
+        createHeroRecommendation({
+          progressionId: 'foo',
           contentRef: 'should not be selected because date 2017',
           updatedAt: '2017-05-23T16:10:38.486Z',
-          latestNbQuestions: 8,
+          nbSlides: 8,
           success: false
         })
       ];

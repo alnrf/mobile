@@ -232,10 +232,10 @@ export type Completion = {|
 
 export type Record = {|content: ProgressionAPI|};
 
-export type ProgressionAggregationByContent = {|
-  stars: number,
+export type HeroRecommendation = {|
   success: boolean,
   content: Content,
-  latestNbQuestions: number,
-  updatedAt: string
+  nbSlides: number,
+  updatedAt: string,
+  progressionId: string
 |};

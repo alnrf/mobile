@@ -1,19 +1,17 @@
 // @flow
 
 import type {Content} from '@coorpacademy/progression-engine';
-import type {DisciplineCard, ChapterCard, ProgressionAggregationByContent} from './_types';
+import type {DisciplineCard, ChapterCard, HeroRecommendation} from './_types';
 
-const isStepGreaterThan3 = (aggregation: ProgressionAggregationByContent): boolean =>
-  aggregation.latestNbQuestions > 3;
+const isStepGreaterThan3 = (aggregation: HeroRecommendation): boolean => aggregation.nbSlides > 3;
 
-const isNotFinished = (aggregation: ProgressionAggregationByContent): boolean =>
-  aggregation.success === false;
+const isNotFinished = (aggregation: HeroRecommendation): boolean => aggregation.success === false;
 
-const isOnGoing = (aggregation: ProgressionAggregationByContent): boolean =>
+const isOnGoing = (aggregation: HeroRecommendation): boolean =>
   isStepGreaterThan3(aggregation) && isNotFinished(aggregation);
 
 export const getHero = (
-  aggregations: Array<ProgressionAggregationByContent>,
+  aggregations: Array<HeroRecommendation>,
   fetchRecommendation: () => Promise<DisciplineCard | ChapterCard | void>,
   fetchCard: Content => Promise<DisciplineCard | ChapterCard | void>
 ): Promise<DisciplineCard | ChapterCard | void> => {

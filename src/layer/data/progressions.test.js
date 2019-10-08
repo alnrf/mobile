@@ -8,7 +8,7 @@ import {ForbiddenError} from '../../models/error';
 import {CONTENT_TYPE, ENGINE, SPECIFIC_CONTENT_REF} from '../../const';
 
 import {OLDEST_DATE} from '../../utils/progressions';
-import type {ProgressionAggregationByContent} from './_types';
+import type {HeroRecommendation} from './_types';
 import {
   findById,
   getAggregationsByContent,
@@ -734,13 +734,13 @@ describe('aggregation by content', () => {
     mockProgressionsStorage(progressions);
 
     const result = await getAggregationsByContent();
-    const expected: Array<ProgressionAggregationByContent> = [
+    const expected: Array<HeroRecommendation> = [
       {
+        progressionId: 'progression1',
         content: {version: '1', ref: 'foo', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        latestNbQuestions: progression1.state.step.current - 1,
+        nbSlides: progression1.state.step.current - 1,
         success: true,
-        stars: 0,
         updatedAt: OLDEST_DATE
       }
     ];
@@ -761,7 +761,6 @@ describe('aggregation by content', () => {
           ref: SPECIFIC_CONTENT_REF.SUCCESS_EXIT_NODE,
           type: CONTENT_TYPE.SUCCESS
         },
-        stars: 4,
         step: {
           current: 12
         }
@@ -785,7 +784,6 @@ describe('aggregation by content', () => {
           ref: SPECIFIC_CONTENT_REF.SUCCESS_EXIT_NODE,
           type: CONTENT_TYPE.SUCCESS
         },
-        stars: 14,
         step: {
           current: 13
         }
@@ -847,23 +845,22 @@ describe('aggregation by content', () => {
     mockProgressionsStorage(progressions);
 
     const result = await getAggregationsByContent();
-    const expected: Array<ProgressionAggregationByContent> = [
+    const expected: Array<HeroRecommendation> = [
       {
+        progressionId: 'progression2',
         content: {version: '1', ref: 'foo', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        latestNbQuestions: progression2.state.step.current - 1,
+        nbSlides: progression2.state.step.current - 1,
         success: true,
-        // $FlowFixMe state.stars IS defined
-        stars: progression2.state.stars,
         // $FlowFixMe actions[2] IS defined
         updatedAt: progression2.actions[2].createdAt
       },
       {
+        progressionId: 'progression3',
         content: {version: '1', ref: 'bar', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        latestNbQuestions: progression3.state.step.current - 1,
+        nbSlides: progression3.state.step.current - 1,
         success: false,
-        stars: 0,
         // $FlowFixMe actions[2] IS defined
         updatedAt: progression3.actions[2].createdAt
       }
@@ -885,7 +882,6 @@ describe('aggregation by content', () => {
           ref: SPECIFIC_CONTENT_REF.SUCCESS_EXIT_NODE,
           type: CONTENT_TYPE.SUCCESS
         },
-        stars: 24,
         step: {
           current: 17
         }
@@ -904,7 +900,6 @@ describe('aggregation by content', () => {
           ref: SPECIFIC_CONTENT_REF.SUCCESS_EXIT_NODE,
           type: CONTENT_TYPE.SUCCESS
         },
-        stars: 8,
         step: {
           current: 10
         }
@@ -928,7 +923,6 @@ describe('aggregation by content', () => {
           ref: SPECIFIC_CONTENT_REF.SUCCESS_EXIT_NODE,
           type: CONTENT_TYPE.SUCCESS
         },
-        stars: 14,
         step: {
           current: 12
         }
@@ -945,14 +939,13 @@ describe('aggregation by content', () => {
     mockProgressionsStorage(progressions);
 
     const result = await getAggregationsByContent();
-    const expected: Array<ProgressionAggregationByContent> = [
+    const expected: Array<HeroRecommendation> = [
       {
+        progressionId: 'progression1',
         content: {version: '1', ref: 'foo', type: CONTENT_TYPE.CHAPTER},
         // $FlowFixMe state.step IS defined
-        latestNbQuestions: progression0.state.step.current - 1,
+        nbSlides: progression0.state.step.current - 1,
         success: true,
-        // $FlowFixMe state.stars IS defined
-        stars: progression0.state.stars,
         // $FlowFixMe actions[2] IS defined
         updatedAt: progression1.actions[2].createdAt
       }
