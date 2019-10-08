@@ -1106,12 +1106,12 @@
     redux "^4.0.4"
     redux-thunk "^2.3.0"
 
-"@coorpacademy/progression-aggregations@^2.151.0":
-  version "2.151.0"
-  resolved "https://registry.npmjs.org/@coorpacademy/progression-aggregations/-/progression-aggregations-2.151.0.tgz#08789c69b0412570bcef069b396dd704141a186f"
-  integrity sha512-IgfB/V0+MVQjX0S/c17t7liC5WoGv+wz+j7VQf9RqJBobN7WHa4+K+8SIqExzf2P5EqaPNchiMX5Rz8gcFk7fg==
+"@coorpacademy/progression-aggregations@^2.168.0":
+  version "2.168.0"
+  resolved "https://registry.npmjs.org/@coorpacademy/progression-aggregations/-/progression-aggregations-2.168.0.tgz#ed5bbbd1fe0712c61bf3a020f3486600b40e8268"
+  integrity sha512-NerABBPw5I2r+ERamUZfafXY5/PA8lTseTK6IFUTD/Najpf8yV8qFJcX0y+28B1TewDKmWFj7oYBtt5y4byXDA==
   dependencies:
-    lodash "^4.17.11"
+    lodash "^4.17.15"
     moment "^2.24.0"
 
 "@coorpacademy/progression-engine@11.0.7":
