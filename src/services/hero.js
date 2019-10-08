@@ -12,10 +12,6 @@ const get = (dataLayer: DataLayer): $PropertyType<HeroService, 'get'> => async (
   DisciplineCard | ChapterCard | void
 > => {
   const aggregations = await getAggregationsByContent();
-  if (aggregations.length === 0) {
-    return undefined;
-  }
-
   const {fetchCard, fetchRecommendation, getHero} = dataLayer;
   return getHero(aggregations, fetchRecommendation, fetchCard);
 };

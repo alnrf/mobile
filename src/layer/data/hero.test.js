@@ -71,16 +71,16 @@ describe('HeroContent', () => {
     it('should return "recommendation" if no started content have at least 3 questions answered', async () => {
       const completions: Array<ProgressionAggregationByContent> = [
         createAggregation({
-          contentRef: 'notMe | success: true',
+          contentRef: 'should not be selected because  success: true',
           success: true
         }),
         createAggregation({
-          contentRef: 'notMeEither | latestNbQuestions < 3',
+          contentRef: 'should not be selected because  latestNbQuestions < 3',
           latestNbQuestions: 2,
           success: false
         }),
         createAggregation({
-          contentRef: 'stillNotMe | date 2018',
+          contentRef: 'should not be selected because | date 2018',
           updatedAt: '2018-05-23T16:10:38.486Z',
           latestNbQuestions: 1,
           success: false

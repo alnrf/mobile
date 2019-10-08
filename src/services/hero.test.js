@@ -44,7 +44,7 @@ describe('Hero service', () => {
     expect(getHero).toHaveBeenCalledTimes(1);
   });
 
-  it('should return undefined if no aggregation is found', async () => {
+  it('should return undefined if no aggregation and no reco is found', async () => {
     const createService = require('./hero').default;
 
     jest.mock('../layer/data/progressions', () => {
@@ -61,7 +61,7 @@ describe('Hero service', () => {
     const heroService = createService({fetchCard, fetchRecommendation, getHero});
     const result = await heroService.get();
     expect(result).toEqual(undefined);
-    expect(getHero).toHaveBeenCalledTimes(0);
+    expect(getHero).toHaveBeenCalledTimes(1);
   });
 
   afterAll(() => {
