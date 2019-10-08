@@ -202,17 +202,16 @@ const getAggregationsByContent = async (): Promise<Array<ProgressionAggregationB
     allRecords
   );
 
-  const aggregations = Object.entries(recordsByContent).reduce(
-    (acc, [id: string, records: Array<Record>]) => {
-      // $FlowFixMe records is Array<Record> and no mixed
-      const values: Array<ProgressionAggregationByContent> = records.map(
-        aggregationByContent.mapValue
-      );
-      acc.push(values.reduce(aggregationByContent.reduce, undefined));
-      return acc;
-    },
-    []
-  );
+  // $FlowFixMe values are Array<Record> and not 'mixed'
+  const _records: Array<[string, Array<Record>]> = Object.entries(recordsByContent);
+  const aggregations = _records.reduce((acc, [id: string, records: Array<Record>]) => {
+    // $FlowFixMe records is Array<Record> and no 'mixed'
+    const values: Array<ProgressionAggregationByContent> = records.map(
+      aggregationByContent.mapValue
+    );
+    acc.push(values.reduce(aggregationByContent.reduce, undefined));
+    return acc;
+  }, []);
 
   return aggregations;
 };
