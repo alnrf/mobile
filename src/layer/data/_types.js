@@ -18,15 +18,6 @@ import type {
 import type {Discipline as DisciplineStore} from '@coorpacademy/player-store';
 import type {SupportedLanguage} from '../../translations/_types';
 
-export type ProgressionAPI = {|
-  ...Progression,
-  _id: ProgressionId,
-  meta: {
-    updatedAt: string,
-    createdAt: string
-  }
-|};
-
 export type MimeType = ResourceMimeType;
 
 type Skill = string;
@@ -230,7 +221,16 @@ export type Completion = {|
   stars: number
 |};
 
-export type Record = {|content: ProgressionAPI|};
+export type Record = {|
+  content: {
+    ...Progression,
+    _id: ProgressionId,
+    meta: {
+      updatedAt: string,
+      createdAt: string
+    }
+  }
+|};
 
 export type HeroRecommendation = {|
   success: boolean,
