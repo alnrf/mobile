@@ -11797,10 +11797,10 @@ react-native-animatable@^1.3.1:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-camera@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/react-native-camera/-/react-native-camera-2.9.0.tgz#5ef94a535dbbfd215d672deef8d0c45bf06b1f3a"
-  integrity sha512-S1vtsmCx2upnLK/4xYALHKB1itbujHemAIhQ+R0qxxEjb/8TYP7AJUjlxmBJ57tjYR3IaNCAeiashCCnEvGe5Q==
+react-native-camera@3.9.0:
+  version "3.9.0"
+  resolved "https://registry.npmjs.org/react-native-camera/-/react-native-camera-3.9.0.tgz#334d9d7be5476d673af4df954929958ecc36ed55"
+  integrity sha512-qUhog1yd7FQ9xRTxN1SP+T5f4uLuVY5eXx6mMlBCNsqvYSoKCWFHH1Kpil9fx7d2iOl/o09o/7kHNcSl9RkrkQ==
   dependencies:
     prop-types "^15.6.2"
 
@@ -11811,10 +11811,10 @@ react-native-card-flip@^1.0.4:
   dependencies:
     prop-types "15.5.10"
 
-react-native-device-info@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-2.1.0.tgz#55eb82c1ba14c550cef6b71efc368d88b96b826a"
-  integrity sha512-FdHFi0DtISiytXzE2KM16Qd4GPEGnbA8DjTP1vHjcUPFJCLBtm1P0/10Xn5x/kISjEvsz17grdtJxGrd83c6Pw==
+react-native-device-info@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-5.3.0.tgz#ca0386310f59ccce458e1cea39b9f5b8f8d02098"
+  integrity sha512-1WzER5Hck83b5sF850uPt71RXNI56di1aikoBqdauQid5PsKmvambDl2zIflCE1AkMFEv9HmfPYpCOWop0ZkPw==
 
 react-native-email-link@^1.4.0:
   version "1.4.0"
@@ -11882,10 +11882,10 @@ react-native-orientation-locker@1.1.6:
   resolved "https://registry.npmjs.org/react-native-orientation-locker/-/react-native-orientation-locker-1.1.6.tgz#7d66a62cdbf4dd1548522efe69a4e04af5daf929"
   integrity sha512-yXTC8KmKfhuEAh+gCOcehx0v4IjYapV0lJ6W1muafoISvxMsT+Cizzy+Iz78hQywVZTJNB/Xusl7WMXev7OxDQ==
 
-react-native-pdf@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/react-native-pdf/-/react-native-pdf-5.1.0.tgz#dd209171cec9a04d74a4b12e71ff78ecb98465d4"
-  integrity sha512-zmeSmsheqydC+Vm8l74XSJ/gzLp9LZcT49lJasBXl9NH67yHd0HoW9Un5jawM+xwHwx/xKsw6lOUb0HHVjq6ng==
+react-native-pdf@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/react-native-pdf/-/react-native-pdf-6.0.0.tgz#e5e5e41ceaea0c20ca71f25f2b520fc3a498c782"
+  integrity sha512-lQ4TkcD0UXwmRHCeRMspTSx4IVpuSP627CxavIudbvSwYfs4uVARzumeik183LpkuK5LLjXBVhFdt2XZi3bj4Q==
   dependencies:
     crypto-js "^3.1.9-1"
     prop-types "^15.5.10"
@@ -11961,10 +11961,10 @@ react-native-snap-carousel@^3.8.0:
     prop-types "^15.6.1"
     react-addons-shallow-compare "15.6.2"
 
-react-native-sound@^0.10.12:
-  version "0.10.12"
-  resolved "https://registry.npmjs.org/react-native-sound/-/react-native-sound-0.10.12.tgz#f912d6f9d6e9e2b42b391e0226787628d940f01a"
-  integrity sha512-lhvzZ+ekNSHW9s4FjmxxGAQmd7yDT9FnHgJNP824cMyHRrTES/LgHnSOxES/1FWVoaQ8FdfbEHkWd2rN0G/L9A==
+react-native-sound@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npmjs.org/react-native-sound/-/react-native-sound-0.11.0.tgz#ad60b55ba8c6dc89917f381ad3713f2738de530f"
+  integrity sha512-4bGAZfni6E2L695NQjOZwNLBQGXgBGYC4Sy+h99K5h0HqNZjCqR0+aLel+ezASxEJDpaH83gylNObXpiqJgdwg==
 
 react-native-splash-screen@^3.2.0:
   version "3.2.0"
@@ -12785,10 +12785,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rn-fetch-blob@0.10.15:
-  version "0.10.15"
-  resolved "https://registry.npmjs.org/rn-fetch-blob/-/rn-fetch-blob-0.10.15.tgz#3526860c1c57e0bf4c09bdbe409c919264afffba"
-  integrity sha512-/m/gurTaPAvR3J843uehHhznj5k89x7XClyO5ejmbspNLNQ4ByF+kZs80wiiKGWntj+Wqo0jJu1goArXEfc0kA==
+rn-fetch-blob@0.11.2:
+  version "0.11.2"
+  resolved "https://registry.npmjs.org/rn-fetch-blob/-/rn-fetch-blob-0.11.2.tgz#bdc483bf1b0c3810d457983494a11fbada446679"
+  integrity sha512-oKszdNtA7vZ56d0Rfr+RDEUexwlZxu/HOqwULa36PRHhQsTO5ia7uKk+va3WzuwYxzhF9e0bY8n3k+GC6Df14A==
   dependencies:
     base-64 "0.1.0"
     glob "7.0.6"
