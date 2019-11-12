@@ -51,6 +51,13 @@ esproposal.nullish_coalescing=enable
 
 munge_underscores=true
 
+# custom stuff :)
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+
+# for the CI
+server.max_workers=4
+
 module.name_mapper='^react-native$' -> '<PROJECT_ROOT>/node_modules/react-native/Libraries/react-native/react-native-implementation'
 module.name_mapper='^react-native/\(.*\)$' -> '<PROJECT_ROOT>/node_modules/react-native/\1'
 module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> '<PROJECT_ROOT>/node_modules/react-native/Libraries/Image/RelativeImageStub'
@@ -76,13 +83,6 @@ inexact-spread=warn
 unnecessary-invariant=warn
 signature-verification-failure=warn
 deprecated-utility=error
-
-# custom stuff :)
-esproposal.class_instance_fields=enable
-esproposal.class_static_fields=enable
-
-# for the CI
-server.max_workers=4
 
 [strict]
 deprecated-type
