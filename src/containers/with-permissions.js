@@ -6,9 +6,8 @@ import {connect} from 'react-redux';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 
 import {APP_STATE} from '../const';
-import type {AppState} from '../types';
+import type {AppState, PermissionType} from '../types';
 import {check as checkPermission, request as requestPermission} from '../redux/actions/permissions';
-import type {PermissionType} from '../redux/actions/permissions';
 
 export type WithPermissionsProps = {|
   requestPermission: (type: PermissionType, description: string, onDeny?: () => void) => void

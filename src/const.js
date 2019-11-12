@@ -14,6 +14,7 @@ import type {
   Engine,
   ErrorType,
   PermissionStatus,
+  PermissionType,
   QuestionChoiceInputType,
   SpaceType,
   TooltipType,
@@ -140,13 +141,26 @@ export const ENGINE: {
 (Object.keys(ENGINE).map(k => ENGINE[k]): Array<Engine>);
 
 export const PERMISSION_STATUS: {
-  ['AUTHORIZED' | 'DENIED' | 'RESTRICTED' | 'UNDETERMINED']: PermissionStatus
-} = {
-  AUTHORIZED: 'authorized',
+  GRANTED: 'granted',
   DENIED: 'denied',
-  RESTRICTED: 'restricted',
-  UNDETERMINED: 'undetermined'
+  BLOCKED: 'blocked',
+  UNAVAILABLE: 'unavailable'
+} = {
+  GRANTED: 'granted',
+  DENIED: 'denied',
+  BLOCKED: 'blocked',
+  UNAVAILABLE: 'unavailable'
 };
+// FlowAssert
+(Object.keys(PERMISSION_STATUS).map(k => PERMISSION_STATUS[k]): Array<PermissionStatus>);
+
+export const PERMISSION_TYPE: {
+  CAMERA: 'camera'
+} = {
+  CAMERA: 'camera'
+};
+// FlowAssert
+(Object.keys(PERMISSION_TYPE).map(k => PERMISSION_TYPE[k]): Array<PermissionType>);
 
 export const APP_STATE: {
   ['ACTIVE' | 'BACKGROUND' | 'INACTIVE']: AppState

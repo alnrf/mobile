@@ -1,7 +1,9 @@
 // @flow
 
+import {Alert} from 'react-native';
 import type {ChapterAPI, DataLayer as DataLayerBase, LevelAPI} from '@coorpacademy/player-services';
 import type {Progression} from '@coorpacademy/progression-engine';
+
 import {
   findById as findProgressionById,
   getAll as getAllProgressions,
@@ -12,7 +14,6 @@ import {
   findBestOf,
   updateSynchronizedProgressionIds
 } from './progressions';
-
 import {find as findContent} from './content';
 import {findById as findChapterById, getNextChapter} from './chapters';
 import {getExitNode} from './exit-nodes';
@@ -29,6 +30,12 @@ import {logEvent} from './analytics';
 import {fetchLanguage, setLanguage, getInterfaceLanguage} from './language';
 import {fetchSections} from './sections';
 import {findUriById as findVideoUriById} from './videos';
+import {
+  request as requestPermission,
+  check as checkPermission,
+  openSettings,
+  canOpenSettings
+} from './permissions';
 
 export type DataLayer = {
   ...DataLayerBase,
@@ -54,7 +61,12 @@ export type DataLayer = {
   logEvent: typeof logEvent,
   fetchUser: typeof fetchUser,
   saveProgression: Progression => Promise<Progression>,
-  updateSynchronizedProgressionIds: typeof updateSynchronizedProgressionIds
+  updateSynchronizedProgressionIds: typeof updateSynchronizedProgressionIds,
+  requestPermission: typeof requestPermission,
+  checkPermission: typeof checkPermission,
+  openSettings: typeof openSettings,
+  canOpenSettings: typeof canOpenSettings,
+  alert: typeof Alert.alert
 };
 
 const createDataLayer = (): DataLayer => ({
@@ -94,7 +106,12 @@ const createDataLayer = (): DataLayer => ({
   fetchBundle,
   storeBundle,
   logEvent,
-  updateSynchronizedProgressionIds
+  updateSynchronizedProgressionIds,
+  requestPermission,
+  checkPermission,
+  openSettings,
+  canOpenSettings,
+  alert: Alert.alert
 });
 
 export default createDataLayer;

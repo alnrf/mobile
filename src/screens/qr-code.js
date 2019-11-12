@@ -12,7 +12,7 @@ import Screen from '../components/screen';
 import Touchable from '../components/touchable';
 import HeaderBackButton from '../components/header-back-button';
 import theme from '../modules/theme';
-import {PERMISSION_STATUS} from '../const';
+import {PERMISSION_STATUS, PERMISSION_TYPE} from '../const';
 import withPermissions from '../containers/with-permissions';
 import {getPermissionStatus} from '../redux/utils/state-extract';
 import type {WithPermissionsProps} from '../containers/with-permissions';
@@ -51,7 +51,7 @@ class QRCodeScreen extends React.PureComponent<Props> {
   };
 
   handleDidFocus = () =>
-    this.props.requestPermission('camera', translations.permissionCamera, this.handleClose);
+    this.props.requestPermission(PERMISSION_TYPE.CAMERA, translations.permissionCamera, this.handleClose);
 
   handleFakeScan = () => {
     const {onScan} = this.props.navigation.state.params;
@@ -82,8 +82,8 @@ class QRCodeScreen extends React.PureComponent<Props> {
 }
 
 const getHasPermissionState: StoreState => boolean = createSelector(
-  [getPermissionStatus('camera')],
-  permission => permission === PERMISSION_STATUS.AUTHORIZED
+  [getPermissionStatus(PERMISSION_TYPE.CAMERA)],
+  permission => permission === PERMISSION_STATUS.GRANTED
 );
 
 export const mapStateToProps = (state: StoreState): ConnectedStateProps => ({
@@ -91,4 +91,4 @@ export const mapStateToProps = (state: StoreState): ConnectedStateProps => ({
 });
 
 export {QRCodeScreen as Component};
-export default connect(mapStateToProps)(withPermissions(QRCodeScreen, ['camera']));
+export default connect(mapStateToProps)(withPermissions(QRCodeScreen, [PERMISSION_TYPE.CAMERA]));

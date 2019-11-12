@@ -17,15 +17,7 @@ ScrollView.propTypes = {
 Vibration.vibrate = () => {};
 Vibration.cancel = () => {};
 
-jest.mock('NativeEventEmitter', () => {
-  return class MockNativeEventEmitter {
-    addListener = () => ({remove: jest.fn()});
-
-    removeListener = () => jest.fn();
-
-    removeAllListeners = () => jest.fn();
-  };
-});
+jest.mock('./node_modules/react-native/Libraries/EventEmitter/NativeEventEmitter');
 
 // react-native Linking
 NativeModules.Linking = {
@@ -90,8 +82,8 @@ jest.mock('react-native-permissions', () => {
   return {
     canOpenSettings: jest.fn(() => Promise.resolve(true)),
     openSettings: jest.fn(() => Promise.resolve(undefined)),
-    request: jest.fn(() => Promise.resolve(PERMISSION_STATUS.UNDETERMINED)),
-    check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.UNDETERMINED))
+    request: jest.fn(() => Promise.resolve(PERMISSION_STATUS.DENIED)),
+    check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.DENIED))
   };
 });
 

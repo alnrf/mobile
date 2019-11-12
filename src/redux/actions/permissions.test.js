@@ -1,6 +1,6 @@
 // @flow strict
 
-import {ANALYTICS_EVENT_TYPE, PERMISSION_STATUS} from '../../const';
+import {ANALYTICS_EVENT_TYPE, PERMISSION_STATUS, PERMISSION_TYPE} from '../../const';
 import type {PermissionStatus} from '../../types';
 import translations from '../../translations';
 import {createFakeAnalytics} from '../../utils/tests';
@@ -14,12 +14,12 @@ const createStore = (status: PermissionStatus) => ({
 
 describe('Permissions', () => {
   it('change', () => {
-    const result = change('camera', PERMISSION_STATUS.AUTHORIZED);
+    const result = change(PERMISSION_TYPE.CAMERA, PERMISSION_STATUS.GRANTED);
     const expected: Action = {
       type: CHANGE,
       payload: {
-        type: 'camera',
-        status: PERMISSION_STATUS.AUTHORIZED
+        type: PERMISSION_TYPE.CAMERA,
+        status: PERMISSION_STATUS.GRANTED
       }
     };
     expect(result).toEqual(expected);
@@ -29,7 +29,7 @@ describe('Permissions', () => {
     const expected: Action = {
       type: CHECK,
       payload: {
-        type: 'camera'
+        type: PERMISSION_TYPE.CAMERA
       }
     };
 
@@ -37,38 +37,38 @@ describe('Permissions', () => {
       const {getState, dispatch} = createStore(PERMISSION_STATUS.DENIED);
       const services = {
         Permissions: {
-          check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.UNDETERMINED))
+          check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.DENIED))
         }
       };
       // $FlowFixMe we dont want to mock the entire services object
-      await check('camera')(dispatch, getState, {services});
+      await check(PERMISSION_TYPE.CAMERA)(dispatch, getState, {services});
       const expectedChangeAction: Action = {
         type: CHANGE,
         payload: {
-          type: 'camera',
-          status: PERMISSION_STATUS.UNDETERMINED
+          type: PERMISSION_TYPE.CAMERA,
+          status: PERMISSION_STATUS.DENIED
         }
       };
       expect(dispatch.mock.calls.length).toBe(2);
       expect(dispatch.mock.calls[0]).toEqual([expected]);
       expect(dispatch.mock.calls[1]).toEqual([expectedChangeAction]);
       expect(services.Permissions.check.mock.calls.length).toBe(1);
-      expect(services.Permissions.check.mock.calls[0]).toEqual(['camera']);
+      expect(services.Permissions.check.mock.calls[0]).toEqual([PERMISSION_TYPE.CAMERA]);
     });
 
     it('without change', async () => {
-      const {getState, dispatch} = createStore(PERMISSION_STATUS.AUTHORIZED);
+      const {getState, dispatch} = createStore(PERMISSION_STATUS.GRANTED);
       const services = {
         Permissions: {
-          check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.AUTHORIZED))
+          check: jest.fn(() => Promise.resolve(PERMISSION_STATUS.GRANTED))
         }
       };
       // $FlowFixMe we dont want to mock the entire services object
-      await check('camera')(dispatch, getState, {services});
+      await check(PERMISSION_TYPE.CAMERA)(dispatch, getState, {services});
       expect(dispatch.mock.calls.length).toBe(1);
       expect(dispatch.mock.calls[0]).toEqual([expected]);
       expect(services.Permissions.check.mock.calls.length).toBe(1);
-      expect(services.Permissions.check.mock.calls[0]).toEqual(['camera']);
+      expect(services.Permissions.check.mock.calls[0]).toEqual([PERMISSION_TYPE.CAMERA]);
     });
   });
 
@@ -76,13 +76,13 @@ describe('Permissions', () => {
     const expected: Action = {
       type: REQUEST,
       payload: {
-        type: 'camera'
+        type: PERMISSION_TYPE.CAMERA
       }
     };
 
     describe('should handle request', () => {
       it('with deny callback and change', async () => {
-        const {getState, dispatch} = createStore(PERMISSION_STATUS.UNDETERMINED);
+        const {getState, dispatch} = createStore(PERMISSION_STATUS.DENIED);
         const handleDeny = jest.fn();
         const services = {
           Analytics: createFakeAnalytics(),
@@ -91,11 +91,13 @@ describe('Permissions', () => {
           }
         };
         // $FlowFixMe we dont want to mock the entire services object
-        await request('camera', 'foo bar baz', handleDeny)(dispatch, getState, {services});
+        await request(PERMISSION_TYPE.CAMERA, 'foo bar baz', handleDeny)(dispatch, getState, {
+          services
+        });
         const expectedChangeAction: Action = {
           type: CHANGE,
           payload: {
-            type: 'camera',
+            type: PERMISSION_TYPE.CAMERA,
             status: PERMISSION_STATUS.DENIED
           }
         };
@@ -104,34 +106,36 @@ describe('Permissions', () => {
         expect(dispatch.mock.calls[1]).toEqual([expectedChangeAction]);
         expect(handleDeny.mock.calls.length).toBe(1);
         expect(services.Permissions.request.mock.calls.length).toBe(1);
-        expect(services.Permissions.request.mock.calls[0]).toEqual(['camera']);
+        expect(services.Permissions.request.mock.calls[0]).toEqual([PERMISSION_TYPE.CAMERA]);
 
         expect(services.Analytics.logEvent).toHaveBeenCalledWith(ANALYTICS_EVENT_TYPE.PERMISSION, {
-          type: 'camera',
+          type: PERMISSION_TYPE.CAMERA,
           status: PERMISSION_STATUS.DENIED
         });
       });
 
       it('without deny callback and no change', async () => {
-        const {getState, dispatch} = createStore(PERMISSION_STATUS.UNDETERMINED);
+        const {getState, dispatch} = createStore(PERMISSION_STATUS.DENIED);
         const handleDeny = jest.fn();
         const services = {
           Analytics: createFakeAnalytics(),
           Permissions: {
-            request: jest.fn(() => Promise.resolve(PERMISSION_STATUS.UNDETERMINED))
+            request: jest.fn(() => Promise.resolve(PERMISSION_STATUS.DENIED))
           }
         };
         // $FlowFixMe we dont want to mock the entire services object
-        await request('camera', 'foo bar baz', handleDeny)(dispatch, getState, {services});
+        await request(PERMISSION_TYPE.CAMERA, 'foo bar baz', handleDeny)(dispatch, getState, {
+          services
+        });
         expect(dispatch.mock.calls.length).toBe(1);
         expect(dispatch.mock.calls[0]).toEqual([expected]);
         expect(handleDeny.mock.calls.length).toBe(0);
         expect(services.Permissions.request.mock.calls.length).toBe(1);
-        expect(services.Permissions.request.mock.calls[0]).toEqual(['camera']);
+        expect(services.Permissions.request.mock.calls[0]).toEqual([PERMISSION_TYPE.CAMERA]);
 
         expect(services.Analytics.logEvent).toHaveBeenCalledWith(ANALYTICS_EVENT_TYPE.PERMISSION, {
-          type: 'camera',
-          status: PERMISSION_STATUS.UNDETERMINED
+          type: PERMISSION_TYPE.CAMERA,
+          status: PERMISSION_STATUS.DENIED
         });
       });
     });
@@ -150,7 +154,9 @@ describe('Permissions', () => {
           }
         };
         // $FlowFixMe we dont want to mock the entire services object
-        await request('camera', 'foo bar baz', handleDeny)(dispatch, getState, {services});
+        await request(PERMISSION_TYPE.CAMERA, 'foo bar baz', handleDeny)(dispatch, getState, {
+          services
+        });
         expect(dispatch.mock.calls.length).toBe(1);
         expect(dispatch.mock.calls[0]).toEqual([expected]);
         expect(services.Permissions.canOpenSettings.mock.calls.length).toBe(1);
@@ -183,7 +189,9 @@ describe('Permissions', () => {
           }
         };
         // $FlowFixMe we dont want to mock the entire services object
-        await request('camera', 'foo bar baz', handleDeny)(dispatch, getState, {services});
+        await request(PERMISSION_TYPE.CAMERA, 'foo bar baz', handleDeny)(dispatch, getState, {
+          services
+        });
         expect(dispatch.mock.calls.length).toBe(1);
         expect(dispatch.mock.calls[0]).toEqual([expected]);
         expect(services.Permissions.canOpenSettings.mock.calls.length).toBe(1);

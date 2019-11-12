@@ -106,7 +106,9 @@ export type User = {|
   givenName: string
 |};
 
-export type PermissionStatus = 'authorized' | 'denied' | 'restricted' | 'undetermined';
+export type PermissionStatus = 'unavailable' | 'denied' | 'blocked' | 'granted';
+
+export type PermissionType = 'camera';
 
 export type UnlockedLevelInfo = {|
   isUnlocked: boolean,

@@ -1,22 +1,21 @@
 // @flow strict
 
-import {Alert} from 'react-native';
-import Permissions from 'react-native-permissions';
+import type {DataLayer} from '../layer/data';
 
 export type PermissionsService = {|
-  request: typeof Permissions.request,
-  check: typeof Permissions.check,
-  canOpenSettings: typeof Permissions.canOpenSettings,
-  openSettings: typeof Permissions.openSettings,
-  alert: typeof Alert.alert
+  request: $PropertyType<DataLayer, 'requestPermission'>,
+  check: $PropertyType<DataLayer, 'checkPermission'>,
+  openSettings: $PropertyType<DataLayer, 'openSettings'>,
+  canOpenSettings: $PropertyType<DataLayer, 'canOpenSettings'>,
+  alert: $PropertyType<DataLayer, 'alert'>
 |};
 
-const service: PermissionsService = {
-  request: Permissions.request,
-  check: Permissions.check,
-  canOpenSettings: Permissions.canOpenSettings,
-  openSettings: Permissions.openSettings,
-  alert: Alert.alert
-};
+const service = (dataLayer: DataLayer): PermissionsService => ({
+  request: dataLayer.requestPermission,
+  check: dataLayer.checkPermission,
+  canOpenSettings: dataLayer.canOpenSettings,
+  openSettings: dataLayer.openSettings,
+  alert: dataLayer.alert
+});
 
 export default service;

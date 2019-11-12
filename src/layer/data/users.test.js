@@ -19,7 +19,7 @@ const fetchedUser: FetchUserResponse = {
   displayName: user.displayName
 };
 
-describe('brand', () => {
+describe('users', () => {
   beforeEach(() => {
     jest.resetModules();
   });

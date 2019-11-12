@@ -1,15 +1,13 @@
 // @flow strict
 
 import {ANALYTICS_EVENT_TYPE, PERMISSION_STATUS} from '../../const';
-import type {PermissionStatus} from '../../types';
+import type {PermissionStatus, PermissionType} from '../../types';
 import translations from '../../translations';
 import type {Options} from '../_types';
 
 export const REQUEST = '@@permissions/REQUEST';
 export const CHECK = '@@permissions/CHECK';
 export const CHANGE = '@@permissions/CHANGE';
-
-export type PermissionType = 'camera';
 
 export type RequestPayload = {|
   type: PermissionType

@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 import {createNavigation} from '../__fixtures__/navigation';
 import {createStoreState, createPermissionsState} from '../__fixtures__/store';
 import {createProgression} from '../__fixtures__/progression';
-import {ENGINE, CONTENT_TYPE, PERMISSION_STATUS} from '../const';
+import {ENGINE, CONTENT_TYPE, PERMISSION_STATUS, PERMISSION_TYPE} from '../const';
 import translations from '../translations';
 import {devToken} from '../../app';
 import type {ConnectedStateProps, Params} from './qr-code';
@@ -35,7 +35,7 @@ describe('QR Code', () => {
         slides: [],
         progression,
         permissions: createPermissionsState({
-          camera: PERMISSION_STATUS.AUTHORIZED
+          camera: PERMISSION_STATUS.GRANTED
         })
       });
 
@@ -116,7 +116,7 @@ describe('QR Code', () => {
 
     expect(requestPermission).toHaveBeenCalledTimes(1);
     expect(requestPermission).toHaveBeenCalledWith(
-      'camera',
+      PERMISSION_TYPE.CAMERA,
       translations.permissionCamera,
       expect.any(Function)
     );

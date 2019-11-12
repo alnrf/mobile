@@ -2,7 +2,7 @@
 
 import {CHANGE} from '../actions/permissions';
 import type {Action} from '../actions/permissions';
-import {PERMISSION_STATUS} from '../../const';
+import {PERMISSION_STATUS, PERMISSION_TYPE} from '../../const';
 import reducer from './permissions';
 import type {State} from './permissions';
 
@@ -25,7 +25,7 @@ describe('Permissions', () => {
       const action: Action = {
         type: CHANGE,
         payload: {
-          type: 'camera',
+          type: PERMISSION_TYPE.CAMERA,
           status: PERMISSION_STATUS.DENIED
         }
       };

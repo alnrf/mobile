@@ -6,7 +6,13 @@ import {ROLES} from '@coorpacademy/acl';
 import type {Slide, DisciplineCard, ChapterCard} from '../../layer/data/_types';
 import {CARD_STATUS} from '../../layer/data/_const';
 import type {Engine, ProgressionEngineVersions, Section, Brand, User} from '../../types';
-import {ENGINE, CONTENT_TYPE, SPECIFIC_CONTENT_REF, PERMISSION_STATUS} from '../../const';
+import {
+  ENGINE,
+  CONTENT_TYPE,
+  SPECIFIC_CONTENT_REF,
+  PERMISSION_STATUS,
+  PERMISSION_TYPE
+} from '../../const';
 import {createBrand} from '../../__fixtures__/brands';
 import {createUser} from '../../__fixtures__/user';
 import {createToken} from '../../__fixtures__/tokens';
@@ -225,7 +231,7 @@ describe('State-extract', () => {
         })
       });
 
-      const result = getPermissionStatus('camera')(state);
+      const result = getPermissionStatus(PERMISSION_TYPE.CAMERA)(state);
       const expected = PERMISSION_STATUS.DENIED;
 
       expect(result).toEqual(expected);
