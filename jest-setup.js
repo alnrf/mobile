@@ -109,15 +109,20 @@ jest.mock('@coorpacademy/react-native-confetti-cannon', () => 'Mock$ReactNativeC
 
 // react-native-firebase
 
-jest.mock('react-native-firebase', () => ({
-  analytics: () => ({
-    setAnalyticsCollectionEnabled: jest.fn(),
-    logEvent: jest.fn(),
-    setCurrentScreen: jest.fn(),
-    setUserProperty: jest.fn(),
-    setUserProperties: jest.fn()
-  }),
+jest.mock('@react-native-firebase/app', () => ({
   utils: jest.fn(() => ({}))
+}));
+
+jest.mock('@react-native-firebase/analytics', () => ({
+  setAnalyticsCollectionEnabled: jest.fn(() => Promise.resolve(undefined)),
+  logEvent: jest.fn(() => Promise.resolve(undefined)),
+  setCurrentScreen: jest.fn(() => Promise.resolve(undefined)),
+  setUserProperties: jest.fn(() => Promise.resolve(undefined))
+}));
+
+jest.mock('@react-native-firebase/dynamic-links', () => ({
+  onLink: jest.fn(() => () => {}),
+  getInitialLink: jest.fn(() => Promise.resolve({}))
 }));
 
 // react-native-status-bar-height
