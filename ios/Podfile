@@ -1,6 +1,6 @@
 install! 'cocoapods', :deterministic_uuids => false
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'Coorpacademy' do
@@ -40,7 +40,7 @@ target 'Coorpacademy' do
   pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
 
   # Tracking
-  pod 'GoogleTagManager'
+  pod 'GoogleTagManager', '~> 7.1.2'
 
   # Add new pods below this line
 
