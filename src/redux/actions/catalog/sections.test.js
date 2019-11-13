@@ -3,7 +3,7 @@
 import {createSections} from '../../../__fixtures__/sections';
 import {createBrand} from '../../../__fixtures__/brands';
 import {createAuthenticationState} from '../../../__fixtures__/store';
-import {showModal} from '../ui/modal';
+import {showError} from '../ui/errors';
 import {ERROR_TYPE} from '../../../const';
 import {fetchRequest, fetchSuccess, fetchError, fetchSections} from './sections';
 import {
@@ -94,7 +94,7 @@ describe('Sections', () => {
     });
 
     dispatch.mockImplementationOnce((action: Action) => {
-      const expected = showModal({
+      const expected = showError({
         errorType: ERROR_TYPE.NO_CONTENT_FOUND,
         // $FlowFixMe callable signature
         lastAction: expect.any(Function)
@@ -118,7 +118,7 @@ describe('Sections', () => {
     });
 
     dispatch.mockImplementationOnce((action: Action) => {
-      const expected = showModal({
+      const expected = showError({
         errorType: ERROR_TYPE.NO_CONTENT_FOUND,
         // $FlowFixMe callable signature
         lastAction: expect.any(Function)

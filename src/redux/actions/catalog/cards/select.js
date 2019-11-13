@@ -7,8 +7,8 @@ import {getToken, getBrand} from '../../../utils/state-extract';
 import {pickNextCardLevel} from '../../../../utils/content';
 import {CARD_TYPE, RESTRICTED_RESOURCE_TYPE} from '../../../../layer/data/_const';
 import {createNextProgression} from '../../progressions/create-next-progression';
-import type {Action as ModalAction} from '../../ui/modal';
-import {showModal} from '../../ui/modal';
+import type {Action as DisplayErrorAction} from '../../ui/errors';
+import {showError} from '../../ui/errors';
 import type {StoreState} from '../../../store';
 import type {Services} from '../../../../services';
 import {NoContentFoundError} from '../../../../models/error';
@@ -96,7 +96,7 @@ const attemptToRetrieveContent = async (
 
 export const selectCard = (
   item: DisciplineCard | ChapterCard
-): StoreAction<Action | ModalAction<StoreAction<Action>>> => async (
+): StoreAction<Action | DisplayErrorAction<StoreAction<Action>>> => async (
   dispatch,
   getState,
   options
@@ -153,7 +153,7 @@ export const selectCard = (
   } catch (e) {
     if (e instanceof NoContentFoundError) {
       dispatch(
-        showModal({
+        showError({
           errorType: ERROR_TYPE.NO_CONTENT_FOUND,
           lastAction: () => selectCard(item)
         })

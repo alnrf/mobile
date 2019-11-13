@@ -3,22 +3,22 @@
 import type {ErrorType} from '../../../types';
 import type {StoreAction} from '../../_types';
 
-export const SHOW = '@@modal/SHOW';
-export const HIDE = '@@modal/HIDE';
+export const SHOW = '@@error/SHOW';
+export const HIDE = '@@error/HIDE';
 
 export type Action<T> =
   | {|
-      type: '@@modal/SHOW',
+      type: '@@error/SHOW',
       payload: {
         errorType: ErrorType,
         lastAction?: () => StoreAction<T>
       }
     |}
   | {|
-      type: '@@modal/HIDE'
+      type: '@@error/HIDE'
     |};
 
-export const showModal = <T>({
+export const showError = <T>({
   errorType,
   lastAction
 }: {
@@ -32,7 +32,7 @@ export const showModal = <T>({
   }
 });
 
-export const hideModal = <T>(): Action<T> => ({
+export const hideError = <T>(): Action<T> => ({
   type: HIDE
 });
 
@@ -43,6 +43,6 @@ export const refresh = <T>(): StoreAction<Action<T>> => {
       dispatch(error.lastAction());
     }
 
-    return dispatch(hideModal());
+    return dispatch(hideError());
   };
 };

@@ -1,18 +1,18 @@
 // @flow
 
 import {ERROR_TYPE} from '../../../const';
-import {showModal, hideModal, SHOW, HIDE, refresh} from './modal';
-import type {Action} from './modal';
+import {showError, hideError, SHOW, HIDE, refresh} from './errors';
+import type {Action} from './errors';
 
 const fakeAction = {
   type: 'FAKE_ACTION'
 };
 type FakeAction = typeof fakeAction;
 
-describe('modal', () => {
+describe('errors', () => {
   describe('show', () => {
     it('should return an action without callback', () => {
-      const result = showModal({errorType: ERROR_TYPE.NO_CONTENT_FOUND});
+      const result = showError({errorType: ERROR_TYPE.NO_CONTENT_FOUND});
       const expected: Action<void> = {
         type: SHOW,
         payload: {
@@ -25,7 +25,7 @@ describe('modal', () => {
 
     it('should return an action with callback', () => {
       const lastAction = jest.fn(() => fakeAction);
-      const result = showModal({
+      const result = showError({
         errorType: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction
       });
@@ -45,7 +45,7 @@ describe('modal', () => {
 
   describe('hide', () => {
     it('should return the action', () => {
-      const action = hideModal();
+      const action = hideError();
       expect(action).toEqual({
         type: HIDE
       });
@@ -53,7 +53,7 @@ describe('modal', () => {
   });
 
   describe('refresh', () => {
-    it('should only dispatch the hide modal action', () => {
+    it('should only dispatch the hide errors action', () => {
       const dispatch = jest.fn();
       const getState = jest.fn();
 
@@ -65,10 +65,10 @@ describe('modal', () => {
 
       // $FlowFixMe -- due to genericity of refresh function
       const actual = refresh()(dispatch, getState);
-      return expect(actual).toEqual(hideModal());
+      return expect(actual).toEqual(hideError());
     });
 
-    it('should dispatch the hide modal action and the last action', () => {
+    it('should dispatch the hide errors action and the last action', () => {
       const dispatch = jest.fn();
       const getState = jest.fn();
       const lastAction = () => {};
@@ -89,7 +89,7 @@ describe('modal', () => {
       });
       // $FlowFixMe -- due to genericity of refresh function
       const actual: Action<FakeAction> = refresh()(dispatch, getState);
-      return expect(actual).toEqual(hideModal());
+      return expect(actual).toEqual(hideError());
     });
   });
 });

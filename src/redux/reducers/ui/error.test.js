@@ -1,8 +1,8 @@
 // @flow strict
 
 import {ERROR_TYPE} from '../../../const';
-import {SHOW, HIDE} from '../../actions/ui/modal';
-import type {Action} from '../../actions/ui/modal';
+import {SHOW, HIDE} from '../../actions/ui/errors';
+import type {Action} from '../../actions/ui/errors';
 import reducer from './error';
 import type {State} from './error';
 

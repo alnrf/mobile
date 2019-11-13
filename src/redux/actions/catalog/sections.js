@@ -6,8 +6,8 @@ import type {SupportedLanguage} from '../../../translations/_types';
 import type {StoreAction, ErrorAction} from '../../_types';
 import {getToken, getSection} from '../../utils/state-extract';
 import {ERROR_TYPE} from '../../../const';
-import {showModal} from '../ui/modal';
-import type {Action as ModalAction} from '../ui/modal';
+import {showError} from '../ui/errors';
+import type {Action as DisplayErrorAction} from '../ui/errors';
 import {fetchCards, DEFAULT_LIMIT} from './cards/fetch';
 
 export const FETCH_REQUEST = '@@sections/FETCH_REQUEST';
@@ -77,7 +77,7 @@ export const fetchSections = (
   offset: number,
   limit: number,
   forceRefresh?: boolean = false
-): StoreAction<Action | ModalAction<StoreAction<Action>>> => async (
+): StoreAction<Action | DisplayErrorAction<StoreAction<Action>>> => async (
   dispatch,
   getState,
   options
@@ -113,7 +113,7 @@ export const fetchSections = (
   } catch (e) {
     dispatch(fetchError(e));
     return dispatch(
-      showModal({
+      showError({
         errorType: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction: () => fetchSections(offset, limit, forceRefresh)
       })

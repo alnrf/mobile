@@ -9,7 +9,7 @@ import {createChapter} from '../../../../__fixtures__/chapters';
 import {createBrand} from '../../../../__fixtures__/brands';
 import {createAuthenticationState} from '../../../../__fixtures__/store';
 import {CARD_TYPE, CARD_STATUS} from '../../../../layer/data/_const';
-import {SHOW} from '../../ui/modal';
+import {SHOW} from '../../ui/errors';
 import {CONTENT_TYPE, ERROR_TYPE} from '../../../../const';
 import {NoContentFoundError} from '../../../../models/error';
 import {selectRequest, selectSuccess, selectError, selectCard} from './select';
@@ -19,7 +19,11 @@ const chapter = createChapter({
   name: 'chapter1'
 });
 
-const level = createCardLevel({ref: 'mod_1', status: CARD_STATUS.ACTIVE, label: 'Fake level'});
+const level = createCardLevel({
+  ref: 'mod_1',
+  status: CARD_STATUS.ACTIVE,
+  label: 'Fake level'
+});
 const disciplineCard = createDisciplineCard({
   ref: 'dis1',
   completion: 0,
@@ -35,12 +39,18 @@ const chapterCard = createChapterCard({
 
 const noToken = {
   name: 'No token',
-  authentication: createAuthenticationState({token: null, brand: createBrand({host: 'digital'})})
+  authentication: createAuthenticationState({
+    token: null,
+    brand: createBrand({host: 'digital'})
+  })
 };
 
 const noBrand = {
   name: 'No brand',
-  authentication: createAuthenticationState({token: '__TOURTE__', brand: null})
+  authentication: createAuthenticationState({
+    token: '__TOURTE__',
+    brand: null
+  })
 };
 
 const mockNoContent = expectedType =>
@@ -68,7 +78,10 @@ const Bundle = {
 
 jest.mock('../../progressions/create-next-progression', () => ({
   createNextProgression: jest.fn(() =>
-    Promise.resolve({type: '@@mock/CREATE_NEXT_PROGRESSION', meta: {type: 'level', ref: 'mod_1'}})
+    Promise.resolve({
+      type: '@@mock/CREATE_NEXT_PROGRESSION',
+      meta: {type: 'level', ref: 'mod_1'}
+    })
   )
 }));
 
@@ -403,9 +416,9 @@ describe('Cards', () => {
       return action;
     });
 
-    let modalAction;
+    let displayErrorAction;
     dispatch.mockImplementationOnce(action => {
-      modalAction = action;
+      displayErrorAction = action;
       expect(action).toEqual(modal);
       return action;
     });
@@ -420,7 +433,7 @@ describe('Cards', () => {
     expect(result).toEqual(selectError(error));
 
     // $FlowFixMe
-    const newResult = await modalAction.payload.lastAction()(dispatch, getState, options);
+    const newResult = await displayErrorAction.payload.lastAction()(dispatch, getState, options);
     return expect(newResult).toEqual(undefined);
   });
 });

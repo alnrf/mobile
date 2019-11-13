@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
 import ErrorModal from '../components/error-modal';
 import type {ErrorType} from '../types';
 import {ERROR_TYPE} from '../const';
-import {hideModal, refresh} from '../redux/actions/ui/modal';
+import {hideError, refresh} from '../redux/actions/ui/errors';
 import {signOut} from '../redux/actions/authentication';
 import {assistanceEmail} from '../../app';
 
@@ -20,7 +20,7 @@ type ConnectedStateToProps = {|
 |};
 
 type ConnectedDispatchProps = {|
-  hideModal: typeof hideModal,
+  hideError: typeof hideError,
   refresh: typeof refresh,
   signOut: typeof signOut
 |};
@@ -39,7 +39,7 @@ class ErrorListener extends React.PureComponent<Props> {
   };
 
   handleClose = () => {
-    this.props.hideModal();
+    this.props.hideError();
     this.props.signOut();
     this.props.onClose();
   };
@@ -79,7 +79,7 @@ const mapStateToProps = ({error}: StoreState): ConnectedStateToProps => ({
 });
 
 const mapDispatchToProps: ConnectedDispatchProps = {
-  hideModal,
+  hideError,
   refresh,
   signOut
 };
