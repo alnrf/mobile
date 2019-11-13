@@ -1,13 +1,13 @@
 // @flow strict
 
 import type {DisciplineCard, ChapterCard} from '../../../../layer/data/_types';
-import type {StoreAction, ErrorAction} from '../../../_types';
+import type {StoreAction, StoreErrorAction} from '../../../_types';
 import {ERROR_TYPE} from '../../../../const';
 import {getToken, getBrand} from '../../../utils/state-extract';
 import {pickNextCardLevel} from '../../../../utils/content';
 import {CARD_TYPE, RESTRICTED_RESOURCE_TYPE} from '../../../../layer/data/_const';
 import {createNextProgression} from '../../progressions/create-next-progression';
-import type {Action as DisplayErrorAction} from '../../ui/errors';
+import type {Action as ErrorAction} from '../../ui/errors';
 import {showError} from '../../ui/errors';
 import type {StoreState} from '../../../store';
 import type {Services} from '../../../../services';
@@ -27,7 +27,7 @@ export type SelectSuccessAction = {|
   payload: DisciplineCard | ChapterCard
 |};
 
-export type SelectErrorAction = ErrorAction<{|
+export type SelectErrorAction = StoreErrorAction<{|
   type: '@@cards/SELECT_ERROR'
 |}>;
 
@@ -96,7 +96,7 @@ const attemptToRetrieveContent = async (
 
 export const selectCard = (
   item: DisciplineCard | ChapterCard
-): StoreAction<Action | DisplayErrorAction<StoreAction<Action>>> => async (
+): StoreAction<Action | ErrorAction<StoreAction<Action>>> => async (
   dispatch,
   getState,
   options

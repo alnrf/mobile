@@ -416,9 +416,9 @@ describe('Cards', () => {
       return action;
     });
 
-    let displayErrorAction;
+    let errorAction;
     dispatch.mockImplementationOnce(action => {
-      displayErrorAction = action;
+      errorAction = action;
       expect(action).toEqual(modal);
       return action;
     });
@@ -433,7 +433,7 @@ describe('Cards', () => {
     expect(result).toEqual(selectError(error));
 
     // $FlowFixMe
-    const newResult = await displayErrorAction.payload.lastAction()(dispatch, getState, options);
+    const newResult = await errorAction.payload.lastAction()(dispatch, getState, options);
     return expect(newResult).toEqual(undefined);
   });
 });

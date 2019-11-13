@@ -2,19 +2,19 @@
 
 import type {Middleware, MiddlewareAPI, Dispatch} from 'redux';
 
-import type {ErrorAction} from '../_types';
+import type {StoreErrorAction} from '../_types';
 import type {StoreState} from '../store';
 
 import {ForbiddenError} from '../../models/error';
 import {showError} from '../actions/ui/errors';
 import {ERROR_TYPE} from '../../const';
-import type {Action as DisplayErrorAction} from '../actions/ui/errors';
+import type {Action as ErrorAction} from '../actions/ui/errors';
 
 type Action =
-  | ErrorAction<{|
+  | StoreErrorAction<{|
       type: string
     |}>
-  | DisplayErrorAction<void>;
+  | ErrorAction<void>;
 type State = StoreState;
 
 const createMiddleware = (): Middleware<State, Action, Dispatch<Action>> => ({
