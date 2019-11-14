@@ -22,7 +22,8 @@ export type Props = {|
   type: ErrorType,
   onPress: () => void,
   onAssistancePress: () => void,
-  onClose: () => void
+  onClose: () => void,
+  testID?: string
 |};
 
 const styles = StyleSheet.create({
@@ -79,10 +80,10 @@ class ModalError extends React.PureComponent<Props> {
   };
 
   render() {
-    const {type, onAssistancePress, onPress, onClose} = this.props;
+    const {type, onAssistancePress, onPress, onClose, testID} = this.props;
 
     return (
-      <Modal renderIcon={this.renderIcon} onClose={onClose}>
+      <Modal renderIcon={this.renderIcon} onClose={onClose} testID={testID}>
         <View>
           <Text style={[styles.heading, styles.text]}>
             {type === ERROR_TYPE.NO_CONTENT_FOUND

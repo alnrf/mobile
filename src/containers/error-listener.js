@@ -56,12 +56,13 @@ class ErrorListener extends React.PureComponent<Props> {
     const {type, isVisible} = this.props;
 
     return (
-      <ModalAnimated isVisible={isVisible} onClose={this.handleClose}>
+      <ModalAnimated isVisible={isVisible} onClose={this.handleClose} testID="modal-animated">
         <ModalError
           onClose={this.handleClose}
           onPress={this.handlePress}
           onAssistancePress={this.handleAssistancePress}
           type={type}
+          testID="modal-error"
         />
       </ModalAnimated>
     );
@@ -79,6 +80,7 @@ const mapDispatchToProps: ConnectedDispatchProps = {
   signOut
 };
 
+export {ErrorListener as Component};
 export default connect(
   mapStateToProps,
   mapDispatchToProps

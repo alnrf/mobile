@@ -6,11 +6,17 @@ import Modal from 'react-native-modal';
 export type Props = {|
   isVisible?: boolean,
   children: React.Node,
-  onClose: () => void
+  onClose: () => void,
+  testID?: string
 |};
 
-const ModalAnimated = ({isVisible, children, onClose}: Props) => (
-  <Modal isVisible={Boolean(isVisible)} onSwipeComplete={onClose} onBackdropPress={onClose}>
+const ModalAnimated = ({isVisible, children, onClose, testID}: Props) => (
+  <Modal
+    isVisible={Boolean(isVisible)}
+    onSwipeComplete={onClose}
+    onBackdropPress={onClose}
+    testID={testID}
+  >
     {children}
   </Modal>
 );
