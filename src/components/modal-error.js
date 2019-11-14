@@ -97,7 +97,11 @@ class ModalError extends React.PureComponent<Props> {
           </Text>
           <Space type="base" />
           <View style={styles.button}>
-            <Button onPress={onPress} analyticsID="button-retry-action">
+            <Button
+              onPress={onPress}
+              analyticsID="button-retry-action"
+              testID="button-retry-action"
+            >
               {type === ERROR_TYPE.NO_CONTENT_FOUND && (
                 <React.Fragment>
                   <RedoIcon color={theme.colors.white} height={25} width={25} />
@@ -115,7 +119,11 @@ class ModalError extends React.PureComponent<Props> {
             <View style={styles.contentFooter}>
               <Text style={[styles.text, styles.smallText]}>{translations.refreshNotWorking}</Text>
               <Space type="tiny" />
-              <Touchable onPress={onAssistancePress} analyticsID="ask-for-help">
+              <Touchable
+                onPress={onAssistancePress}
+                analyticsID="ask-for-help"
+                testID="ask-for-help"
+              >
                 <Text style={[styles.text, styles.smallText, styles.underlineText]}>
                   {translations.askForHelp}
                 </Text>
