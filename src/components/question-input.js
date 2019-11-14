@@ -119,6 +119,7 @@ class QuestionInput extends React.PureComponent<Props> {
               <View style={[styles.spaced, fullWitdh && styles.fullWitdh]} testID={testID}>
                 <Select
                   analyticsID={analyticsID}
+                  key={analyticsID}
                   isDisabled={isDisabled}
                   questionType={questionType}
                   values={items}
