@@ -8,15 +8,15 @@ export const BLUR = '@@select/BLUR';
 export type Action =
   | {|
       type: '@@select/FOCUS',
-      payload: string
+      payload: {key: string}
     |}
   | {|
       type: '@@select/BLUR'
     |};
 
-export const focus = (key: string): Action => ({
+export const focus = ({key}: {key: string}): Action => ({
   type: FOCUS,
-  payload: key
+  payload: {key}
 });
 
 export const blur = (): Action => ({

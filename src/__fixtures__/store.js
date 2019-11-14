@@ -253,7 +253,9 @@ export const createErrorsState = ({
   type
 });
 
-export const createSelectState = (key: string | void): SelectState => key;
+export const createSelectState = ({key}: {key?: string}): SelectState => ({
+  key: key !== undefined ? key : null
+});
 
 export const createNavigationState = (): NavigationState => ({
   currentNavigatorName: 'dummyNavigatorName',
@@ -323,7 +325,7 @@ export const createStoreState = ({
     }),
   ui: ui || createUiState({}),
   errors: errors || createErrorsState({}),
-  select: select || createSelectState(),
+  select: select || createSelectState({}),
   navigation: navigation || createNavigationState(),
   catalog: catalog || createCatalogState({}),
   permissions: permissions || createPermissionsState({}),

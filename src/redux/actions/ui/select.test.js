@@ -7,10 +7,10 @@ import type {Action} from './select';
 describe('select', () => {
   describe('focus', () => {
     it('should return an action without the select.key focused', () => {
-      const result = focus('foo');
+      const result = focus({key: 'foo'});
       const expected: Action = {
         type: FOCUS,
-        payload: 'foo'
+        payload: {key: 'foo'}
       };
 
       expect(result).toEqual(expected);

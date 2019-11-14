@@ -158,4 +158,4 @@ export const isErrorVisible = (state: StoreState): boolean => state.errors.isVis
 
 export const getErrorType = (state: StoreState): ErrorType | void => state.errors.type;
 
-export const getFocusedSelect = (state: StoreState): string | void => state.select;
+export const getFocusedSelect = (state: StoreState): string | null => state.select.key;

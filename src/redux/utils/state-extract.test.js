@@ -922,7 +922,7 @@ describe('State-extract', () => {
     it('should return the selected key', () => {
       const key = 'foo';
       const state = createState({
-        select: createSelectState(key)
+        select: createSelectState({key})
       });
 
       const result = getFocusedSelect(state);
