@@ -45,6 +45,8 @@ require('./components/lives.stories.js');
 require('./components/loader.stories.js');
 require('./components/lock.stories.js');
 require('./components/modal-error.stories.js');
+require('./components/modal-select-item.stories.js');
+require('./components/modal-select.stories.js');
 require('./components/modal.stories.js');
 require('./components/notification.stories.js');
 require('./components/pdf.stories.js');
