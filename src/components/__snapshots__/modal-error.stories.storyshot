@@ -558,7 +558,9 @@ exports[`Storyshots ModalError No content found 1`] = `
           }
         }
       >
-        <View>
+        <View
+          testID="button-retry-action"
+        >
           <View
             accessible={true}
             isTVSelectable={true}
@@ -583,6 +585,7 @@ exports[`Storyshots ModalError No content found 1`] = `
                 "paddingHorizontal": 24,
               }
             }
+            testID="button-retry-action-native"
           >
             <RNSVGSvgView
               align="xMidYMid"
@@ -865,6 +868,7 @@ exports[`Storyshots ModalError No content found 1`] = `
               "opacity": 1,
             }
           }
+          testID="ask-for-help"
         >
           <Text
             style={
@@ -1456,7 +1460,9 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
           }
         }
       >
-        <View>
+        <View
+          testID="button-retry-action"
+        >
           <View
             accessible={true}
             isTVSelectable={true}
@@ -1481,6 +1487,7 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
                 "paddingHorizontal": 24,
               }
             }
+            testID="button-retry-action-native"
           >
             <Text
               style={

@@ -11,7 +11,8 @@ export type Props = {|
   headerBackgroundColor?: string,
   iconBackgroundColor?: string,
   renderIcon?: () => React.Node,
-  onClose: () => void
+  onClose: () => void,
+  testID?: string
 |};
 
 const HEADER_HEIGHT = 75;
@@ -55,9 +56,10 @@ const Modal = ({
   headerBackgroundColor = theme.colors.white,
   iconBackgroundColor = theme.colors.white,
   renderIcon,
-  onClose
+  onClose,
+  testID
 }: Props) => (
-  <View style={styles.container}>
+  <View style={styles.container} testID={testID}>
     <View style={[styles.header, {backgroundColor: headerBackgroundColor}]}>
       <HeaderBackButton
         color={theme.colors.gray.dark}
