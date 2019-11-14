@@ -8,7 +8,7 @@ describe('select', () => {
   describe('focus', () => {
     it('should return an action without the select.key focused', () => {
       const result = focus('foo');
-      const expected: Action<void> = {
+      const expected: Action = {
         type: FOCUS,
         payload: 'foo'
       };

@@ -8,9 +8,7 @@ export const BLUR = '@@select/BLUR';
 export type Action =
   | {|
       type: '@@select/FOCUS',
-      payload: {
-        key: string
-      }
+      payload: string
     |}
   | {|
       type: '@@select/BLUR'
