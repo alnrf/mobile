@@ -83,8 +83,14 @@ class ModalError extends React.PureComponent<Props> {
     const {type, onAssistancePress, onPress, onClose, testID} = this.props;
 
     return (
-      <Modal renderIcon={this.renderIcon} onClose={onClose} testID={testID}>
-        <View>
+      <Modal
+        headerBackgroundColor={theme.colors.salmon}
+        iconBackgroundColor={theme.colors.negative}
+        renderIcon={this.renderIcon}
+        onClose={onClose}
+        testID={testID}
+      >
+        <React.Fragment>
           <Text style={[styles.heading, styles.text]}>
             {type === ERROR_TYPE.NO_CONTENT_FOUND
               ? translations.dataLost
@@ -115,23 +121,27 @@ class ModalError extends React.PureComponent<Props> {
               )}
             </Button>
           </View>
-          <Space type="base" />
           {type === ERROR_TYPE.NO_CONTENT_FOUND && (
-            <View style={styles.contentFooter}>
-              <Text style={[styles.text, styles.smallText]}>{translations.refreshNotWorking}</Text>
-              <Space type="tiny" />
-              <Touchable
-                onPress={onAssistancePress}
-                analyticsID="ask-for-help"
-                testID="ask-for-help"
-              >
-                <Text style={[styles.text, styles.smallText, styles.underlineText]}>
-                  {translations.askForHelp}
+            <React.Fragment>
+              <Space type="base" />
+              <View style={styles.contentFooter}>
+                <Text style={[styles.text, styles.smallText]}>
+                  {translations.refreshNotWorking}
                 </Text>
-              </Touchable>
-            </View>
+                <Space type="tiny" />
+                <Touchable
+                  onPress={onAssistancePress}
+                  analyticsID="ask-for-help"
+                  testID="ask-for-help"
+                >
+                  <Text style={[styles.text, styles.smallText, styles.underlineText]}>
+                    {translations.askForHelp}
+                  </Text>
+                </Touchable>
+              </View>
+            </React.Fragment>
           )}
-        </View>
+        </React.Fragment>
       </Modal>
     );
   }

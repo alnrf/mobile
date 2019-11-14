@@ -11,6 +11,7 @@ export type Props = {|
   headerBackgroundColor?: string,
   iconBackgroundColor?: string,
   renderIcon?: () => React.Node,
+  contentStyle?: ViewStyleProp,
   onClose: () => void,
   testID?: string
 |};
@@ -24,14 +25,19 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.white
   },
   header: {
+    backgroundColor: theme.colors.white,
     alignItems: 'flex-end',
     justifyContent: 'center',
     paddingHorizontal: theme.spacing.medium,
     height: HEADER_HEIGHT
   },
   content: {
-    padding: theme.spacing.medium,
+    paddingHorizontal: theme.spacing.medium,
+    paddingBottom: theme.spacing.medium,
     alignItems: 'center'
+  },
+  contentWithHeader: {
+    paddingTop: theme.spacing.medium
   },
   contentWithIcon: {
     paddingTop: theme.spacing.small
@@ -44,6 +50,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   iconContent: {
+    backgroundColor: theme.colors.white,
     padding: theme.spacing.small,
     borderRadius: theme.radius.thumbnail,
     justifyContent: 'center',
@@ -53,9 +60,10 @@ const styles = StyleSheet.create({
 
 const Modal = ({
   children,
-  headerBackgroundColor = theme.colors.white,
-  iconBackgroundColor = theme.colors.white,
+  headerBackgroundColor,
+  iconBackgroundColor,
   renderIcon,
+  contentStyle,
   onClose,
   testID
 }: Props) => (
@@ -76,7 +84,16 @@ const Modal = ({
         </View>
       </View>
     )}
-    <View style={[styles.content, renderIcon && styles.contentWithIcon]}>{children}</View>
+    <View
+      style={[
+        styles.content,
+        headerBackgroundColor && styles.contentWithHeader,
+        renderIcon && styles.contentWithIcon,
+        contentStyle
+      ]}
+    >
+      {children}
+    </View>
   </View>
 );
 

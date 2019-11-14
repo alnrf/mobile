@@ -15,6 +15,7 @@ exports[`Storyshots Modal Custom header and icon background color 1`] = `
       Array [
         Object {
           "alignItems": "flex-end",
+          "backgroundColor": "#FFFFFF",
           "height": 75,
           "justifyContent": "center",
           "paddingHorizontal": 32,
@@ -236,6 +237,7 @@ exports[`Storyshots Modal Custom header and icon background color 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
             "borderRadius": 1000,
             "justifyContent": "center",
             "padding": 16,
@@ -493,11 +495,16 @@ exports[`Storyshots Modal Custom header and icon background color 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "padding": 32,
+          "paddingBottom": 32,
+          "paddingHorizontal": 32,
+        },
+        Object {
+          "paddingTop": 32,
         },
         Object {
           "paddingTop": 16,
         },
+        undefined,
       ]
     }
   >
@@ -530,12 +537,13 @@ exports[`Storyshots Modal Default 1`] = `
       Array [
         Object {
           "alignItems": "flex-end",
+          "backgroundColor": "#FFFFFF",
           "height": 75,
           "justifyContent": "center",
           "paddingHorizontal": 32,
         },
         Object {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": undefined,
         },
       ]
     }
@@ -740,8 +748,11 @@ exports[`Storyshots Modal Default 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "padding": 32,
+          "paddingBottom": 32,
+          "paddingHorizontal": 32,
         },
+        undefined,
+        undefined,
         undefined,
       ]
     }
