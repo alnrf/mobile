@@ -2,13 +2,11 @@
 
 import * as React from 'react';
 import {StyleSheet, View} from 'react-native';
-import ModalBase from 'react-native-modal';
 
 import theme from '../modules/theme';
 import HeaderBackButton from './header-back-button';
 
 export type Props = {|
-  isVisible?: boolean,
   children: React.Node,
   headerBackgroundColor?: string,
   iconBackgroundColor?: string,
@@ -53,34 +51,31 @@ const styles = StyleSheet.create({
 });
 
 const Modal = ({
-  isVisible,
   children,
   headerBackgroundColor = theme.colors.white,
   iconBackgroundColor = theme.colors.white,
   renderIcon,
   onClose
 }: Props) => (
-  <ModalBase isVisible={Boolean(isVisible)} onSwipeComplete={onClose} onBackdropPress={onClose}>
-    <View style={styles.container}>
-      <View style={[styles.header, {backgroundColor: headerBackgroundColor}]}>
-        <HeaderBackButton
-          color={theme.colors.gray.dark}
-          isFloating={false}
-          testID="close-modal"
-          onPress={onClose}
-          type="close"
-        />
-      </View>
-      {renderIcon && (
-        <View style={styles.icon}>
-          <View style={[styles.iconContent, {backgroundColor: iconBackgroundColor}]}>
-            {renderIcon()}
-          </View>
-        </View>
-      )}
-      <View style={[styles.content, renderIcon && styles.contentWithIcon]}>{children}</View>
+  <View style={styles.container}>
+    <View style={[styles.header, {backgroundColor: headerBackgroundColor}]}>
+      <HeaderBackButton
+        color={theme.colors.gray.dark}
+        isFloating={false}
+        testID="close-modal"
+        onPress={onClose}
+        type="close"
+      />
     </View>
-  </ModalBase>
+    {renderIcon && (
+      <View style={styles.icon}>
+        <View style={[styles.iconContent, {backgroundColor: iconBackgroundColor}]}>
+          {renderIcon()}
+        </View>
+      </View>
+    )}
+    <View style={[styles.content, renderIcon && styles.contentWithIcon]}>{children}</View>
+  </View>
 );
 
 export default Modal;

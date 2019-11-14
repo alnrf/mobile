@@ -1,17 +1,17 @@
 // @flow
 
 import React from 'react';
-import Modal from 'react-native-modal';
 import {Linking} from 'react-native';
 import {connect} from 'react-redux';
 
-import ErrorModal from '../components/error-modal';
+import ModalError from '../components/modal-error';
 import type {ErrorType} from '../types';
 import {ERROR_TYPE} from '../const';
 import {hideError, refresh} from '../redux/actions/ui/errors';
 import {signOut} from '../redux/actions/authentication';
 import {isErrorVisible, getErrorType} from '../redux/utils/state-extract';
 import {assistanceEmail} from '../../app';
+import ModalAnimated from './modal-animated';
 
 type ConnectedStateToProps = {|
   ...ReactNavigation$WithNavigationProps,
@@ -56,18 +56,14 @@ class ErrorListener extends React.PureComponent<Props> {
     const {type, isVisible} = this.props;
 
     return (
-      <Modal
-        isVisible={this.props.isVisible}
-        onSwipeComplete={this.handleClose}
-        onBackdropPress={this.handleClose}
-      >
-        <ErrorModal
+      <ModalAnimated isVisible={isVisible} onClose={this.handleClose}>
+        <ModalError
           onClose={this.handleClose}
           onPress={this.handlePress}
           onAssistancePress={this.handleAssistancePress}
           type={type}
         />
-      </Modal>
+      </ModalAnimated>
     );
   }
 }
