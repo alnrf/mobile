@@ -16,7 +16,7 @@ exports[`Storyshots ModalError No content found 1`] = `
         Object {
           "alignItems": "flex-end",
           "backgroundColor": "#FFFFFF",
-          "height": 75,
+          "height": 64,
           "justifyContent": "center",
           "paddingHorizontal": 32,
         },
@@ -227,7 +227,7 @@ exports[`Storyshots ModalError No content found 1`] = `
         "alignSelf": "center",
         "backgroundColor": "#FFFFFF",
         "borderRadius": 1000,
-        "marginTop": -37.5,
+        "marginTop": -48,
         "padding": 5,
       }
     }
@@ -250,10 +250,10 @@ exports[`Storyshots ModalError No content found 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={60}
-        bbWidth={60}
+        bbHeight={50}
+        bbWidth={50}
         color="#FFFFFF"
-        height={60}
+        height={50}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -267,15 +267,15 @@ exports[`Storyshots ModalError No content found 1`] = `
             null,
             Object {
               "flex": 0,
-              "height": 60,
-              "width": 60,
+              "height": 50,
+              "width": 50,
             },
           ]
         }
         tintColor="#FFFFFF"
         vbHeight={24}
         vbWidth={24}
-        width={60}
+        width={50}
       >
         <RNSVGGroup
           fill={
@@ -921,7 +921,7 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
         Object {
           "alignItems": "flex-end",
           "backgroundColor": "#FFFFFF",
-          "height": 75,
+          "height": 64,
           "justifyContent": "center",
           "paddingHorizontal": 32,
         },
@@ -1132,7 +1132,7 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
         "alignSelf": "center",
         "backgroundColor": "#FFFFFF",
         "borderRadius": 1000,
-        "marginTop": -37.5,
+        "marginTop": -48,
         "padding": 5,
       }
     }
@@ -1155,10 +1155,10 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
     >
       <RNSVGSvgView
         align="xMidYMid"
-        bbHeight={60}
-        bbWidth={60}
+        bbHeight={50}
+        bbWidth={50}
         color="#FFFFFF"
-        height={60}
+        height={50}
         meetOrSlice={0}
         minX={0}
         minY={0}
@@ -1174,15 +1174,15 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
             null,
             Object {
               "flex": 0,
-              "height": 60,
-              "width": 60,
+              "height": 50,
+              "width": 50,
             },
           ]
         }
         tintColor="#FFFFFF"
         vbHeight={24}
         vbWidth={24}
-        width={60}
+        width={50}
       >
         <RNSVGGroup
           fill={

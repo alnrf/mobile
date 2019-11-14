@@ -16,7 +16,8 @@ export type Props = {|
   testID?: string
 |};
 
-const HEADER_HEIGHT = 75;
+// const HEADER_HEIGHT = 75;
+const HEADER_HEIGHT = 64;
 
 const styles = StyleSheet.create({
   container: {
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     paddingTop: theme.spacing.small
   },
   icon: {
-    marginTop: -HEADER_HEIGHT / 2,
+    marginTop: -HEADER_HEIGHT * (3 / 4),
     padding: 5,
     backgroundColor: theme.colors.white,
     borderRadius: theme.radius.thumbnail,

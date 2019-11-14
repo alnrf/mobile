@@ -59,6 +59,8 @@ const styles = StyleSheet.create({
   }
 });
 
+const ICON_SIZE = 50;
+
 class ModalError extends React.PureComponent<Props> {
   props: Props;
 
@@ -70,13 +72,13 @@ class ModalError extends React.PureComponent<Props> {
         <PhoneCloseIcon
           style={styles.iconClosePhone}
           color={theme.colors.white}
-          height={60}
-          width={60}
+          height={ICON_SIZE}
+          width={ICON_SIZE}
         />
       );
     }
 
-    return <RingPlanet color={theme.colors.white} height={60} width={60} />;
+    return <RingPlanet color={theme.colors.white} height={ICON_SIZE} width={ICON_SIZE} />;
   };
 
   render() {
