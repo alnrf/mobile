@@ -3,31 +3,31 @@
 import type {ErrorType} from '../../../types';
 import type {StoreAction} from '../../_types';
 
-export const SHOW = '@@error/SHOW';
-export const HIDE = '@@error/HIDE';
+export const SHOW = '@@errors/SHOW';
+export const HIDE = '@@errors/HIDE';
 
 export type Action<T> =
   | {|
-      type: '@@error/SHOW',
+      type: '@@errors/SHOW',
       payload: {
-        errorType: ErrorType,
+        type: ErrorType,
         lastAction?: () => StoreAction<T>
       }
     |}
   | {|
-      type: '@@error/HIDE'
+      type: '@@errors/HIDE'
     |};
 
 export const showError = <T>({
-  errorType,
+  type,
   lastAction
 }: {
-  errorType: ErrorType,
+  type: ErrorType,
   lastAction?: () => StoreAction<T>
 }): Action<T> => ({
   type: SHOW,
   payload: {
-    errorType,
+    type,
     lastAction
   }
 });

@@ -7,7 +7,7 @@ import type {Action} from '../../actions/ui/errors';
 
 export type State<T> = {|
   isVisible: boolean,
-  errorType?: ErrorType,
+  type?: ErrorType,
   lastAction?: () => StoreAction<T>
 |};
 
@@ -22,7 +22,7 @@ const reducer = <T>(state: State<T> = initialState, action: Action<T>): State<T>
       return {
         ...state,
         isVisible: true,
-        errorType: action.payload.errorType,
+        type: action.payload.type,
         lastAction: action.payload.lastAction
       };
     }

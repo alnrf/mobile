@@ -154,7 +154,7 @@ export const selectCard = (
     if (e instanceof NoContentFoundError) {
       dispatch(
         showError({
-          errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+          type: ERROR_TYPE.NO_CONTENT_FOUND,
           lastAction: () => selectCard(item)
         })
       );

@@ -26,7 +26,7 @@ const createMiddleware = (): Middleware<State, Action, Dispatch<Action>> => ({
   if (action.payload && action.payload instanceof ForbiddenError) {
     dispatch(
       showError({
-        errorType: ERROR_TYPE.PLATFORM_NOT_ACTIVATED
+        type: ERROR_TYPE.PLATFORM_NOT_ACTIVATED
       })
     );
   }

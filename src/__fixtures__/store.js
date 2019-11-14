@@ -13,7 +13,7 @@ import type {
 } from '@coorpacademy/progression-engine';
 import type {SlideAPI, ChapterAPI, LevelAPI} from '@coorpacademy/player-services';
 
-import type {Section, Brand, PermissionStatus, User} from '../types';
+import type {Section, Brand, PermissionStatus, User, ErrorType} from '../types';
 import type {
   Level,
   Slide,
@@ -25,7 +25,7 @@ import type {
 import type {StoreState, DataState, UiState} from '../redux/store';
 import type {State as AuthenticationState} from '../redux/reducers/authentication';
 import type {State as CatalogState} from '../redux/reducers/catalog';
-import type {State as ErrorState} from '../redux/reducers/ui/error';
+import type {State as ErrorsState} from '../redux/reducers/ui/errors';
 import type {State as GodModeState} from '../redux/reducers/god-mode';
 import type {State as NavigationState} from '../redux/reducers/navigation';
 import type {State as FastSlideState} from '../redux/reducers/fast-slide';
@@ -241,8 +241,15 @@ export const createDataState = ({
   };
 };
 
-export const createErrorState = ({isVisible = false}: {isVisible?: boolean}): ErrorState<void> => ({
-  isVisible
+export const createErrorsState = ({
+  isVisible = false,
+  type
+}: {
+  isVisible?: boolean,
+  type?: ErrorType
+}): ErrorsState<void> => ({
+  isVisible,
+  type
 });
 
 export const createNavigationState = (): NavigationState => ({
@@ -277,7 +284,7 @@ export const createStoreState = ({
   nextContent,
   godMode = false,
   fastSlide = false,
-  error,
+  errors,
   navigation,
   permissions,
   video
@@ -294,7 +301,7 @@ export const createStoreState = ({
   nextContent?: SlideAPI | ChapterAPI | LevelAPI,
   godMode?: GodModeState,
   fastSlide?: FastSlideState,
-  error?: ErrorState<void>,
+  errors?: ErrorsState<void>,
   navigation?: NavigationState,
   permissions?: PermissionsState,
   video?: VideoState
@@ -310,7 +317,7 @@ export const createStoreState = ({
       nextContent
     }),
   ui: ui || createUiState({}),
-  error: error || createErrorState({}),
+  errors: errors || createErrorsState({}),
   navigation: navigation || createNavigationState(),
   catalog: catalog || createCatalogState({}),
   permissions: permissions || createPermissionsState({}),

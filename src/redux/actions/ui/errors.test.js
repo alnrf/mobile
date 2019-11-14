@@ -12,11 +12,11 @@ type FakeAction = typeof fakeAction;
 describe('errors', () => {
   describe('show', () => {
     it('should return an action without callback', () => {
-      const result = showError({errorType: ERROR_TYPE.NO_CONTENT_FOUND});
+      const result = showError({type: ERROR_TYPE.NO_CONTENT_FOUND});
       const expected: Action<void> = {
         type: SHOW,
         payload: {
-          errorType: ERROR_TYPE.NO_CONTENT_FOUND
+          type: ERROR_TYPE.NO_CONTENT_FOUND
         }
       };
 
@@ -26,13 +26,13 @@ describe('errors', () => {
     it('should return an action with callback', () => {
       const lastAction = jest.fn(() => fakeAction);
       const result = showError({
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction
       });
       const expected: Action<FakeAction> = {
         type: SHOW,
         payload: {
-          errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+          type: ERROR_TYPE.NO_CONTENT_FOUND,
           lastAction
         }
       };

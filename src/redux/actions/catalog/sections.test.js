@@ -95,7 +95,7 @@ describe('Sections', () => {
 
     dispatch.mockImplementationOnce((action: Action) => {
       const expected = showError({
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         // $FlowFixMe callable signature
         lastAction: expect.any(Function)
       });
@@ -119,7 +119,7 @@ describe('Sections', () => {
 
     dispatch.mockImplementationOnce((action: Action) => {
       const expected = showError({
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         // $FlowFixMe callable signature
         lastAction: expect.any(Function)
       });

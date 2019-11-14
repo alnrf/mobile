@@ -114,7 +114,7 @@ export const fetchSections = (
     dispatch(fetchError(e));
     return dispatch(
       showError({
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction: () => fetchSections(offset, limit, forceRefresh)
       })
     );

@@ -253,7 +253,7 @@ describe('storeFixture', () => {
 
     const expectedResult: StoreState = {
       data: data,
-      error: {
+      errors: {
         isVisible: false
       },
       ui: {

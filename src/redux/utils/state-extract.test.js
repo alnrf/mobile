@@ -6,7 +6,13 @@ import {ROLES} from '@coorpacademy/acl';
 import type {Slide, DisciplineCard, ChapterCard} from '../../layer/data/_types';
 import {CARD_STATUS} from '../../layer/data/_const';
 import type {Engine, ProgressionEngineVersions, Section, Brand, User} from '../../types';
-import {ENGINE, CONTENT_TYPE, SPECIFIC_CONTENT_REF, PERMISSION_STATUS} from '../../const';
+import {
+  ENGINE,
+  CONTENT_TYPE,
+  SPECIFIC_CONTENT_REF,
+  PERMISSION_STATUS,
+  ERROR_TYPE
+} from '../../const';
 import {createBrand} from '../../__fixtures__/brands';
 import {createUser} from '../../__fixtures__/user';
 import {createToken} from '../../__fixtures__/tokens';
@@ -21,7 +27,8 @@ import {
   createAuthenticationState,
   createCatalogState,
   createPermissionsState,
-  createStoreState
+  createStoreState,
+  createErrorsState
 } from '../../__fixtures__/store';
 import {
   isExitNode,
@@ -47,7 +54,9 @@ import {
   getSectionsRef,
   getCards,
   getHeroRef,
-  getHero
+  getHero,
+  isErrorVisible,
+  getErrorType
 } from './state-extract';
 
 const createDefaultLevel = (levelRef: string) => createLevel({ref: levelRef, chapterIds: ['666']});
@@ -91,7 +100,8 @@ const createState = ({
   token,
   brand,
   user,
-  heroRef
+  heroRef,
+  errors
 }: {
   engine?: Engine,
   levelRef?: string,
@@ -104,7 +114,8 @@ const createState = ({
   token?: string | null,
   brand?: Brand | null,
   user?: User | null,
-  heroRef?: string
+  heroRef?: string,
+  errors?: $ExtractReturn<typeof createErrorsState>
 }): StoreState =>
   createStoreState({
     levels: [createDefaultLevel(levelRef)],
@@ -120,7 +131,8 @@ const createState = ({
     godMode: true,
     fastSlide: true,
     catalog: createCatalogState({sections, cards, heroRef}),
-    permissions
+    permissions,
+    errors
   });
 
 describe('State-extract', () => {
@@ -850,6 +862,48 @@ describe('State-extract', () => {
       const result = getHero(state);
 
       expect(result).toBeUndefined;
+    });
+  });
+
+  describe('isErrorVisible', () => {
+    it('should return false', () => {
+      const state = createState({});
+
+      const result = isErrorVisible(state);
+
+      expect(result).toBeFalsy;
+    });
+
+    it('should return true', () => {
+      const state = createState({
+        errors: createErrorsState({isVisible: true})
+      });
+
+      const result = isErrorVisible(state);
+
+      expect(result).toBeTruthy;
+    });
+  });
+
+  describe('getErrorType', () => {
+    it('should return undefined', () => {
+      const state = createState({});
+
+      const result = getErrorType(state);
+
+      expect(result).toBeUndefined;
+    });
+
+    it('should return the error type', () => {
+      const type = ERROR_TYPE.PLATFORM_NOT_ACTIVATED;
+      const state = createState({
+        errors: createErrorsState({type})
+      });
+
+      const result = getErrorType(state);
+      const expected = type;
+
+      expect(result).toEqual(expected);
     });
   });
 });

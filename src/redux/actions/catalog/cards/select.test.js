@@ -311,7 +311,7 @@ describe('Cards', () => {
     const modal = {
       type: SHOW,
       payload: {
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction: expect.any(Function)
       }
     };
@@ -405,7 +405,7 @@ describe('Cards', () => {
     const modal = {
       type: SHOW,
       payload: {
-        errorType: ERROR_TYPE.NO_CONTENT_FOUND,
+        type: ERROR_TYPE.NO_CONTENT_FOUND,
         lastAction: expect.any(Function)
       }
     };

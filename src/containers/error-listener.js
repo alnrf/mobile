@@ -10,13 +10,13 @@ import type {ErrorType} from '../types';
 import {ERROR_TYPE} from '../const';
 import {hideError, refresh} from '../redux/actions/ui/errors';
 import {signOut} from '../redux/actions/authentication';
+import {isErrorVisible, getErrorType} from '../redux/utils/state-extract';
 import {assistanceEmail} from '../../app';
 
 type ConnectedStateToProps = {|
   ...ReactNavigation$WithNavigationProps,
   isVisible: boolean,
-  errorType: ErrorType,
-  lastAction?: () => void
+  type: ErrorType
 |};
 
 type ConnectedDispatchProps = {|
@@ -45,15 +45,15 @@ class ErrorListener extends React.PureComponent<Props> {
   };
 
   handlePress = () => {
-    if (this.props.errorType === ERROR_TYPE.PLATFORM_NOT_ACTIVATED) {
-      this.handleAssistancePress();
-    } else {
-      this.props.refresh();
+    if (this.props.type === ERROR_TYPE.PLATFORM_NOT_ACTIVATED) {
+      return this.handleAssistancePress();
     }
+
+    return this.props.refresh();
   };
 
   render() {
-    const {errorType} = this.props;
+    const {type, isVisible} = this.props;
 
     return (
       <Modal
@@ -65,17 +65,16 @@ class ErrorListener extends React.PureComponent<Props> {
           onClose={this.handleClose}
           onPress={this.handlePress}
           onAssistancePress={this.handleAssistancePress}
-          type={errorType}
+          type={type}
         />
       </Modal>
     );
   }
 }
 
-const mapStateToProps = ({error}: StoreState): ConnectedStateToProps => ({
-  isVisible: error.isVisible,
-  errorType: error.errorType,
-  lastAction: error.lastAction
+const mapStateToProps = (state: StoreState): ConnectedStateToProps => ({
+  isVisible: isErrorVisible(state),
+  type: getErrorType(state)
 });
 
 const mapDispatchToProps: ConnectedDispatchProps = {
