@@ -26,6 +26,7 @@ import type {StoreState, DataState, UiState} from '../redux/store';
 import type {State as AuthenticationState} from '../redux/reducers/authentication';
 import type {State as CatalogState} from '../redux/reducers/catalog';
 import type {State as ErrorsState} from '../redux/reducers/ui/errors';
+import type {State as SelectState} from '../redux/reducers/ui/select';
 import type {State as GodModeState} from '../redux/reducers/god-mode';
 import type {State as NavigationState} from '../redux/reducers/navigation';
 import type {State as FastSlideState} from '../redux/reducers/fast-slide';
@@ -252,6 +253,8 @@ export const createErrorsState = ({
   type
 });
 
+export const createSelectState = (key: string | void): SelectState => key;
+
 export const createNavigationState = (): NavigationState => ({
   currentNavigatorName: 'dummyNavigatorName',
   currentAppScreenName: 'dummycurrentAppScreenName',
@@ -285,6 +288,7 @@ export const createStoreState = ({
   godMode = false,
   fastSlide = false,
   errors,
+  select,
   navigation,
   permissions,
   video
@@ -302,6 +306,7 @@ export const createStoreState = ({
   godMode?: GodModeState,
   fastSlide?: FastSlideState,
   errors?: ErrorsState<void>,
+  select?: SelectState,
   navigation?: NavigationState,
   permissions?: PermissionsState,
   video?: VideoState
@@ -318,6 +323,7 @@ export const createStoreState = ({
     }),
   ui: ui || createUiState({}),
   errors: errors || createErrorsState({}),
+  select: select || createSelectState(),
   navigation: navigation || createNavigationState(),
   catalog: catalog || createCatalogState({}),
   permissions: permissions || createPermissionsState({}),

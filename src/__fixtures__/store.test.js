@@ -256,6 +256,7 @@ describe('storeFixture', () => {
       errors: {
         isVisible: false
       },
+      select: undefined,
       ui: {
         answers: {},
         coaches: {

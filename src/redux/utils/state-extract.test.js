@@ -28,7 +28,8 @@ import {
   createCatalogState,
   createPermissionsState,
   createStoreState,
-  createErrorsState
+  createErrorsState,
+  createSelectState
 } from '../../__fixtures__/store';
 import {
   isExitNode,
@@ -56,7 +57,8 @@ import {
   getHeroRef,
   getHero,
   isErrorVisible,
-  getErrorType
+  getErrorType,
+  getFocusedSelect
 } from './state-extract';
 
 const createDefaultLevel = (levelRef: string) => createLevel({ref: levelRef, chapterIds: ['666']});
@@ -101,7 +103,8 @@ const createState = ({
   brand,
   user,
   heroRef,
-  errors
+  errors,
+  select
 }: {
   engine?: Engine,
   levelRef?: string,
@@ -115,7 +118,8 @@ const createState = ({
   brand?: Brand | null,
   user?: User | null,
   heroRef?: string,
-  errors?: $ExtractReturn<typeof createErrorsState>
+  errors?: $ExtractReturn<typeof createErrorsState>,
+  select?: $ExtractReturn<typeof createSelectState>
 }): StoreState =>
   createStoreState({
     levels: [createDefaultLevel(levelRef)],
@@ -132,7 +136,8 @@ const createState = ({
     fastSlide: true,
     catalog: createCatalogState({sections, cards, heroRef}),
     permissions,
-    errors
+    errors,
+    select
   });
 
 describe('State-extract', () => {
@@ -902,6 +907,26 @@ describe('State-extract', () => {
 
       const result = getErrorType(state);
       const expected = type;
+
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe('getFocusedSelect', () => {
+    it('should return undefined', () => {
+      const state = createState({});
+      const result = getFocusedSelect(state);
+      expect(result).toBeUndefined;
+    });
+
+    it('should return the selected key', () => {
+      const key = 'foo';
+      const state = createState({
+        select: createSelectState(key)
+      });
+
+      const result = getFocusedSelect(state);
+      const expected = key;
 
       expect(result).toEqual(expected);
     });
