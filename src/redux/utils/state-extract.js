@@ -18,6 +18,7 @@ import type {StoreState} from '../store';
 import type {State as BrandState} from '../reducers/authentication/brand';
 import type {State as UserState} from '../reducers/authentication/user';
 import type {State as TokenState} from '../reducers/authentication/token';
+import type {State as SelectState} from '../reducers/ui/select';
 import type {PermissionType} from '../actions/permissions';
 import type {DisciplineCard, ChapterCard, Slide} from '../../layer/data/_types';
 import translations from '../../translations';
@@ -158,4 +159,4 @@ export const isErrorVisible = (state: StoreState): boolean => state.errors.isVis
 
 export const getErrorType = (state: StoreState): ErrorType | void => state.errors.type;
 
-export const getFocusedSelect = (state: StoreState): string | null => state.select.key;
+export const getFocusedSelect = (state: StoreState): SelectState => state.select;

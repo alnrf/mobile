@@ -35,11 +35,11 @@ module.exports = {
       // @todo increase this value
       branches: 41,
       // @todo increase this value
-      functions: 46,
+      functions: 47,
       // @todo increase this value
-      lines: 51,
+      lines: 52,
       // @todo increase this value
-      statements: 51
+      statements: 52
     },
     'src/screens': {
       branches: 100,

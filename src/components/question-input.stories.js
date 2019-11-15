@@ -6,7 +6,8 @@ import {storiesOf} from '@storybook/react-native';
 import renderer from 'react-test-renderer';
 import {ANALYTICS_EVENT_TYPE, QUESTION_TYPE, QUESTION_CHOICE_INPUT_TYPE} from '../const';
 import {createSelectChoice} from '../__fixtures__/question-choices';
-import {createFakeAnalytics, handleFakePress} from '../utils/tests';
+import {createSelectState} from '../__fixtures__/store';
+import {createFakeAnalytics, handleFakePress, TestContextProvider} from '../utils/tests';
 import {__TEST__} from '../modules/environment';
 import {Component as QuestionInput} from './question-input';
 
@@ -50,43 +51,51 @@ storiesOf('QuestionInput', module)
     />
   ))
   .add('Select', () => (
-    <QuestionInput
-      questionType={QUESTION_TYPE.TEMPLATE}
-      type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
-      items={select.items}
-      onChange={handleFakePress}
-      id="foo"
-    />
+    <TestContextProvider>
+      <QuestionInput
+        questionType={QUESTION_TYPE.TEMPLATE}
+        type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
+        items={select.items}
+        onChange={handleFakePress}
+        id="foo"
+      />
+    </TestContextProvider>
   ))
   .add('Select (not empty)', () => (
-    <QuestionInput
-      questionType={QUESTION_TYPE.TEMPLATE}
-      type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
-      items={select.items}
-      value={select.items && select.items[1] && select.items[1].text}
-      onChange={handleFakePress}
-      id="foo"
-    />
+    <TestContextProvider>
+      <QuestionInput
+        questionType={QUESTION_TYPE.TEMPLATE}
+        type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
+        items={select.items}
+        value={select.items && select.items[1] && select.items[1].text}
+        onChange={handleFakePress}
+        id="foo"
+      />
+    </TestContextProvider>
   ))
   .add('Select (disabled)', () => (
-    <QuestionInput
-      questionType={QUESTION_TYPE.TEMPLATE}
-      type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
-      items={select.items}
-      onChange={handleFakePress}
-      isDisabled
-      id="foo"
-    />
+    <TestContextProvider>
+      <QuestionInput
+        questionType={QUESTION_TYPE.TEMPLATE}
+        type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
+        items={select.items}
+        onChange={handleFakePress}
+        isDisabled
+        id="foo"
+      />
+    </TestContextProvider>
   ))
   .add('Select (full width)', () => (
-    <QuestionInput
-      questionType={QUESTION_TYPE.TEMPLATE}
-      type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
-      items={select.items}
-      onChange={handleFakePress}
-      fullWitdh
-      id="foo"
-    />
+    <TestContextProvider>
+      <QuestionInput
+        questionType={QUESTION_TYPE.TEMPLATE}
+        type={QUESTION_CHOICE_INPUT_TYPE.SELECT}
+        items={select.items}
+        onChange={handleFakePress}
+        fullWitdh
+        id="foo"
+      />
+    </TestContextProvider>
   ))
   .add('Not supported', () => (
     <QuestionInput

@@ -916,17 +916,18 @@ describe('State-extract', () => {
     it('should return undefined', () => {
       const state = createState({});
       const result = getFocusedSelect(state);
+
       expect(result).toBeUndefined;
     });
 
-    it('should return the selected key', () => {
-      const key = 'foo';
+    it('should return the selected id', () => {
+      const id = 'foo';
       const state = createState({
-        select: createSelectState({key})
+        select: createSelectState({id})
       });
 
       const result = getFocusedSelect(state);
-      const expected = key;
+      const expected = id;
 
       expect(result).toEqual(expected);
     });

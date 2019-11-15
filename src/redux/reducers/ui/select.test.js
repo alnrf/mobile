@@ -6,7 +6,7 @@ import reducer from './select';
 import type {State} from './select';
 
 describe('Select', () => {
-  const expectedInitialState: State = {key: null};
+  const expectedInitialState: State = null;
 
   it('Default', () => {
     const action = {
@@ -19,12 +19,13 @@ describe('Select', () => {
 
   describe(FOCUS, () => {
     it('Default', () => {
+      const payload = 'foo';
       const action: Action = {
         type: FOCUS,
-        payload: {key: 'foo'}
+        payload
       };
       const result = reducer(expectedInitialState, action);
-      const expected = {key: 'foo'};
+      const expected = payload;
 
       expect(result).toEqual(expected);
     });
@@ -35,7 +36,7 @@ describe('Select', () => {
       const action: Action = {
         type: BLUR
       };
-      const result = reducer({key: 'foo'}, action);
+      const result = reducer('foo', action);
       expect(result).toEqual(expectedInitialState);
     });
   });

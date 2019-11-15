@@ -9,13 +9,17 @@ import type {StoreState} from '../redux/store';
 import {getFocusedSelect} from '../redux/utils/state-extract';
 import {focus, blur} from '../redux/actions/ui/select';
 
-type ConnectedStateProps = {|
+export type ConnectedStateProps = {|
   isFocused: boolean
 |};
 
 type ConnectedDispatchProps = {|
   focus: typeof focus,
   blur: typeof blur
+|};
+
+export type OwnProps = {|
+  id: string
 |};
 
 export type Props = {|
@@ -28,13 +32,13 @@ export type Props = {|
       onFocus: $PropertyType<ComponentProps, 'onFocus'>
     |}
   >,
-  id: string
+  ...OwnProps
 |};
 
 class Select extends React.PureComponent<Props> {
   props: Props;
 
-  handleFocus = () => this.props.focus({key: this.props.id});
+  handleFocus = () => this.props.focus(this.props.id);
 
   handleBlur = () => this.props.blur();
 
@@ -50,7 +54,7 @@ class Select extends React.PureComponent<Props> {
   }
 }
 
-export const mapStateToProps = (state: StoreState, {id}: Props): ConnectedStateProps => ({
+export const mapStateToProps = (state: StoreState, {id}: OwnProps): ConnectedStateProps => ({
   isFocused: getFocusedSelect(state) === id
 });
 
@@ -59,6 +63,7 @@ const mapDispatchToProps: ConnectedDispatchProps = {
   blur
 };
 
+export {Select as Component};
 export default connect(
   mapStateToProps,
   mapDispatchToProps

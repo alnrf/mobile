@@ -1,16 +1,17 @@
 // @flow
 
-import {ERROR_TYPE} from '../../../const';
 import {focus, blur, FOCUS, BLUR} from './select';
 import type {Action} from './select';
 
 describe('select', () => {
   describe('focus', () => {
     it('should return an action without the select.key focused', () => {
-      const result = focus({key: 'foo'});
+      const payload = 'foo';
+
+      const result = focus(payload);
       const expected: Action = {
         type: FOCUS,
-        payload: {key: 'foo'}
+        payload
       };
 
       expect(result).toEqual(expected);

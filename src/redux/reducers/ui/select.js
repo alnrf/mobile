@@ -3,19 +3,17 @@
 import {FOCUS, BLUR} from '../../actions/ui/select';
 import type {Action} from '../../actions/ui/select';
 
-export type State = {|key: string | null|};
+export type State = string | null;
 
-export const initialState: State = {key: null};
+export const initialState: State = null;
 
 const reducer = (state: State = initialState, action: Action): State => {
   switch (action.type) {
     case FOCUS: {
-      return {
-        key: action.payload.key
-      };
+      return action.payload;
     }
     case BLUR: {
-      return {key: null};
+      return null;
     }
     default:
       return state;

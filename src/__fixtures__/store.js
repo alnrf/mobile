@@ -253,9 +253,8 @@ export const createErrorsState = ({
   type
 });
 
-export const createSelectState = ({key}: {key?: string}): SelectState => ({
-  key: key !== undefined ? key : null
-});
+export const createSelectState = ({id}: {id?: string}): SelectState =>
+  id !== undefined ? id : null;
 
 export const createNavigationState = (): NavigationState => ({
   currentNavigatorName: 'dummyNavigatorName',
