@@ -2,52 +2,64 @@
 
 import * as React from 'react';
 import {connect} from 'react-redux';
-import type {Choice, QuestionType} from '@coorpacademy/progression-engine';
 
-import Select from '../components/select';
+import SelectComponent from '../components/select';
+import type {Props as ComponentProps} from '../components/select';
 import type {StoreState} from '../redux/store';
 import {getFocusedSelect} from '../redux/utils/state-extract';
 import {focus, blur} from '../redux/actions/ui/select';
-
-import type {WithAnalyticsProps} from './with-analytics';
 
 type ConnectedStateProps = {|
   isFocused: boolean
 |};
 
-type ConnectedDispatchToProps = {|
+type ConnectedDispatchProps = {|
   focus: typeof focus,
   blur: typeof blur
 |};
 
-type Props = {|
+export type Props = {|
   ...ConnectedStateProps,
-  ...ConnectedDispatchToProps,
-  ...WithAnalyticsProps,
-  analyticsID: string,
-  key: string,
-  questionType: QuestionType,
-  isDisabled?: boolean,
-  values: $NonMaybeType<$PropertyType<Choice, 'items'>>,
-  value?: string,
-  placeholder?: string,
-  color?: string,
-  onChange: (value: string) => void,
-  style?: TextStyleProp,
-  testID?: string
+  ...ConnectedDispatchProps,
+  ...$Rest<
+    ComponentProps,
+    {|
+      onBlur: $PropertyType<ComponentProps, 'onBlur'>,
+      onFocus: $PropertyType<ComponentProps, 'onFocus'>
+    |}
+  >,
+  id: string
 |};
 
-export const mapStateToProps = (state: StoreState, props: Props): ConnectedStateProps => {
-  const {key} = props;
+class Select extends React.PureComponent<Props> {
+  props: Props;
 
-  return {
-    isFocused: getFocusedSelect(state) === key
-  };
-};
+  handleFocus = () => this.props.focus({key: this.props.id});
 
-const mapDispatchToProps: ConnectedDispatchToProps = {
+  handleBlur = () => this.props.blur();
+
+  render() {
+    const {
+      /* eslint-disable no-unused-vars */
+      id,
+      /* eslint-enable no-unused-vars */
+      ...props
+    } = this.props;
+
+    return <SelectComponent {...props} onFocus={this.handleFocus} onBlur={this.handleBlur} />;
+  }
+}
+
+export const mapStateToProps = (state: StoreState, {id}: Props): ConnectedStateProps => ({
+  isFocused: getFocusedSelect(state) === id
+});
+
+const mapDispatchToProps: ConnectedDispatchProps = {
   focus,
   blur
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Select);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Select);
