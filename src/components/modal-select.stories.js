@@ -17,7 +17,7 @@ storiesOf('ModalSelect', module)
   ))
   .add('With value', () => (
     <ModalSelect
-      value={select.items && select.items[1] && select.items[1].value}
+      value={select.items && select.items[1] && select.items[1].text}
       values={select.items || []}
       onChange={handleFakePress}
       onClose={handleFakePress}
@@ -53,7 +53,7 @@ if (__TEST__) {
 
       expect(handleChange).toHaveBeenCalledTimes(1);
       expect(handleChange).toHaveBeenCalledWith(
-        select.items && select.items[1] && select.items[1].value
+        select.items && select.items[1] && select.items[1].text
       );
     });
   });

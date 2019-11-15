@@ -81,6 +81,7 @@ storiesOf('Select', module)
   .add('With value', () => (
     <Select
       analyticsID="foo"
+      placeholder="Feel free to edit"
       questionType={QUESTION_TYPE.TEMPLATE}
       values={items}
       value={items[1].text}
@@ -92,9 +93,9 @@ storiesOf('Select', module)
   .add('Disabled', () => (
     <Select
       analyticsID="foo"
+      placeholder="Feel free to edit"
       questionType={QUESTION_TYPE.TEMPLATE}
       values={items}
-      placeholder="Feel free to edit"
       onChange={handleFakePress}
       onFocus={handleFakePress}
       onBlur={handleFakePress}
@@ -104,6 +105,7 @@ storiesOf('Select', module)
   .add('Colored', () => (
     <Select
       analyticsID="foo"
+      placeholder="Feel free to edit"
       questionType={QUESTION_TYPE.TEMPLATE}
       values={items}
       onChange={handleFakePress}
@@ -115,8 +117,10 @@ storiesOf('Select', module)
   .add('Colored with value', () => (
     <Select
       analyticsID="foo"
+      placeholder="Feel free to edit"
       questionType={QUESTION_TYPE.TEMPLATE}
       values={items}
+      value={items[1].text}
       onChange={handleFakePress}
       onFocus={handleFakePress}
       onBlur={handleFakePress}
@@ -126,6 +130,7 @@ storiesOf('Select', module)
   .add('Focused', () => (
     <SelectWithModal
       analyticsID="foo"
+      placeholder="Feel free to edit"
       questionType={QUESTION_TYPE.TEMPLATE}
       values={items}
       onChange={handleFakePress}
@@ -180,7 +185,7 @@ if (__TEST__) {
           questionType={questionType}
           analytics={analytics}
           values={items}
-          value={items[1].value}
+          value={items[1].text}
           placeholder="Foo bar baz"
           onChange={handleFakePress}
           onFocus={handleFakePress}
@@ -193,6 +198,41 @@ if (__TEST__) {
       const item = component.root.find(el => el.props.testID === 'select-modal');
       item.props.onClose();
 
+      expect(analytics.logEvent).toHaveBeenCalledWith(ANALYTICS_EVENT_TYPE.CLOSE_SELECT, {
+        id: analyticsID,
+        questionType
+      });
+      expect(handleBlur).toHaveBeenCalledTimes(1);
+    });
+
+    it('should handle change', () => {
+      const analytics = createFakeAnalytics();
+      const analyticsID = 'foo';
+      const questionType = QUESTION_TYPE.TEMPLATE;
+      const handleBlur = jest.fn();
+      const handleChange = jest.fn();
+
+      const component = renderer.create(
+        <Select
+          analyticsID={analyticsID}
+          questionType={questionType}
+          analytics={analytics}
+          values={items}
+          value={items[1].text}
+          placeholder="Foo bar baz"
+          onChange={handleChange}
+          onFocus={handleFakePress}
+          onBlur={handleBlur}
+          isDisabled
+          testID="select"
+        />
+      );
+
+      const item = component.root.find(el => el.props.testID === 'select-modal');
+      item.props.onChange('bar');
+
+      expect(handleChange).toHaveBeenCalledTimes(1);
+      expect(handleChange).toHaveBeenCalledWith('bar');
       expect(analytics.logEvent).toHaveBeenCalledWith(ANALYTICS_EVENT_TYPE.CLOSE_SELECT, {
         id: analyticsID,
         questionType

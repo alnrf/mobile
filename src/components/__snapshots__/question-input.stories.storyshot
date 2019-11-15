@@ -2380,7 +2380,9 @@ exports[`Storyshots QuestionInput Select (not empty) 1`] = `
                             "color": "#14171A",
                             "fontWeight": "700",
                           },
-                          false,
+                          Object {
+                            "color": "#00B0FF",
+                          },
                         ],
                       ]
                     }

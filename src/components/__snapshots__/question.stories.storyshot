@@ -5589,7 +5589,9 @@ exports[`Storyshots Question Template 1`] = `
                                     "color": "#14171A",
                                     "fontWeight": "700",
                                   },
-                                  false,
+                                  Object {
+                                    "color": "#00B0FF",
+                                  },
                                 ],
                               ]
                             }

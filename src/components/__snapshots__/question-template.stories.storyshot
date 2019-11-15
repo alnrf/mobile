@@ -1778,7 +1778,9 @@ exports[`Storyshots QuestionTemplate Default 1`] = `
                               "color": "#14171A",
                               "fontWeight": "700",
                             },
-                            false,
+                            Object {
+                              "color": "#00B0FF",
+                            },
                           ],
                         ]
                       }
@@ -3671,7 +3673,9 @@ exports[`Storyshots QuestionTemplate Disabled 1`] = `
                               "color": "#14171A",
                               "fontWeight": "700",
                             },
-                            false,
+                            Object {
+                              "color": "#00B0FF",
+                            },
                           ],
                         ]
                       }

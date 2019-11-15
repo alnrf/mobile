@@ -8,7 +8,7 @@ import theme from '../modules/theme';
 import Modal from './modal';
 import ModalSelectItem from './modal-select-item';
 
-type ChoiceValue = $PropertyType<Choice, 'value'>;
+type ChoiceValue = $NonMaybeType<$PropertyType<Choice, 'value'>>;
 type ChoiceItem = $ElementType<$NonMaybeType<$PropertyType<Choice, 'items'>>, 0>;
 
 export type Props = {|
@@ -44,8 +44,8 @@ class ModalSelect extends React.PureComponent<Props> {
 
     return (
       <ModalSelectItem
-        onPress={this.handleChange(item.value)}
-        isSelected={value === item.value}
+        onPress={this.handleChange(item.text)}
+        isSelected={value === item.text}
         testID={`${testID}-item-${index + 1}`}
       >
         {item.text}

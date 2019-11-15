@@ -46,7 +46,9 @@ Array [
             ],
           ]
         }
-      />
+      >
+        Feel free to edit
+      </Text>
       <View
         style={
           Object {
@@ -833,7 +835,9 @@ Array [
             ],
           ]
         }
-      />
+      >
+        App Store
+      </Text>
       <View
         style={
           Object {
@@ -1460,7 +1464,9 @@ Array [
                             "color": "#14171A",
                             "fontWeight": "700",
                           },
-                          false,
+                          Object {
+                            "color": "#00B0FF",
+                          },
                         ],
                       ]
                     }
@@ -3190,7 +3196,9 @@ Array [
             ],
           ]
         }
-      />
+      >
+        Feel free to edit
+      </Text>
       <View
         style={
           Object {
@@ -5391,7 +5399,9 @@ Array [
                             "color": "#14171A",
                             "fontWeight": "700",
                           },
-                          false,
+                          Object {
+                            "color": "#00B0FF",
+                          },
                         ],
                       ]
                     }

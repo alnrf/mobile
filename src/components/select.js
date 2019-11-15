@@ -71,12 +71,16 @@ class Select extends React.PureComponent<Props> {
     this.logEvent(ANALYTICS_EVENT_TYPE.CLOSE_SELECT);
   };
 
+  handleChange = (value: string) => {
+    this.props.onChange(value);
+    this.handleBlur();
+  };
+
   render() {
     const {
       values,
       placeholder,
       value,
-      onChange,
       style,
       textStyle,
       color,
@@ -108,7 +112,7 @@ class Select extends React.PureComponent<Props> {
           <ModalSelect
             value={value}
             values={values}
-            onChange={onChange}
+            onChange={this.handleChange}
             onClose={this.handleBlur}
             testID={`${testID}-modal`}
           />
