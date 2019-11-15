@@ -16,8 +16,7 @@ export type Props = {|
   testID?: string
 |};
 
-// const HEADER_HEIGHT = 75;
-const HEADER_HEIGHT = 64;
+export const HEADER_HEIGHT = 64;
 
 const styles = StyleSheet.create({
   container: {
