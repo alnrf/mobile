@@ -75,6 +75,7 @@
     "@coorpacademy/react-native-slider": "^0.11.1",
     "@coorpacademy/react-native-video-controls": "2.5.5",
     "@react-native-community/async-storage": "^1.4.0",
+    "@react-native-community/netinfo": "3.2.1",
     "app-store-link": "^1.0.2",
     "apsl-react-native-button": "^3.1.1",
     "bson": "^4.0.2",

@@ -35,6 +35,11 @@ PODS:
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
+    - Folly/Default (= 2018.10.22.00)
+    - glog
+  - Folly/Default (2018.10.22.00):
+    - boost-for-react-native
+    - DoubleConversion
     - glog
   - glog (0.3.5)
   - GoogleAnalytics (3.17.0)
@@ -87,6 +92,8 @@ PODS:
   - react-native-camera/RCT (2.9.0):
     - React
   - react-native-camera/RN (2.9.0):
+    - React
+  - react-native-netinfo (3.2.1):
     - React
   - react-native-orientation-locker (1.1.6):
     - React
@@ -183,6 +190,7 @@ DEPENDENCIES:
   - lottie-ios (from `../node_modules/lottie-ios`)
   - lottie-react-native (from `../node_modules/lottie-react-native`)
   - react-native-camera (from `../node_modules/react-native-camera`)
+  - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-orientation-locker (from `../node_modules/react-native-orientation-locker`)
   - react-native-pdf (from `../node_modules/react-native-pdf`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -243,6 +251,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native"
   react-native-camera:
     :path: "../node_modules/react-native-camera"
+  react-native-netinfo:
+    :path: "../node_modules/@react-native-community/netinfo"
   react-native-orientation-locker:
     :path: "../node_modules/react-native-orientation-locker"
   react-native-pdf:
@@ -279,15 +289,15 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: 8cbc5155c978f2e43098818c91d206d07aae6d30
-  DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
   FirebaseAnalytics: ece1aa57a4f43c64d53a648b5a5e05151aae947b
   FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
   FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
   FirebaseDynamicLinks: f7a8717e2c7ea652923882a2d60b0045d6fd99d5
   FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
-  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
-  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
+  Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
+  glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
@@ -299,6 +309,7 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
   react-native-camera: 571e4cfe70e7021e9077c1699a53e659db971f96
+  react-native-netinfo: 0da34082d2cec3100c9b5073bb217e35f1142bdd
   react-native-orientation-locker: 23918c400376a7043e752c639c122fcf6bce8f1c
   react-native-pdf: 8cc276fd8ab7dff6b602eb65fcf0f6c145c0f524
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
@@ -316,6 +327,6 @@ SPEC CHECKSUMS:
   RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: 008a8fcaf126ded4da01c100ba8d681bb5f4338c
+PODFILE CHECKSUM: b0255f149a8e6e87643dbd7f7ba84301cdb55a0a
 
 COCOAPODS: 1.6.1
