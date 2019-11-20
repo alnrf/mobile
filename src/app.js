@@ -11,6 +11,7 @@ import orientation from 'react-native-orientation-locker';
 import Navigator from './navigator';
 import BrandThemeProvider from './components/brand-theme-provider';
 import UserProvider from './components/user-provider';
+import ConnectionListener from './containers/connection-listener';
 import VersionListener from './containers/version-listener';
 import VideoFullscreenListener from './containers/video-fullscreen-listener';
 import createDataLayer from './layer/data';
@@ -50,6 +51,7 @@ class App extends React.PureComponent<Props> {
     return (
       <Provider store={store}>
         <PortalProvider>
+          <ConnectionListener />
           <VersionListener />
           <UserProvider>
             <BrandThemeProvider>
