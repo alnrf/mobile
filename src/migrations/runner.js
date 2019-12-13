@@ -35,10 +35,14 @@ const applyMigrations = (asyncStorageVersionKey, migrations) => async (
     _.map(_.update('0', _.parseInt(10))),
     _.filter(([version]) => version > parseInt(currentASVersion)),
     _.sortBy('0'),
-    (vm: PairedMigrations) =>
-      Promise.mapSeries(vm, async ([version, [predicate, transformer]]) => {
-        await applyMigration(predicate, transformer)(asyncStorage);
-        await asyncStorage.setItem(asyncStorageVersionKey, version.toString());
+    (vpm: PairedMigrations) =>
+      Promise.mapSeries(vpm, async ([version, [predicate, transformer]]) => {
+        try {
+          await applyMigration(predicate, transformer)(asyncStorage);
+          await asyncStorage.setItem(asyncStorageVersionKey, version.toString());
+        } catch (error) {
+          throw error;
+        }
       })
   )(migrations);
 };
