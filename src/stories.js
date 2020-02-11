@@ -69,6 +69,7 @@ require('./components/question.stories.js');
 require('./components/resource.stories.js');
 require('./components/resources-browser.stories.js');
 require('./components/screen.stories.js');
+require('./components/search-input.stories.js');
 require('./components/select.stories.js');
 require('./components/space.stories.js');
 require('./components/starburst.stories.js');
