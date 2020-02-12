@@ -34,6 +34,7 @@ exports[`Storyshots Modal Custom header and icon background color 1`] = `
           },
           false,
           false,
+          false,
         ]
       }
     >
@@ -554,6 +555,7 @@ exports[`Storyshots Modal Default 1`] = `
           Object {
             "paddingLeft": 24,
           },
+          false,
           false,
           false,
         ]

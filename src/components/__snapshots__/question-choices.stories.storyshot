@@ -1982,6 +1982,7 @@ exports[`Storyshots QuestionChoices Template 1`] = `
                     },
                     false,
                     false,
+                    false,
                   ]
                 }
               >
@@ -2923,6 +2924,7 @@ exports[`Storyshots QuestionChoices Template 1`] = `
                     Object {
                       "paddingLeft": 24,
                     },
+                    false,
                     false,
                     false,
                   ]

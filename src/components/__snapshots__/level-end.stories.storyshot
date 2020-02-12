@@ -1328,6 +1328,7 @@ exports[`Storyshots LevelEnd Failure 1`] = `
           "top": 0,
         },
         false,
+        false,
       ]
     }
   >
@@ -2857,6 +2858,7 @@ exports[`Storyshots LevelEnd Failure Author Coorp 1`] = `
           "position": "absolute",
           "top": 0,
         },
+        false,
         false,
       ]
     }
@@ -4764,6 +4766,7 @@ exports[`Storyshots LevelEnd Finished 1`] = `
           "position": "absolute",
           "top": 0,
         },
+        false,
         false,
       ]
     }
@@ -6948,6 +6951,7 @@ exports[`Storyshots LevelEnd Microlearning 1`] = `
           "position": "absolute",
           "top": 0,
         },
+        false,
         false,
       ]
     }
@@ -9707,6 +9711,7 @@ exports[`Storyshots LevelEnd Success 1`] = `
           "top": 0,
         },
         false,
+        false,
       ]
     }
   >
@@ -12202,6 +12207,7 @@ exports[`Storyshots LevelEnd Success Author Coorp 1`] = `
           "position": "absolute",
           "top": 0,
         },
+        false,
         false,
       ]
     }

@@ -22,6 +22,7 @@ type Props = {|
   onPress: () => void,
   isFloating?: boolean,
   noSafeArea?: boolean,
+  noLeftPadding?: boolean,
   testID: string
 |};
 
@@ -36,6 +37,9 @@ const styles = StyleSheet.create({
   },
   noSafeArea: {
     top: 0
+  },
+  noLeftPadding: {
+    paddingLeft: 0
   }
 });
 
@@ -45,13 +49,15 @@ const HeaderBackButton = ({
   onPress,
   isFloating = true,
   noSafeArea = false,
+  noLeftPadding = false,
   testID
 }: Props) => (
   <View
     style={[
       styles.container,
       isFloating && styles.floating,
-      isFloating && noSafeArea && styles.noSafeArea
+      isFloating && noSafeArea && styles.noSafeArea,
+      noLeftPadding && styles.noLeftPadding
     ]}
   >
     <Touchable testID={testID} onPress={onPress} hitSlop={getHitSlop()} analyticsID="button-close">

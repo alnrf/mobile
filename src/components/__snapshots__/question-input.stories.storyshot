@@ -410,6 +410,7 @@ exports[`Storyshots QuestionInput Select (disabled) 1`] = `
                 },
                 false,
                 false,
+                false,
               ]
             }
           >
@@ -1222,6 +1223,7 @@ exports[`Storyshots QuestionInput Select (full width) 1`] = `
                 Object {
                   "paddingLeft": 24,
                 },
+                false,
                 false,
                 false,
               ]
@@ -2041,6 +2043,7 @@ exports[`Storyshots QuestionInput Select (not empty) 1`] = `
                 },
                 false,
                 false,
+                false,
               ]
             }
           >
@@ -2853,6 +2856,7 @@ exports[`Storyshots QuestionInput Select 1`] = `
                 Object {
                   "paddingLeft": 24,
                 },
+                false,
                 false,
                 false,
               ]
