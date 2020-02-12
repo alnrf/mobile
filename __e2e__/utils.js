@@ -1,7 +1,7 @@
 // @flow strict
 
 import {HEIGHT as HERO_HEIGHT} from '../src/components/hero';
-import {ITEM_WIDTH, ITEM_HEIGHT} from '../src/components/catalog-section';
+import {ITEM_WIDTH, ITEM_HEIGHT} from '../src/components/catalog-items';
 
 let alreadyLaunched = false;
 

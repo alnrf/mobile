@@ -4,7 +4,7 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import {storiesOf} from '@storybook/react-native';
 
-import {handleFakePress, fakeLayout} from '../utils/tests';
+import {handleFakePress} from '../utils/tests';
 import {
   createCardLevel,
   createDisciplineCard,
@@ -14,7 +14,7 @@ import {
 import {__TEST__} from '../modules/environment';
 import {AUTHOR_TYPE} from '../const';
 import {CARD_STATUS} from '../layer/data/_const';
-import {Component as CatalogSearch} from './catalog-search';
+import CatalogItems from './catalog-items';
 
 const authorCard = createCardAuthor({authorType: AUTHOR_TYPE.CUSTOM});
 const levelCard = createCardLevel({ref: 'mod_1', status: CARD_STATUS.ACTIVE, label: 'Fake level'});
@@ -51,39 +51,45 @@ const fourthCard = createChapterCard({
 const emptyCards = new Array(30).fill();
 const cards = [firstCard, secondCard, thirdCard, fourthCard].concat(emptyCards.slice(0, 26));
 
-storiesOf('CatalogSearch', module)
-  .add('Default', () => (
-    <CatalogSearch onCardPress={handleFakePress} onScroll={handleFakePress} layout={fakeLayout} />
-  ))
-  .add('No results', () => (
-    <CatalogSearch
-      cards={[]}
-      onCardPress={handleFakePress}
+storiesOf('CatalogItems', module)
+  .add('Default', () => <CatalogItems onScroll={handleFakePress} testID="catalog-items-default" />)
+  .add('Placeholders', () => (
+    <CatalogItems
+      placeholderLength={5}
       onScroll={handleFakePress}
-      layout={fakeLayout}
-      testID="catalog-search-no-results"
+      testID="catalog-items-placeholders"
     />
   ))
-  .add('With cards', () => (
-    <CatalogSearch
-      cards={cards}
-      onCardPress={handleFakePress}
+  .add('Placeholders (grid)', () => (
+    <CatalogItems
+      placeholderLength={5}
       onScroll={handleFakePress}
-      layout={fakeLayout}
-      testID="catalog-search-with-cards"
+      numColumns={2}
+      testID="catalog-items-placeholders-grid"
+    />
+  ))
+  .add('With content', () => (
+    <CatalogItems cards={cards} onScroll={handleFakePress} testID="catalog-items-with-content" />
+  ))
+  .add('With content (grid)', () => (
+    <CatalogItems
+      cards={cards}
+      onScroll={handleFakePress}
+      numColumns={2}
+      testID="catalog-items-with-content-grid"
     />
   ));
 
 if (__TEST__) {
-  describe('CatalogSearch', () => {
-    it('should handle card press', () => {
+  describe('CatalogItems', () => {
+    it('should handle press', () => {
       const handleCardPress = jest.fn();
       const component = renderer.create(
-        <CatalogSearch cards={cards} onCardPress={handleCardPress} onScroll={handleFakePress} />
+        <CatalogItems cards={cards} onCardPress={handleCardPress} onScroll={handleFakePress} />
       );
 
       const catalogItem = component.root.find(
-        el => el.props.testID === 'catalog-search-items-bar' && el.props.analyticsID === 'card'
+        el => el.props.testID === 'catalog-items-bar' && el.props.analyticsID === 'card'
       );
       catalogItem.props.onPress();
 

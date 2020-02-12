@@ -22,8 +22,10 @@ export const LAYOUT: {[key: string]: CardType} = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     borderRadius: theme.radius.card
+  },
+  deckSwipe: {
+    flex: 1
   },
   overflowHidden: {
     overflow: 'hidden'
@@ -35,13 +37,13 @@ const Card = ({children, style, testID, type}: Props) => {
     case LAYOUT.DECK_SWIPE:
       /* istanbul ignore next */
       return Platform.OS === 'ios' ? (
-        <View style={[style, styles.container, styles.overflowHidden]}>
-          <View style={[styles.container]} testID={testID}>
+        <View style={[style, styles.container, styles.deckSwipe, styles.overflowHidden]}>
+          <View style={[styles.container, styles.deckSwipe]} testID={testID}>
             {children}
           </View>
         </View>
       ) : (
-        <View style={[style, styles.container]} testID={testID}>
+        <View style={[style, styles.container, styles.deckSwipe]} testID={testID}>
           {children}
         </View>
       );
