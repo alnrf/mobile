@@ -283,11 +283,11 @@ Pol P.!
             }
             data={
               Array [
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
+                Object {},
+                Object {},
+                Object {},
+                Object {},
+                Object {},
               ]
             }
             disableVirtualization={false}
@@ -311,6 +311,7 @@ Pol P.!
             scrollEnabled={true}
             scrollEventThrottle={50}
             showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             stickyHeaderIndices={Array []}
             testID="catalog-section-catalog-section-0-placeholder-items"
             updateCellsBatchingPeriod={50}
@@ -331,7 +332,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -342,7 +342,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -362,9 +361,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -386,7 +388,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-item-0-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -427,7 +429,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-0-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -465,7 +467,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -474,7 +476,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-item-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -713,7 +715,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -724,7 +725,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -744,9 +744,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -768,7 +771,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-item-1-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -809,7 +812,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-1-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -847,7 +850,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -856,7 +859,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-item-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1095,7 +1098,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -1106,7 +1108,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -1126,9 +1127,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -1150,7 +1154,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-item-2-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1191,7 +1195,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-2-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -1229,7 +1233,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -1238,7 +1242,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-item-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1477,7 +1481,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -1488,7 +1491,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -1508,9 +1510,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -1532,7 +1537,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-item-3-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1573,7 +1578,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-3-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -1611,7 +1616,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -1620,7 +1625,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-item-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1859,7 +1864,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -1870,7 +1874,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -1890,9 +1893,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -1914,7 +1920,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-item-4-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1955,7 +1961,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-4-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -1993,7 +1999,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-item-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2002,7 +2008,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-item-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -2315,11 +2321,11 @@ Pol P.!
             }
             data={
               Array [
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
+                Object {},
+                Object {},
+                Object {},
+                Object {},
+                Object {},
               ]
             }
             disableVirtualization={false}
@@ -2343,6 +2349,7 @@ Pol P.!
             scrollEnabled={true}
             scrollEventThrottle={50}
             showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             stickyHeaderIndices={Array []}
             testID="catalog-section-catalog-section-1-placeholder-items"
             updateCellsBatchingPeriod={50}
@@ -2363,7 +2370,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -2374,7 +2380,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -2394,9 +2399,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -2418,7 +2426,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-item-0-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -2459,7 +2467,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-0-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -2497,7 +2505,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2506,7 +2514,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-item-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -2745,7 +2753,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -2756,7 +2763,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -2776,9 +2782,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -2800,7 +2809,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-item-1-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -2841,7 +2850,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-1-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -2879,7 +2888,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2888,7 +2897,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-item-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3127,7 +3136,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -3138,7 +3146,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -3158,9 +3165,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -3182,7 +3192,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-item-2-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -3223,7 +3233,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-2-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -3261,7 +3271,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -3270,7 +3280,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-item-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3509,7 +3519,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -3520,7 +3529,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -3540,9 +3548,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -3564,7 +3575,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-item-3-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -3605,7 +3616,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-3-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -3643,7 +3654,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -3652,7 +3663,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-item-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3891,7 +3902,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -3902,7 +3912,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -3922,9 +3931,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -3946,7 +3958,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-item-4-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -3987,7 +3999,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-4-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4025,7 +4037,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-item-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4034,7 +4046,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-item-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -4347,11 +4359,11 @@ Pol P.!
             }
             data={
               Array [
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
+                Object {},
+                Object {},
+                Object {},
+                Object {},
+                Object {},
               ]
             }
             disableVirtualization={false}
@@ -4375,6 +4387,7 @@ Pol P.!
             scrollEnabled={true}
             scrollEventThrottle={50}
             showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             stickyHeaderIndices={Array []}
             testID="catalog-section-catalog-section-2-placeholder-items"
             updateCellsBatchingPeriod={50}
@@ -4395,7 +4408,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -4406,7 +4418,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -4426,9 +4437,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -4450,7 +4464,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-item-0-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -4491,7 +4505,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-0-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4529,7 +4543,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4538,7 +4552,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-item-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -4777,7 +4791,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -4788,7 +4801,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -4808,9 +4820,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -4832,7 +4847,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-item-1-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -4873,7 +4888,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-1-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4911,7 +4926,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4920,7 +4935,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-item-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -5159,7 +5174,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -5170,7 +5184,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -5190,9 +5203,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -5214,7 +5230,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-item-2-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -5255,7 +5271,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-2-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -5293,7 +5309,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -5302,7 +5318,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-item-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -5541,7 +5557,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -5552,7 +5567,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -5572,9 +5586,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -5596,7 +5613,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-item-3-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -5637,7 +5654,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-3-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -5675,7 +5692,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -5684,7 +5701,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-item-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -5923,7 +5940,6 @@ Pol P.!
                 <View
                   style={
                     Object {
-                      "flex": 1,
                       "marginHorizontal": 4,
                       "marginVertical": 16,
                     }
@@ -5934,7 +5950,6 @@ Pol P.!
                       Array [
                         Object {
                           "borderRadius": 5,
-                          "flex": 1,
                         },
                         Object {
                           "elevation": 4,
@@ -5954,9 +5969,12 @@ Pol P.!
                         Array [
                           Object {
                             "borderRadius": 5,
-                            "flex": 1,
                           },
-                          undefined,
+                          Object {
+                            "flex": 0,
+                            "height": 205,
+                            "width": 168,
+                          },
                           Object {
                             "overflow": "hidden",
                           },
@@ -5978,7 +5996,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-item-4-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -6019,7 +6037,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-4-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -6057,7 +6075,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-item-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -6066,7 +6084,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-item-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={

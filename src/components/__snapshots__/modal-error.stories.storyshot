@@ -34,7 +34,6 @@ exports[`Storyshots ModalError No content found 1`] = `
           },
           false,
           false,
-          false,
         ]
       }
     >
@@ -938,7 +937,6 @@ exports[`Storyshots ModalError Platform not activated 1`] = `
           Object {
             "paddingLeft": 24,
           },
-          false,
           false,
           false,
         ]

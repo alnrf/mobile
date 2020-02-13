@@ -35,7 +35,6 @@ exports[`Storyshots ModalSelect Default 1`] = `
           },
           false,
           false,
-          false,
         ]
       }
     >
@@ -519,7 +518,6 @@ exports[`Storyshots ModalSelect With value 1`] = `
           Object {
             "paddingLeft": 24,
           },
-          false,
           false,
           false,
         ]

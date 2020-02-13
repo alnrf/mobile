@@ -3,60 +3,47 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {NovaCompositionCoorpacademySearch as SearchIcon} from '@coorpacademy/nova-icons';
-import theme from '../modules/theme';
-import HeaderBackButton from './header-back-button';
+
+import theme, {getHitSlop} from '../modules/theme';
 import {BrandThemeContext} from './brand-theme-provider';
-import Touchable from './touchable';
+import HeaderBackButton, {BACK_ICON_HEIGHT, SPACING as ICON_SPACING} from './header-back-button';
 import ImageBackground from './image-background';
 import SearchInput from './search-input';
+import Touchable from './touchable';
 
 type Props = {|
-  onLogoLongPress: () => void,
-  isSearchFocused: boolean,
-  onSearchToggle: () => void,
   height: number,
-  searchValue: string,
-  isFetching: boolean,
+  searchValue?: string,
+  isSearchFocused?: boolean,
+  isSearchFetching?: boolean,
+  onSearchToggle: () => void,
   onSearchInputChange: () => void,
-  onSearchInputClear: () => void
+  onLogoLongPress: () => void
 |};
+
+const CENTER_PADDING = theme.spacing.small;
+const SIDE_WIDTH = BACK_ICON_HEIGHT + ICON_SPACING;
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: theme.spacing.small,
-    backgroundColor: theme.colors.white
+    backgroundColor: theme.colors.white,
+    flexDirection: 'row',
+    alignItems: 'stretch'
   },
-  brandLogoWrapper: {
-    flex: 1,
+  side: {
+    width: SIDE_WIDTH,
     justifyContent: 'center'
   },
-  searchContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around'
+  right: {
+    alignItems: 'flex-end',
+    paddingRight: theme.spacing.medium
   },
-  backIconWrapper: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingRight: theme.spacing.small
-  },
-  searchInput: {
-    flex: 1
+  center: {
+    flex: 1,
+    padding: CENTER_PADDING
   },
   logo: {
     width: '100%'
-  },
-  searchIconWrapper: {
-    flex: 1,
-    position: 'absolute',
-    justifyContent: 'center',
-    alignItems: 'center',
-    right: 0,
-    paddingRight: theme.spacing.base
-  },
-  searchIcon: {
-    width: 20,
-    height: 20,
-    paddingRight: theme.spacing.base
   }
 });
 
@@ -66,45 +53,41 @@ const Header = ({
   onSearchToggle,
   height,
   searchValue,
-  isFetching,
-  onSearchInputChange,
-  onSearchInputClear
+  isSearchFetching,
+  onSearchInputChange
 }: Props) => {
-  const HEADER_HEIGHT = height + theme.spacing.small * 2;
   const brandTheme = React.useContext(BrandThemeContext);
+  const logoHeight = height - CENTER_PADDING * 2;
+
   return (
-    <View style={[styles.container, {height: HEADER_HEIGHT}]}>
-      {isSearchFocused ? (
-        <View style={styles.searchContainer}>
-          <View style={styles.backIconWrapper}>
-            <HeaderBackButton
-              color={theme.colors.gray.dark}
-              isFloating={false}
-              noLeftPadding
-              testID="search-back-icon"
-              onPress={onSearchToggle}
-              type="back"
-            />
-          </View>
-          <View style={styles.searchInput}>
-            <SearchInput
-              value={searchValue}
-              isFetching={isFetching}
-              onChange={onSearchInputChange}
-              onClear={onSearchInputClear}
-            />
-          </View>
-        </View>
-      ) : (
-        <View style={styles.brandLogoWrapper}>
+    <View style={[styles.container, {height}]}>
+      <View style={styles.side}>
+        {isSearchFocused ? (
+          <HeaderBackButton
+            color={theme.colors.gray.dark}
+            testID="search-back-icon"
+            onPress={onSearchToggle}
+            type="back"
+          />
+        ) : null}
+      </View>
+      <View style={styles.center}>
+        {isSearchFocused ? (
+          <SearchInput
+            value={searchValue}
+            isFetching={isSearchFetching}
+            onChange={onSearchInputChange}
+            testID="search-input"
+          />
+        ) : (
           <Touchable
-            testID="home-logo"
+            testID="header-logo"
             onLongPress={onLogoLongPress}
             analyticsID="sign-out"
             isWithoutFeedback
           >
             <ImageBackground
-              style={[styles.logo, {height}]}
+              style={[styles.logo, {height: logoHeight}]}
               testID="brand-logo"
               source={{
                 uri: brandTheme.images['logo-mobile']
@@ -112,13 +95,20 @@ const Header = ({
               resizeMode="contain"
             />
           </Touchable>
-          <View style={styles.searchIconWrapper}>
-            <Touchable testID="search-icon" onLongPress={onSearchToggle} analyticsID="search-icon">
-              <SearchIcon style={styles.searchIcon} color={theme.colors.gray.dark} />
-            </Touchable>
-          </View>
+        )}
+      </View>
+      {!isSearchFocused ? (
+        <View style={[styles.side, styles.right]}>
+          <Touchable
+            testID="search-icon"
+            hitSlop={getHitSlop()}
+            onPress={onSearchToggle}
+            analyticsID="search-icon"
+          >
+            <SearchIcon height={20} width={20} color={theme.colors.gray.dark} />
+          </Touchable>
         </View>
-      )}
+      ) : null}
     </View>
   );
 };

@@ -14,6 +14,7 @@ import Space from './space';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     height: 40,
     width: '100%',
     backgroundColor: theme.colors.gray.light,
@@ -36,41 +37,60 @@ type Props = {|
   value?: string,
   isFetching?: boolean,
   onChange: string => void,
-  onClear: () => void,
   testID?: string
 |};
 
-const SearchInput = ({value, isFetching, onChange, onClear, testID = 'search-input'}: Props) => (
-  <View style={styles.container}>
-    <View>
-      <SearchIcon color={PLACEHOLDER_COLOR} height={16} width={16} />
-    </View>
-    <Space />
-    <TextInput
-      value={value}
-      style={styles.input}
-      onChangeText={onChange}
-      placeholder={translations.search}
-      placeholderTextColor={PLACEHOLDER_COLOR}
-      testID={`${testID}-field`}
-    />
-    {value ? (
-      <React.Fragment>
+class SearchInput extends React.PureComponent<Props> {
+  props: Props;
+
+  textInput: TextInput | null;
+
+  handleClear = () => {
+    this.props.onChange('');
+    this.textInput && this.textInput.clear();
+  };
+
+  handleRef = (element: TextInput | null) => {
+    this.textInput = element;
+  };
+
+  render() {
+    const {value, isFetching, onChange, testID = 'search-input'} = this.props;
+
+    return (
+      <View style={styles.container}>
+        <View>
+          <SearchIcon color={PLACEHOLDER_COLOR} height={16} width={16} />
+        </View>
         <Space />
-        {isFetching ? <ActivityIndicator color={theme.colors.black} /> : null}
-        {!isFetching ? (
-          <Touchable
-            testID={`${testID}-clear`}
-            onPress={onClear}
-            hitSlop={getHitSlop()}
-            analyticsID="button-clear"
-          >
-            <ClearIcon height={14} width={14} color={theme.colors.gray.dark} />
-          </Touchable>
+        <TextInput
+          value={value}
+          style={styles.input}
+          onChangeText={onChange}
+          placeholder={translations.search}
+          placeholderTextColor={PLACEHOLDER_COLOR}
+          ref={this.handleRef}
+          testID={`${testID}-field`}
+        />
+        {value ? (
+          <React.Fragment>
+            <Space />
+            {isFetching ? <ActivityIndicator color={theme.colors.black} /> : null}
+            {!isFetching ? (
+              <Touchable
+                testID={`${testID}-clear`}
+                onPress={this.handleClear}
+                hitSlop={getHitSlop()}
+                analyticsID="button-clear"
+              >
+                <ClearIcon height={14} width={14} color={theme.colors.gray.dark} />
+              </Touchable>
+            ) : null}
+          </React.Fragment>
         ) : null}
-      </React.Fragment>
-    ) : null}
-  </View>
-);
+      </View>
+    );
+  }
+}
 
 export default SearchInput;

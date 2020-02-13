@@ -72,11 +72,11 @@ exports[`Storyshots CatalogSection Default 1`] = `
     }
     data={
       Array [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
       ]
     }
     disableVirtualization={false}
@@ -100,6 +100,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
     scrollEnabled={false}
     scrollEventThrottle={50}
     showsHorizontalScrollIndicator={false}
+    showsVerticalScrollIndicator={false}
     stickyHeaderIndices={Array []}
     testID="catalog-section-fake-catalog-section-items"
     updateCellsBatchingPeriod={50}
@@ -120,7 +121,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -131,7 +131,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -151,9 +150,12 @@ exports[`Storyshots CatalogSection Default 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -175,7 +177,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-fake-catalog-section-item-0-placeholder"
+                testID="catalog-section-fake-catalog-section-items-0-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -216,7 +218,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-0-placeholder-image"
+                    testID="catalog-section-fake-catalog-section-items-0-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -254,7 +256,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-0-placeholder-image-gradient"
+                    testID="catalog-section-fake-catalog-section-items-0-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -263,7 +265,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-fake-catalog-section-item-0-placeholder-content-footer-placeholder"
+                      testID="catalog-section-fake-catalog-section-items-0-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -502,7 +504,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -513,7 +514,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -533,9 +533,12 @@ exports[`Storyshots CatalogSection Default 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -557,7 +560,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-fake-catalog-section-item-1-placeholder"
+                testID="catalog-section-fake-catalog-section-items-1-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -598,7 +601,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-1-placeholder-image"
+                    testID="catalog-section-fake-catalog-section-items-1-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -636,7 +639,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-1-placeholder-image-gradient"
+                    testID="catalog-section-fake-catalog-section-items-1-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -645,7 +648,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-fake-catalog-section-item-1-placeholder-content-footer-placeholder"
+                      testID="catalog-section-fake-catalog-section-items-1-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -884,7 +887,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -895,7 +897,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -915,9 +916,12 @@ exports[`Storyshots CatalogSection Default 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -939,7 +943,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-fake-catalog-section-item-2-placeholder"
+                testID="catalog-section-fake-catalog-section-items-2-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -980,7 +984,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-2-placeholder-image"
+                    testID="catalog-section-fake-catalog-section-items-2-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1018,7 +1022,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-2-placeholder-image-gradient"
+                    testID="catalog-section-fake-catalog-section-items-2-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -1027,7 +1031,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-fake-catalog-section-item-2-placeholder-content-footer-placeholder"
+                      testID="catalog-section-fake-catalog-section-items-2-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -1266,7 +1270,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -1277,7 +1280,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -1297,9 +1299,12 @@ exports[`Storyshots CatalogSection Default 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -1321,7 +1326,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-fake-catalog-section-item-3-placeholder"
+                testID="catalog-section-fake-catalog-section-items-3-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -1362,7 +1367,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-3-placeholder-image"
+                    testID="catalog-section-fake-catalog-section-items-3-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1400,7 +1405,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-3-placeholder-image-gradient"
+                    testID="catalog-section-fake-catalog-section-items-3-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -1409,7 +1414,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-fake-catalog-section-item-3-placeholder-content-footer-placeholder"
+                      testID="catalog-section-fake-catalog-section-items-3-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -1648,7 +1653,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -1659,7 +1663,6 @@ exports[`Storyshots CatalogSection Default 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -1679,9 +1682,12 @@ exports[`Storyshots CatalogSection Default 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -1703,7 +1709,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-fake-catalog-section-item-4-placeholder"
+                testID="catalog-section-fake-catalog-section-items-4-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -1744,7 +1750,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-4-placeholder-image"
+                    testID="catalog-section-fake-catalog-section-items-4-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1782,7 +1788,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-fake-catalog-section-item-4-placeholder-image-gradient"
+                    testID="catalog-section-fake-catalog-section-items-4-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -1791,7 +1797,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-fake-catalog-section-item-4-placeholder-content-footer-placeholder"
+                      testID="catalog-section-fake-catalog-section-items-4-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -2094,36 +2100,36 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
     }
     data={
       Array [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
       ]
     }
     disableVirtualization={false}
@@ -2147,6 +2153,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
     scrollEnabled={true}
     scrollEventThrottle={50}
     showsHorizontalScrollIndicator={false}
+    showsVerticalScrollIndicator={false}
     stickyHeaderIndices={Array []}
     testID="catalog-section-default-items"
     updateCellsBatchingPeriod={50}
@@ -2167,7 +2174,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -2178,7 +2184,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -2198,9 +2203,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -2222,7 +2230,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-0-placeholder"
+                testID="catalog-section-default-items-0-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -2263,7 +2271,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-0-placeholder-image"
+                    testID="catalog-section-default-items-0-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -2301,7 +2309,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-0-placeholder-image-gradient"
+                    testID="catalog-section-default-items-0-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -2310,7 +2318,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-0-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-0-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -2549,7 +2557,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -2560,7 +2567,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -2580,9 +2586,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -2604,7 +2613,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-1-placeholder"
+                testID="catalog-section-default-items-1-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -2645,7 +2654,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-1-placeholder-image"
+                    testID="catalog-section-default-items-1-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -2683,7 +2692,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-1-placeholder-image-gradient"
+                    testID="catalog-section-default-items-1-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -2692,7 +2701,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-1-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-1-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -2931,7 +2940,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -2942,7 +2950,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -2962,9 +2969,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -2986,7 +2996,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-2-placeholder"
+                testID="catalog-section-default-items-2-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3027,7 +3037,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-2-placeholder-image"
+                    testID="catalog-section-default-items-2-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3065,7 +3075,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-2-placeholder-image-gradient"
+                    testID="catalog-section-default-items-2-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3074,7 +3084,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-2-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-2-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -3313,7 +3323,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -3324,7 +3333,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -3344,9 +3352,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -3368,7 +3379,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-3-placeholder"
+                testID="catalog-section-default-items-3-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3409,7 +3420,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-3-placeholder-image"
+                    testID="catalog-section-default-items-3-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3447,7 +3458,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-3-placeholder-image-gradient"
+                    testID="catalog-section-default-items-3-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3456,7 +3467,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-3-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-3-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -3695,7 +3706,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -3706,7 +3716,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -3726,9 +3735,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -3750,7 +3762,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-4-placeholder"
+                testID="catalog-section-default-items-4-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3791,7 +3803,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-4-placeholder-image"
+                    testID="catalog-section-default-items-4-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3829,7 +3841,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-4-placeholder-image-gradient"
+                    testID="catalog-section-default-items-4-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3838,7 +3850,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-4-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-4-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -4077,7 +4089,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -4088,7 +4099,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -4108,9 +4118,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -4132,7 +4145,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-5-placeholder"
+                testID="catalog-section-default-items-5-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -4173,7 +4186,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-5-placeholder-image"
+                    testID="catalog-section-default-items-5-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -4211,7 +4224,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-5-placeholder-image-gradient"
+                    testID="catalog-section-default-items-5-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -4220,7 +4233,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-5-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-5-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -4459,7 +4472,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -4470,7 +4482,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -4490,9 +4501,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -4514,7 +4528,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-6-placeholder"
+                testID="catalog-section-default-items-6-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -4555,7 +4569,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-6-placeholder-image"
+                    testID="catalog-section-default-items-6-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -4593,7 +4607,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-6-placeholder-image-gradient"
+                    testID="catalog-section-default-items-6-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -4602,7 +4616,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-6-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-6-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -4841,7 +4855,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -4852,7 +4865,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -4872,9 +4884,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -4896,7 +4911,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-7-placeholder"
+                testID="catalog-section-default-items-7-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -4937,7 +4952,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-7-placeholder-image"
+                    testID="catalog-section-default-items-7-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -4975,7 +4990,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-7-placeholder-image-gradient"
+                    testID="catalog-section-default-items-7-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -4984,7 +4999,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-7-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-7-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -5223,7 +5238,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -5234,7 +5248,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -5254,9 +5267,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -5278,7 +5294,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-8-placeholder"
+                testID="catalog-section-default-items-8-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -5319,7 +5335,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-8-placeholder-image"
+                    testID="catalog-section-default-items-8-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -5357,7 +5373,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-8-placeholder-image-gradient"
+                    testID="catalog-section-default-items-8-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -5366,7 +5382,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-8-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-8-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -5605,7 +5621,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -5616,7 +5631,6 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -5636,9 +5650,12 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -5660,7 +5677,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                     "width": 168,
                   }
                 }
-                testID="catalog-section-default-item-9-placeholder"
+                testID="catalog-section-default-items-9-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -5701,7 +5718,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-9-placeholder-image"
+                    testID="catalog-section-default-items-9-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -5739,7 +5756,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                         undefined,
                       ]
                     }
-                    testID="catalog-section-default-item-9-placeholder-image-gradient"
+                    testID="catalog-section-default-items-9-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -5748,7 +5765,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-default-item-9-placeholder-content-footer-placeholder"
+                      testID="catalog-section-default-items-9-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -6140,34 +6157,34 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
           "universalRef": "bar",
           "version": "1",
         },
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+        Object {},
       ]
     }
     disableVirtualization={false}
@@ -6191,6 +6208,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
     scrollEnabled={true}
     scrollEventThrottle={50}
     showsHorizontalScrollIndicator={false}
+    showsVerticalScrollIndicator={false}
     stickyHeaderIndices={Array []}
     testID="catalog-section-withsomecards-items"
     updateCellsBatchingPeriod={50}
@@ -6211,7 +6229,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -6222,7 +6239,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -6242,9 +6258,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -6266,7 +6285,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-foo"
+                testID="catalog-section-withsomecards-items-foo"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -6312,7 +6331,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-foo-image"
+                    testID="catalog-section-withsomecards-items-foo-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -6350,7 +6369,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-foo-image-gradient"
+                    testID="catalog-section-withsomecards-items-foo-image-gradient"
                   >
                     <Text
                       style={
@@ -6370,7 +6389,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-section-withsomecards-item-foo-content-author"
+                      testID="author-catalog-section-withsomecards-items-foo-content-author"
                     />
                     <View
                       style={
@@ -6379,7 +6398,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-foo-content-footer"
+                      testID="catalog-section-withsomecards-items-foo-content-footer"
                     >
                       <View
                         style={
@@ -6412,7 +6431,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-section-withsomecards-item-foo-content-footer"
+                        testID="title-catalog-section-withsomecards-items-foo-content-footer"
                       >
                         Discipline card
                       </Text>
@@ -6449,7 +6468,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-section-withsomecards-item-foo-content-footer"
+                          testID="subtitle-catalog-section-withsomecards-items-foo-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -6485,7 +6504,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="certified-catalog-section-withsomecards-item-foo-content-footer"
+                          testID="certified-catalog-section-withsomecards-items-foo-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={24}
                           vbWidth={24}
@@ -6638,7 +6657,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-section-withsomecards-item-foo-content-footer"
+                        testID="progress-bar-catalog-section-withsomecards-items-foo-content-footer"
                       >
                         <View
                           style={
@@ -6683,7 +6702,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -6694,7 +6712,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -6714,9 +6731,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -6738,7 +6758,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-bar"
+                testID="catalog-section-withsomecards-items-bar"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -6784,7 +6804,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-bar-image"
+                    testID="catalog-section-withsomecards-items-bar-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -6822,7 +6842,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-bar-image-gradient"
+                    testID="catalog-section-withsomecards-items-bar-image-gradient"
                   >
                     <View
                       style={
@@ -6860,7 +6880,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="catalog-section-withsomecards-item-bar-badge"
+                          testID="catalog-section-withsomecards-items-bar-badge"
                         >
                           New
                         </Text>
@@ -6884,7 +6904,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-section-withsomecards-item-bar-content-author"
+                      testID="author-catalog-section-withsomecards-items-bar-content-author"
                     >
                       A GOOD GUY WITH BLUE EYES
                        CREATION
@@ -6896,7 +6916,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-bar-content-footer"
+                      testID="catalog-section-withsomecards-items-bar-content-footer"
                     >
                       <View
                         style={
@@ -6929,7 +6949,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="infinite-catalog-section-withsomecards-item-bar-content-footer"
+                          testID="infinite-catalog-section-withsomecards-items-bar-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={26}
                           vbWidth={26}
@@ -7057,7 +7077,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-section-withsomecards-item-bar-content-footer"
+                        testID="title-catalog-section-withsomecards-items-bar-content-footer"
                       >
                         Chapter card
                       </Text>
@@ -7094,7 +7114,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-section-withsomecards-item-bar-content-footer"
+                          testID="subtitle-catalog-section-withsomecards-items-bar-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -7117,7 +7137,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-section-withsomecards-item-bar-content-footer"
+                        testID="progress-bar-catalog-section-withsomecards-items-bar-content-footer"
                       >
                         <View
                           style={
@@ -7162,7 +7182,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -7173,7 +7192,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -7193,9 +7211,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -7217,7 +7238,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-2-placeholder"
+                testID="catalog-section-withsomecards-items-2-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -7258,7 +7279,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-2-placeholder-image"
+                    testID="catalog-section-withsomecards-items-2-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -7296,7 +7317,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-2-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-2-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -7305,7 +7326,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-2-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-2-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -7544,7 +7565,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -7555,7 +7575,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -7575,9 +7594,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -7599,7 +7621,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-3-placeholder"
+                testID="catalog-section-withsomecards-items-3-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -7640,7 +7662,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-3-placeholder-image"
+                    testID="catalog-section-withsomecards-items-3-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -7678,7 +7700,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-3-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-3-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -7687,7 +7709,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-3-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-3-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -7926,7 +7948,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -7937,7 +7958,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -7957,9 +7977,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -7981,7 +8004,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-4-placeholder"
+                testID="catalog-section-withsomecards-items-4-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -8022,7 +8045,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-4-placeholder-image"
+                    testID="catalog-section-withsomecards-items-4-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -8060,7 +8083,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-4-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-4-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -8069,7 +8092,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-4-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-4-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -8308,7 +8331,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -8319,7 +8341,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -8339,9 +8360,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -8363,7 +8387,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-5-placeholder"
+                testID="catalog-section-withsomecards-items-5-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -8404,7 +8428,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-5-placeholder-image"
+                    testID="catalog-section-withsomecards-items-5-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -8442,7 +8466,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-5-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-5-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -8451,7 +8475,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-5-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-5-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -8690,7 +8714,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -8701,7 +8724,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -8721,9 +8743,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -8745,7 +8770,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-6-placeholder"
+                testID="catalog-section-withsomecards-items-6-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -8786,7 +8811,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-6-placeholder-image"
+                    testID="catalog-section-withsomecards-items-6-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -8824,7 +8849,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-6-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-6-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -8833,7 +8858,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-6-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-6-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -9072,7 +9097,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -9083,7 +9107,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -9103,9 +9126,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -9127,7 +9153,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-7-placeholder"
+                testID="catalog-section-withsomecards-items-7-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -9168,7 +9194,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-7-placeholder-image"
+                    testID="catalog-section-withsomecards-items-7-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -9206,7 +9232,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-7-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-7-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -9215,7 +9241,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-7-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-7-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -9454,7 +9480,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -9465,7 +9490,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -9485,9 +9509,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -9509,7 +9536,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-8-placeholder"
+                testID="catalog-section-withsomecards-items-8-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -9550,7 +9577,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-8-placeholder-image"
+                    testID="catalog-section-withsomecards-items-8-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -9588,7 +9615,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-8-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-8-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -9597,7 +9624,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-8-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-8-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -9836,7 +9863,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "flex": 1,
               "marginHorizontal": 4,
               "marginVertical": 16,
             }
@@ -9847,7 +9873,6 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               Array [
                 Object {
                   "borderRadius": 5,
-                  "flex": 1,
                 },
                 Object {
                   "elevation": 4,
@@ -9867,9 +9892,12 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                 Array [
                   Object {
                     "borderRadius": 5,
-                    "flex": 1,
                   },
-                  undefined,
+                  Object {
+                    "flex": 0,
+                    "height": 205,
+                    "width": 168,
+                  },
                   Object {
                     "overflow": "hidden",
                   },
@@ -9891,7 +9919,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-section-withsomecards-item-9-placeholder"
+                testID="catalog-section-withsomecards-items-9-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -9932,7 +9960,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-9-placeholder-image"
+                    testID="catalog-section-withsomecards-items-9-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -9970,7 +9998,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-section-withsomecards-item-9-placeholder-image-gradient"
+                    testID="catalog-section-withsomecards-items-9-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -9979,7 +10007,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-section-withsomecards-item-9-placeholder-content-footer-placeholder"
+                      testID="catalog-section-withsomecards-items-9-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={

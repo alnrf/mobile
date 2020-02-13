@@ -797,6 +797,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -810,6 +812,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -1471,6 +1475,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -1484,6 +1490,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -1844,6 +1852,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -1857,6 +1867,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -2547,6 +2559,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -2560,6 +2574,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -3348,6 +3364,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -3361,6 +3379,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -4051,6 +4071,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -4064,6 +4086,8 @@ exports[`Storyshots Correction Bad answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -5314,6 +5338,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -5327,6 +5353,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -5988,6 +6016,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -6001,6 +6031,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -6691,6 +6723,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -6704,6 +6738,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -7492,6 +7528,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -7505,6 +7543,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -8195,6 +8235,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -8208,6 +8250,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -8568,6 +8612,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -8581,6 +8627,8 @@ exports[`Storyshots Correction Bad answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -9939,6 +9987,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -9952,6 +10002,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -11076,6 +11128,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -11089,6 +11143,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -12202,6 +12258,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -12215,6 +12273,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -13339,6 +13399,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -13352,6 +13414,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -14013,6 +14077,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -14026,6 +14092,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -14386,6 +14454,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -14399,6 +14469,8 @@ exports[`Storyshots Correction Extralife 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -15639,6 +15711,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -15652,6 +15726,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -16342,6 +16418,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -16355,6 +16433,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -17143,6 +17223,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -17156,6 +17238,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -17846,6 +17930,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -17859,6 +17945,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -18520,6 +18608,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -18533,6 +18623,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -18893,6 +18985,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -18906,6 +19000,8 @@ exports[`Storyshots Correction Extralife consumed 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -20156,6 +20252,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -20169,6 +20267,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -20830,6 +20930,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -20843,6 +20945,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -21533,6 +21637,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -21546,6 +21652,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -22334,6 +22442,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -22347,6 +22457,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -23037,6 +23149,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -23050,6 +23164,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -23410,6 +23526,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -23423,6 +23541,8 @@ exports[`Storyshots Correction Game over 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -24673,6 +24793,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -24686,6 +24808,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -25138,6 +25262,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -25151,6 +25277,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -25511,6 +25639,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -25524,6 +25654,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -26156,6 +26288,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -26169,6 +26303,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -26859,6 +26995,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -26872,6 +27010,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -27660,6 +27800,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -27673,6 +27815,8 @@ exports[`Storyshots Correction Right answer (resource viewed) 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -29161,6 +29305,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -29174,6 +29320,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -29626,6 +29774,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -29639,6 +29789,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -30329,6 +30481,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -30342,6 +30496,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -31130,6 +31286,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -31143,6 +31301,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -31833,6 +31993,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -31846,6 +32008,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -32206,6 +32370,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -32219,6 +32385,8 @@ exports[`Storyshots Correction Right answer 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -33649,6 +33817,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -33662,6 +33832,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -34323,6 +34495,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -34336,6 +34510,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]
@@ -34696,6 +34872,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 undefined,
                 Object {
                   "borderRadius": 5,
+                },
+                Object {
                   "flex": 1,
                 },
                 Object {
@@ -34709,6 +34887,8 @@ exports[`Storyshots Correction Without resource 1`] = `
                 Array [
                   Object {
                     "borderRadius": 5,
+                  },
+                  Object {
                     "flex": 1,
                   },
                 ]

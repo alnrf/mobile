@@ -9,34 +9,31 @@ import {handleFakePress} from '../utils/tests';
 import SearchInput from './search-input';
 
 storiesOf('SearchInput', module)
-  .add('Default', () => <SearchInput onClear={handleFakePress} onChange={handleFakePress} />)
-  .add('With text', () => (
-    <SearchInput value="Foo" onClear={handleFakePress} onChange={handleFakePress} />
-  ))
-  .add('Fetching', () => (
-    <SearchInput value="Foo" isFetching onClear={handleFakePress} onChange={handleFakePress} />
-  ));
+  .add('Default', () => <SearchInput onChange={handleFakePress} />)
+  .add('With text', () => <SearchInput value="Foo" onChange={handleFakePress} />)
+  .add('Fetching', () => <SearchInput value="Foo" isFetching onChange={handleFakePress} />);
 
 if (__TEST__) {
-  describe('Button', () => {
+  describe('SearchInput', () => {
     it('should handle onClear', () => {
-      const handleClear = jest.fn();
-      const component = renderer.create(
-        <SearchInput value="foo" onClear={handleClear} onChange={handleFakePress} />
-      );
+      const handleChange = jest.fn();
+      const component = renderer.create(<SearchInput value="foo" onChange={handleChange} />);
+
       const icon = component.root.find(el => el.props.testID === 'search-input-clear');
       icon.props.onPress();
-      expect(handleClear).toHaveBeenCalledTimes(1);
+
+      expect(handleChange).toHaveBeenCalledTimes(1);
+      expect(handleChange).toHaveBeenCalledWith('');
     });
 
     it('should handle onChange', () => {
       const handleChange = jest.fn();
       const value = 'foo';
-      const component = renderer.create(
-        <SearchInput onClear={handleFakePress} onChange={handleChange} />
-      );
+      const component = renderer.create(<SearchInput onChange={handleChange} />);
+
       const input = component.root.find(el => el.props.testID === 'search-input-field');
       input.props.onChangeText(value);
+
       expect(handleChange).toHaveBeenCalledTimes(1);
       expect(handleChange).toHaveBeenCalledWith(value);
     });

@@ -496,7 +496,6 @@ exports[`Storyshots QuestionTemplate Default 1`] = `
                   },
                   false,
                   false,
-                  false,
                 ]
               }
             >
@@ -1438,7 +1437,6 @@ exports[`Storyshots QuestionTemplate Default 1`] = `
                   Object {
                     "paddingLeft": 24,
                   },
-                  false,
                   false,
                   false,
                 ]
@@ -2393,7 +2391,6 @@ exports[`Storyshots QuestionTemplate Disabled 1`] = `
                   },
                   false,
                   false,
-                  false,
                 ]
               }
             >
@@ -3335,7 +3332,6 @@ exports[`Storyshots QuestionTemplate Disabled 1`] = `
                   Object {
                     "paddingLeft": 24,
                   },
-                  false,
                   false,
                   false,
                 ]

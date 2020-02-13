@@ -41,14 +41,4 @@ storiesOf('HeaderBackButton', module)
       isFloating={false}
       testID="header-close-button"
     />
-  ))
-  .add('Not left padding', () => (
-    <HeaderBackButton
-      type="back"
-      onPress={handleFakePress}
-      color="#000"
-      isFloating={false}
-      noLeftPadding
-      testID="header-back-button"
-    />
   ));

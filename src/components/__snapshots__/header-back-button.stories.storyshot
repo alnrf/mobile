@@ -13,7 +13,6 @@ exports[`Storyshots HeaderBackButton Back 1`] = `
         "top": 0,
       },
       false,
-      false,
     ]
   }
 >
@@ -225,7 +224,6 @@ exports[`Storyshots HeaderBackButton Close 1`] = `
         "top": 0,
       },
       false,
-      false,
     ]
   }
 >
@@ -427,7 +425,6 @@ exports[`Storyshots HeaderBackButton Custom color 1`] = `
         "top": 0,
       },
       false,
-      false,
     ]
   }
 >
@@ -628,7 +625,6 @@ exports[`Storyshots HeaderBackButton Home 1`] = `
         "position": "absolute",
         "top": 0,
       },
-      false,
       false,
     ]
   }
@@ -833,7 +829,6 @@ exports[`Storyshots HeaderBackButton No safe area 1`] = `
       Object {
         "top": 0,
       },
-      false,
     ]
   }
 >
@@ -1029,7 +1024,6 @@ exports[`Storyshots HeaderBackButton Not floating 1`] = `
       Object {
         "paddingLeft": 24,
       },
-      false,
       false,
       false,
     ]
@@ -1229,9 +1223,6 @@ exports[`Storyshots HeaderBackButton Not left padding 1`] = `
       },
       false,
       false,
-      Object {
-        "paddingLeft": 0,
-      },
     ]
   }
 >

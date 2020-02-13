@@ -336,7 +336,6 @@ Array [
                 },
                 false,
                 false,
-                false,
               ]
             }
           >
@@ -1126,7 +1125,6 @@ Array [
                 },
                 false,
                 false,
-                false,
               ]
             }
           >
@@ -1912,7 +1910,6 @@ Array [
                 Object {
                   "paddingLeft": 24,
                 },
-                false,
                 false,
                 false,
               ]
@@ -2702,7 +2699,6 @@ Array [
                 },
                 false,
                 false,
-                false,
               ]
             }
           >
@@ -3488,7 +3484,6 @@ Array [
                 Object {
                   "paddingLeft": 24,
                 },
-                false,
                 false,
                 false,
               ]
@@ -4278,7 +4273,6 @@ Array [
                 },
                 false,
                 false,
-                false,
               ]
             }
           >
@@ -5064,7 +5058,6 @@ Array [
                 Object {
                   "paddingLeft": 24,
                 },
-                false,
                 false,
                 false,
               ]
