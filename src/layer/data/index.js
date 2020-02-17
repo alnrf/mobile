@@ -17,7 +17,13 @@ import {find as findContent} from './content';
 import {findById as findChapterById, getNextChapter} from './chapters';
 import {getExitNode} from './exit-nodes';
 import {fetchBundle, storeBundle} from './bundle';
-import {fetchCard, fetchCards, refreshCard, getCardFromLocalStorage} from './cards';
+import {
+  fetchCard,
+  fetchSectionCards,
+  fetchSearchCards,
+  refreshCard,
+  getCardFromLocalStorage
+} from './cards';
 import {fetchBrand} from './brand';
 import {fetchUser} from './users';
 import {findById as findSlideById, findByChapter as findSlideByChapter} from './slides';
@@ -36,7 +42,8 @@ export type DataLayer = {
   fetchBundle: typeof fetchBundle,
   storeBundle: typeof storeBundle,
   fetchCard: typeof fetchCard,
-  fetchCards: typeof fetchCards,
+  fetchSectionCards: typeof fetchSectionCards,
+  fetchSearchCards: typeof fetchSearchCards,
   fetchBrand: typeof fetchBrand,
   setLanguage: typeof setLanguage,
   getInterfaceLanguage: typeof getInterfaceLanguage,
@@ -79,7 +86,8 @@ const createDataLayer = (): DataLayer => ({
   getNextLevel,
   findLevelById,
   fetchCard,
-  fetchCards,
+  fetchSectionCards,
+  fetchSearchCards,
   fetchBrand,
   setLanguage,
   getInterfaceLanguage,
