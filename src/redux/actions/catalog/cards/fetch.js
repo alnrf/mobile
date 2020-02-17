@@ -105,7 +105,13 @@ export const fetchCards = (
     if (brand === null) throw new TypeError('Brand not defined');
     if (!section) throw new Error('Section not found');
 
-    const {cards, total} = await services.Cards.find(token, brand.host, section, offset, limit);
+    const {cards, total} = await services.Cards.findBySection(
+      token,
+      brand.host,
+      section,
+      offset,
+      limit
+    );
 
     return dispatch(fetchSuccess(sectionKey, offset, limit, total, cards, language));
   } catch (e) {

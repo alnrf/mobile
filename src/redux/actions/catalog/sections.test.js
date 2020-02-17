@@ -39,7 +39,7 @@ describe('Sections', () => {
           })
         },
         Cards: {
-          find: () => ({
+          findBySection: () => ({
             cards: [],
             total: 42
           })
