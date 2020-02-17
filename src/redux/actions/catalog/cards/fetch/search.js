@@ -1,77 +1,83 @@
 // @flow strict
 
-import type {DisciplineCard, ChapterCard} from '../../../../layer/data/_types';
-import translations from '../../../../translations';
-import type {SupportedLanguage} from '../../../../translations/_types';
-import type {StoreAction, StoreErrorAction} from '../../../_types';
-import {getToken, getBrand, getSection} from '../../../utils/state-extract';
-import type {Action as ErrorAction} from '../../ui/errors';
+import type {DisciplineCard, ChapterCard} from '../../../../../layer/data/_types';
+import translations from '../../../../../translations';
+import type {SupportedLanguage} from '../../../../../translations/_types';
+import type {StoreAction, StoreErrorAction} from '../../../../_types';
+import {getToken, getBrand} from '../../../../utils/state-extract';
+import type {Action as ErrorAction} from '../../../ui/errors';
 
-export const FETCH_REQUEST = '@@cards/FETCH_REQUEST';
-export const FETCH_SUCCESS = '@@cards/FETCH_SUCCESS';
-export const FETCH_ERROR = '@@cards/FETCH_ERROR';
+export const FETCH_REQUEST = '@@cards/FETCH_SEARCH_REQUEST';
+export const FETCH_SUCCESS = '@@cards/FETCH_SEARCH_SUCCESS';
+export const FETCH_ERROR = '@@cards/FETCH_SEARCH_ERROR';
 
 export const DEFAULT_LIMIT = 5;
 
 export type FetchRequestAction = {|
-  type: '@@cards/FETCH_REQUEST',
+  type: '@@cards/FETCH_SEARCH_REQUEST',
   payload: {
-    sectionKey: string,
+    search: string,
     offset: number,
     limit: number,
-    language: SupportedLanguage
+    language: SupportedLanguage,
+    forceRefresh: boolean
   }
 |};
 
 export type FetchSuccessAction = {|
-  type: '@@cards/FETCH_SUCCESS',
+  type: '@@cards/FETCH_SEARCH_SUCCESS',
   payload: {
-    sectionKey: string,
+    search: string,
     offset: number,
     limit: number,
     total: number,
     items: Array<DisciplineCard | ChapterCard>,
-    language: SupportedLanguage
+    language: SupportedLanguage,
+    forceRefresh: boolean
   }
 |};
 
 export type FetchErrorAction = StoreErrorAction<{|
-  type: '@@cards/FETCH_ERROR'
+  type: '@@cards/FETCH_SEARCH_ERROR'
 |}>;
 
 export type Action = FetchRequestAction | FetchSuccessAction | FetchErrorAction;
 
 export const fetchRequest = (
-  sectionKey: string,
+  search: string,
   offset: number,
   limit: number,
-  language: SupportedLanguage
+  language: SupportedLanguage,
+  forceRefresh?: boolean = false
 ): FetchRequestAction => ({
   type: FETCH_REQUEST,
   payload: {
-    sectionKey,
+    search,
     offset,
     limit,
-    language
+    language,
+    forceRefresh
   }
 });
 
 export const fetchSuccess = (
-  sectionKey: string,
+  search: string,
   offset: number,
   limit: number,
   total: number,
   items: Array<DisciplineCard | ChapterCard>,
-  language: SupportedLanguage
+  language: SupportedLanguage,
+  forceRefresh?: boolean = false
 ): FetchSuccessAction => ({
   type: FETCH_SUCCESS,
   payload: {
-    sectionKey,
+    search,
     offset,
     limit,
     total,
     items,
-    language
+    language,
+    forceRefresh
   }
 });
 
@@ -82,38 +88,38 @@ export const fetchError = (error: Error): FetchErrorAction => ({
 });
 
 export const fetchCards = (
-  sectionKey: string,
+  search: string,
   offset: number,
-  limit: number
+  limit: number,
+  forceRefresh?: boolean = false
 ): StoreAction<Action | ErrorAction<StoreAction<Action>>> => async (
   dispatch,
   getState,
   options
 ) => {
   const language = translations.getLanguage();
-  await dispatch(fetchRequest(sectionKey, offset, limit, language));
+  const baleik = fetchRequest(search, offset, limit, language, forceRefresh);
+  await dispatch(baleik);
 
   const state = getState();
   const token = getToken(state);
   const brand = getBrand(state);
-  const section = getSection(state, sectionKey);
 
   const {services} = options;
 
   try {
     if (token === null) throw new TypeError('Token not defined');
     if (brand === null) throw new TypeError('Brand not defined');
-    if (!section) throw new Error('Section not found');
 
-    const {cards, total} = await services.Cards.findBySection(
+    const {cards, total} = await services.Cards.findBySearch(
       token,
       brand.host,
-      section,
+      search,
       offset,
       limit
     );
 
-    return dispatch(fetchSuccess(sectionKey, offset, limit, total, cards, language));
+    return dispatch(fetchSuccess(search, offset, limit, total, cards, language, forceRefresh));
   } catch (e) {
     return dispatch(fetchError(e));
   }

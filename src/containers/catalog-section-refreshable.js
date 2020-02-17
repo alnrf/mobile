@@ -4,7 +4,7 @@ import * as React from 'react';
 import {connect} from 'react-redux';
 import {createArraySelector} from 'reselect-map';
 
-import {fetchCards, DEFAULT_LIMIT} from '../redux/actions/catalog/cards/fetch';
+import {fetchCards, DEFAULT_LIMIT} from '../redux/actions/catalog/cards/fetch/sections';
 import type {StoreState} from '../redux/store';
 import {getCards} from '../redux/utils/state-extract';
 import CatalogSection from '../components/catalog-section';

@@ -1,12 +1,14 @@
 // @flow strict
 
-import type {Action as FetchCardAction} from '../actions/catalog/cards/fetch';
+import type {Action as FetchSectionsCardsAction} from '../actions/catalog/cards/fetch/sections';
+import type {Action as FetchSearchCardsAction} from '../actions/catalog/cards/fetch/search';
 import type {Action as SelectCardAction} from '../actions/catalog/cards/select';
 import type {Action as RefreshCardAction} from '../actions/catalog/cards/refresh';
-import type {Action as SectionAction} from '../actions/catalog/sections';
+import type {Action as SectionsAction} from '../actions/catalog/sections';
 import type {Action as HeroAction} from '../actions/catalog/hero';
 import {FETCH_SUCCESS as FETCH_SECTIONS_SUCCESS} from '../actions/catalog/sections';
-import {FETCH_SUCCESS as FETCH_CARDS_SUCCESS} from '../actions/catalog/cards/fetch';
+import {FETCH_SUCCESS as FETCH_SECTIONS_CARDS_SUCCESS} from '../actions/catalog/cards/fetch/sections';
+import {FETCH_SUCCESS as FETCH_SEARCH_CARDS_SUCCESS} from '../actions/catalog/cards/fetch/search';
 import {REFRESH as REFRESH_CARD} from '../actions/catalog/cards/refresh';
 import {FETCH_SUCCESS as FETCH_HERO_SUCCESS} from '../actions/catalog/hero';
 import type {DisciplineCard, ChapterCard} from '../../layer/data/_types';
@@ -16,6 +18,7 @@ import type {Section} from '../../types';
 export type State = {|
   heroRef?: string | null,
   sectionsRef?: Array<string | void>,
+  searchRef?: Array<string | void>,
   entities: {
     cards: {
       [key: string]: {
@@ -112,7 +115,13 @@ export const reduceSectionsRef = (
 
 const reducer = (
   state: State = initialState,
-  action: FetchCardAction | RefreshCardAction | SelectCardAction | SectionAction | HeroAction
+  action:
+    | FetchSectionsCardsAction
+    | FetchSearchCardsAction
+    | RefreshCardAction
+    | SelectCardAction
+    | SectionsAction
+    | HeroAction
 ): State => {
   switch (action.type) {
     case FETCH_SECTIONS_SUCCESS: {
@@ -137,7 +146,7 @@ const reducer = (
       };
     }
 
-    case FETCH_CARDS_SUCCESS: {
+    case FETCH_SECTIONS_CARDS_SUCCESS: {
       const {sectionKey, offset, total, items, language} = action.payload;
       const section = state.entities.sections[sectionKey];
       const cardsRef = reduceCardsRef(items, offset, total, section[language].cardsRef);
@@ -161,6 +170,28 @@ const reducer = (
             ...reduceCards(items, language)
           },
           sections
+        }
+      };
+    }
+
+    case FETCH_SEARCH_CARDS_SUCCESS: {
+      const {offset, total, items, language, forceRefresh} = action.payload;
+      const searchRef = reduceCardsRef(
+        items,
+        offset,
+        total,
+        forceRefresh ? undefined : state.searchRef
+      );
+
+      return {
+        ...state,
+        searchRef,
+        entities: {
+          ...state.entities,
+          cards: {
+            ...state.entities.cards,
+            ...reduceCards(items, language)
+          }
         }
       };
     }
