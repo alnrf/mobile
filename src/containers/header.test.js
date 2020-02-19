@@ -3,21 +3,18 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
+import translations from '../translations';
 import {createStoreState} from '../__fixtures__/store';
 import {createProgression} from '../__fixtures__/progression';
 import {ENGINE, CONTENT_TYPE} from '../const';
-import {
-  Component as Header,
-  mapStateToProps,
-  SEARCH_DEBOUNCE_DURATION,
-  SEARCH_ITEMS
-} from './header';
 
 jest.useFakeTimers();
 
 describe('Header', () => {
   describe('mapStateToProps', () => {
     it('should return the accurate props', () => {
+      const {mapStateToProps} = require('./header');
+
       const levelRef = 'dummyRef';
       const progression = createProgression({
         engine: ENGINE.MICROLEARNING,
@@ -45,6 +42,8 @@ describe('Header', () => {
   });
 
   it('should handle onSearchToggle', () => {
+    const {Component: Header} = require('./header');
+
     const fakeCallback = jest.fn();
     const toggleSearch = jest.fn();
     const value = true;
@@ -69,6 +68,8 @@ describe('Header', () => {
   });
 
   it('should handle onSearchInputChange', () => {
+    const {Component: Header, SEARCH_DEBOUNCE_DURATION, SEARCH_ITEMS} = require('./header');
+
     const fakeCallback = jest.fn();
     const editSearch = jest.fn();
     const fetchCards = jest.fn();
@@ -109,5 +110,52 @@ describe('Header', () => {
     expect(fetchCards).toHaveBeenCalledWith('foo', 0, SEARCH_ITEMS, true);
     expect(fetchCards).toHaveBeenCalledWith('fooba', 0, SEARCH_ITEMS, true);
     expect(fetchCards).toHaveBeenCalledWith('foobar', 0, SEARCH_ITEMS, true);
+  });
+
+  it('should handle onLogoLongPress', () => {
+    const {Alert} = require('react-native');
+    const alert = jest.spyOn(Alert, 'alert');
+
+    const {Component: Header} = require('./header');
+
+    const fakeCallback = jest.fn();
+    const signOut = jest.fn();
+
+    const component = renderer.create(
+      <Header
+        isSearchVisible={false}
+        isSearchFetching={false}
+        signOut={signOut}
+        toggleSearch={fakeCallback}
+        editSearch={fakeCallback}
+        fetchCards={fakeCallback}
+        height={42}
+      />
+    );
+
+    alert.mockImplementationOnce((title, message, buttons) => {
+      expect(title).toEqual(translations.logOut);
+      expect(message).toBeNil;
+      expect(buttons).toEqual([
+        {
+          text: translations.cancel
+        },
+        {
+          text: translations.ok,
+          onPress: expect.any(Function)
+        }
+      ]);
+
+      const {onPress} = buttons[1];
+
+      onPress();
+
+      expect(signOut).toHaveBeenCalledTimes(1);
+    });
+
+    const header = component.root.find(el => el.props.testID === 'header');
+    header.props.onLogoLongPress();
+
+    expect(alert).toHaveBeenCalledTimes(1);
   });
 });
