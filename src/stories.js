@@ -7,6 +7,7 @@ require('./components/authentication-step.stories.js');
 require('./components/authentication-steps.stories.js');
 require('./components/authentication.stories.js');
 require('./components/box.stories.js');
+require('./components/brand-logo.stories.js');
 require('./components/brand-theme-provider.stories.js');
 require('./components/button-sticky.stories.js');
 require('./components/button.stories.js');
