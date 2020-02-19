@@ -9,6 +9,7 @@ import {
   createCardLevel
 } from '../../../../../__fixtures__/cards';
 import {CARD_STATUS} from '../../../../../layer/data/_const';
+import {fetch as toggleFetch} from '../../../ui/search';
 import {fetchRequest, fetchSuccess, fetchError, fetchCards} from './search';
 
 const brand = createBrand();
@@ -51,6 +52,14 @@ describe('Cards', () => {
         return Promise.resolve(action);
       });
       dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(true));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(false));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
         expect(action).toEqual(fetchSuccess('foo', 0, 3, 8, items, language));
         return Promise.resolve(action);
       });
@@ -88,6 +97,14 @@ describe('Cards', () => {
         return action;
       });
       dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(true));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(false));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
         expect(action).toEqual(fetchError(new TypeError('Token not defined')));
         return action;
       });
@@ -117,6 +134,14 @@ describe('Cards', () => {
 
       dispatch.mockImplementationOnce(action => {
         expect(action).toEqual(fetchRequest('baz', 3, 6, language));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(true));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(false));
         return action;
       });
       dispatch.mockImplementationOnce(action => {
@@ -151,6 +176,14 @@ describe('Cards', () => {
 
       dispatch.mockImplementationOnce(action => {
         expect(action).toEqual(fetchRequest('quux', 1, 3, language));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(true));
+        return action;
+      });
+      dispatch.mockImplementationOnce(action => {
+        expect(action).toEqual(toggleFetch(false));
         return action;
       });
       dispatch.mockImplementationOnce(async action => {

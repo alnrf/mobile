@@ -6,6 +6,8 @@ import type {SupportedLanguage} from '../../../../../translations/_types';
 import type {StoreAction, StoreErrorAction} from '../../../../_types';
 import {getToken, getBrand} from '../../../../utils/state-extract';
 import type {Action as ErrorAction} from '../../../ui/errors';
+import {fetch as toggleFetch} from '../../../ui/search';
+import type {Action as SearchAction} from '../../../ui/search';
 
 export const FETCH_REQUEST = '@@cards/FETCH_SEARCH_REQUEST';
 export const FETCH_SUCCESS = '@@cards/FETCH_SEARCH_SUCCESS';
@@ -92,13 +94,14 @@ export const fetchCards = (
   offset: number,
   limit: number,
   forceRefresh?: boolean = false
-): StoreAction<Action | ErrorAction<StoreAction<Action>>> => async (
+): StoreAction<Action | ErrorAction<StoreAction<Action>> | SearchAction> => async (
   dispatch,
   getState,
   options
 ) => {
   const language = translations.getLanguage();
   await dispatch(fetchRequest(search, offset, limit, language, forceRefresh));
+  await dispatch(toggleFetch(true));
 
   const state = getState();
   const token = getToken(state);
@@ -118,8 +121,10 @@ export const fetchCards = (
       limit
     );
 
+    await dispatch(toggleFetch(false));
     return dispatch(fetchSuccess(search, offset, limit, total, cards, language, forceRefresh));
   } catch (e) {
+    await dispatch(toggleFetch(false));
     return dispatch(fetchError(e));
   }
 };
