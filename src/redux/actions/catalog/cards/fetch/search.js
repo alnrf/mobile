@@ -98,8 +98,7 @@ export const fetchCards = (
   options
 ) => {
   const language = translations.getLanguage();
-  const baleik = fetchRequest(search, offset, limit, language, forceRefresh);
-  await dispatch(baleik);
+  await dispatch(fetchRequest(search, offset, limit, language, forceRefresh));
 
   const state = getState();
   const token = getToken(state);
