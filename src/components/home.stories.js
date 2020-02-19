@@ -1,29 +1,39 @@
 // @flow
 
 import * as React from 'react';
+import renderer from 'react-test-renderer';
 import {storiesOf} from '@storybook/react-native';
 
 import {TestContextProvider, handleFakePress} from '../utils/tests';
+import {__TEST__} from '../modules/environment';
 import Home from './home';
 
 storiesOf('Home', module)
   .add('Default', () => (
     <TestContextProvider>
-      <Home
-        onCardPress={handleFakePress}
-        onLogoLongPress={handleFakePress}
-        isFetching={false}
-        isFocused={false}
-      />
+      <Home onCardPress={handleFakePress} isFetching={false} isFocused={false} />
     </TestContextProvider>
   ))
   .add('Fetching', () => (
     <TestContextProvider>
-      <Home
-        onCardPress={handleFakePress}
-        onLogoLongPress={handleFakePress}
-        isFetching
-        isFocused={false}
-      />
+      <Home onCardPress={handleFakePress} isFetching isFocused={false} />
     </TestContextProvider>
   ));
+
+if (__TEST__) {
+  describe('Home', () => {
+    it('should handle onCardPress', () => {
+      const handleCardPress = jest.fn();
+      const component = renderer.create(
+        <TestContextProvider>
+          <Home onCardPress={handleCardPress} isFetching={false} isFocused={false} />
+        </TestContextProvider>
+      );
+
+      const icon = component.root.find(el => el.props.testID === 'catalog');
+      icon.props.onCardPress();
+
+      expect(handleCardPress).toHaveBeenCalledTimes(1);
+    });
+  });
+}

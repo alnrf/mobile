@@ -17,7 +17,8 @@ export type Props = {|
   isSearchFetching?: boolean,
   onSearchToggle: boolean => void,
   onSearchInputChange: string => void,
-  onLogoLongPress: () => void
+  onLogoLongPress: () => void,
+  testID?: string
 |};
 
 const CENTER_PADDING = theme.spacing.small;
@@ -59,12 +60,13 @@ class Header extends React.PureComponent<Props> {
       height,
       searchValue,
       isSearchFetching,
-      onSearchInputChange
+      onSearchInputChange,
+      testID
     } = this.props;
     const logoHeight = height - CENTER_PADDING * 2;
 
     return (
-      <View style={[styles.container, {height}]}>
+      <View style={[styles.container, {height}]} testID={testID}>
         <View style={styles.side}>
           {isSearchVisible ? (
             <HeaderBackButton

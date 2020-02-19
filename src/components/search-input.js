@@ -66,6 +66,8 @@ class SearchInput extends React.PureComponent<Props> {
         <TextInput
           value={value}
           style={styles.input}
+          autoCorrect={false}
+          autoCapitalize="none"
           onChangeText={onChange}
           placeholder={translations.search}
           placeholderTextColor={PLACEHOLDER_COLOR}
