@@ -20,11 +20,11 @@ storiesOf('Header', module)
       />
     </TestContextProvider>
   ))
-  .add('Focused', () => (
+  .add('Search visible', () => (
     <TestContextProvider>
       <Header
         height={67}
-        isSearchFocused
+        isSearchVisible
         onSearchToggle={handleFakePress}
         onSearchInputChange={handleFakePress}
         onLogoLongPress={handleFakePress}
@@ -36,7 +36,7 @@ storiesOf('Header', module)
       <Header
         height={67}
         searchValue="Foo"
-        isSearchFocused
+        isSearchVisible
         onSearchToggle={handleFakePress}
         onSearchInputChange={handleFakePress}
         onLogoLongPress={handleFakePress}
@@ -48,7 +48,7 @@ storiesOf('Header', module)
       <Header
         height={67}
         searchValue="Foo"
-        isSearchFocused
+        isSearchVisible
         isSearchFetching
         onSearchToggle={handleFakePress}
         onSearchInputChange={handleFakePress}
@@ -65,7 +65,7 @@ if (__TEST__) {
         <TestContextProvider>
           <Header
             height={67}
-            isSearchFocused
+            isSearchVisible
             onSearchToggle={handleSearchToggle}
             onSearchInputChange={handleFakePress}
             onLogoLongPress={handleFakePress}
@@ -105,7 +105,7 @@ if (__TEST__) {
         <TestContextProvider>
           <Header
             height={67}
-            isSearchFocused
+            isSearchVisible
             onSearchToggle={handleFakePress}
             onSearchInputChange={handleSearchInputChange}
             onLogoLongPress={handleFakePress}
