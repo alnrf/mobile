@@ -29,6 +29,7 @@ import {
   createPermissionsState,
   createStoreState,
   createErrorsState,
+  createSearchState,
   createSelectState,
   createNetworkState,
   createVideoState
@@ -60,6 +61,8 @@ import {
   getHeroRef,
   getHero,
   isErrorVisible,
+  isSearchVisible,
+  getSearchValue,
   getErrorType,
   getFocusedSelect,
   isNetworkConnected,
@@ -109,6 +112,7 @@ const createState = ({
   user,
   heroRef,
   errors,
+  search,
   select
 }: {
   engine?: Engine,
@@ -124,6 +128,7 @@ const createState = ({
   user?: User | null,
   heroRef?: string,
   errors?: $ExtractReturn<typeof createErrorsState>,
+  search?: $ExtractReturn<typeof createSearchState>,
   select?: $ExtractReturn<typeof createSelectState>
 }): StoreState =>
   createStoreState({
@@ -142,6 +147,7 @@ const createState = ({
     catalog: createCatalogState({sections, cards, heroRef}),
     permissions,
     errors,
+    search,
     select
   });
 
@@ -917,6 +923,48 @@ describe('State-extract', () => {
       const result = isErrorVisible(state);
 
       expect(result).toBeTruthy;
+    });
+  });
+
+  describe('isSearchVisible', () => {
+    it('should return false', () => {
+      const state = createState({});
+
+      const result = isSearchVisible(state);
+
+      expect(result).toBeFalsy;
+    });
+
+    it('should return true', () => {
+      const state = createState({
+        errors: createErrorsState({isVisible: true})
+      });
+
+      const result = isSearchVisible(state);
+
+      expect(result).toBeTruthy;
+    });
+  });
+
+  describe('getSearchValue', () => {
+    it('should return undefined', () => {
+      const state = createState({});
+
+      const result = getSearchValue(state);
+
+      expect(result).toBeUndefined;
+    });
+
+    it('should return the value', () => {
+      const value = 'foo';
+      const state = createState({
+        search: createSearchState({value})
+      });
+
+      const result = getSearchValue(state);
+      const expected = value;
+
+      expect(result).toEqual(expected);
     });
   });
 

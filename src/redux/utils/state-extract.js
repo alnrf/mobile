@@ -163,6 +163,10 @@ export const getHero = (state: StoreState): DisciplineCard | ChapterCard | void 
 
 export const isErrorVisible = (state: StoreState): boolean => state.errors.isVisible;
 
+export const isSearchVisible = (state: StoreState): boolean => state.search.isVisible;
+
+export const getSearchValue = (state: StoreState): string | void => state.search.value;
+
 export const getErrorType = (state: StoreState): ErrorType | void => state.errors.type;
 
 export const getFocusedSelect = (state: StoreState): SelectState => state.select;
