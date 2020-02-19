@@ -257,7 +257,8 @@ describe('storeFixture', () => {
       },
       select: null,
       search: {
-        isVisible: false
+        isVisible: false,
+        isFetching: false
       },
       ui: {
         answers: {},

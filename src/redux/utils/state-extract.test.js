@@ -62,6 +62,7 @@ import {
   getHero,
   isErrorVisible,
   isSearchVisible,
+  isSearchFetching,
   getSearchValue,
   getErrorType,
   getFocusedSelect,
@@ -937,10 +938,30 @@ describe('State-extract', () => {
 
     it('should return true', () => {
       const state = createState({
-        errors: createErrorsState({isVisible: true})
+        search: createSearchState({isVisible: true})
       });
 
       const result = isSearchVisible(state);
+
+      expect(result).toBeTruthy;
+    });
+  });
+
+  describe('isSearchFetching', () => {
+    it('should return false', () => {
+      const state = createState({});
+
+      const result = isSearchFetching(state);
+
+      expect(result).toBeFalsy;
+    });
+
+    it('should return true', () => {
+      const state = createState({
+        search: createSearchState({isFetching: true})
+      });
+
+      const result = isSearchFetching(state);
 
       expect(result).toBeTruthy;
     });

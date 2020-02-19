@@ -1,13 +1,14 @@
 // @flow strict
 
-import {TOGGLE, EDIT} from '../../actions/ui/search';
+import {TOGGLE, EDIT, FETCH} from '../../actions/ui/search';
 import type {Action} from '../../actions/ui/search';
 import reducer from './search';
 import type {State} from './search';
 
 describe('Select', () => {
   const expectedInitialState: State = {
-    isVisible: false
+    isVisible: false,
+    isFetching: false
   };
 
   it('Default', () => {
@@ -28,7 +29,8 @@ describe('Select', () => {
       };
       const result = reducer(expectedInitialState, action);
       const expected: State = {
-        isVisible: true
+        ...expectedInitialState,
+        isVisible: payload
       };
 
       expect(result).toEqual(expected);
@@ -44,8 +46,26 @@ describe('Select', () => {
       };
       const result = reducer(expectedInitialState, action);
       const expected: State = {
+        ...expectedInitialState,
         isVisible: false,
         value: payload
+      };
+
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe(FETCH, () => {
+    it('Default', () => {
+      const payload = true;
+      const action: Action = {
+        type: FETCH,
+        payload
+      };
+      const result = reducer(expectedInitialState, action);
+      const expected: State = {
+        ...expectedInitialState,
+        isFetching: payload
       };
 
       expect(result).toEqual(expected);

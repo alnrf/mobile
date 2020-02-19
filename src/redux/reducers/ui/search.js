@@ -1,15 +1,17 @@
 // @flow strict
 
-import {TOGGLE, EDIT} from '../../actions/ui/search';
+import {TOGGLE, EDIT, FETCH} from '../../actions/ui/search';
 import type {Action} from '../../actions/ui/search';
 
 export type State = {|
   isVisible: boolean,
+  isFetching: boolean,
   value?: string
 |};
 
 export const initialState: State = {
-  isVisible: false
+  isVisible: false,
+  isFetching: false
 };
 
 const reducer = (state: State = initialState, action: Action): State => {
@@ -24,6 +26,12 @@ const reducer = (state: State = initialState, action: Action): State => {
       return {
         ...state,
         value: action.payload
+      };
+    }
+    case FETCH: {
+      return {
+        ...state,
+        isFetching: action.payload
       };
     }
     default:

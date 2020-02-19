@@ -2,6 +2,7 @@
 
 export const TOGGLE = '@@search/TOGGLE';
 export const EDIT = '@@search/EDIT';
+export const FETCH = '@@search/FETCH';
 
 export type Action =
   | {|
@@ -11,6 +12,10 @@ export type Action =
   | {|
       type: '@@search/EDIT',
       payload: string
+    |}
+  | {|
+      type: '@@search/FETCH',
+      payload: boolean
     |};
 
 export const toggle = (payload: boolean): Action => ({
@@ -20,5 +25,10 @@ export const toggle = (payload: boolean): Action => ({
 
 export const edit = (payload: string): Action => ({
   type: EDIT,
+  payload
+});
+
+export const fetch = (payload: boolean): Action => ({
+  type: FETCH,
   payload
 });

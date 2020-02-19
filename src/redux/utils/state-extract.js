@@ -165,6 +165,8 @@ export const isErrorVisible = (state: StoreState): boolean => state.errors.isVis
 
 export const isSearchVisible = (state: StoreState): boolean => state.search.isVisible;
 
+export const isSearchFetching = (state: StoreState): boolean => state.search.isFetching;
+
 export const getSearchValue = (state: StoreState): string | void => state.search.value;
 
 export const getErrorType = (state: StoreState): ErrorType | void => state.errors.type;
