@@ -299,7 +299,7 @@ describe('cards', () => {
           |}>
         }> => {
           expect(url).toBe(
-            `${host}/api/v1/contents?fullText=foo%20bar%20baz&offset=0&limit=2&lang=en&withoutAdaptive=true`
+            `${host}/api/v2/contents?fullText=foo%20bar%20baz&offset=0&limit=2&lang=en&withoutAdaptive=true`
           );
 
           expect(options).toHaveProperty('headers.authorization', token);

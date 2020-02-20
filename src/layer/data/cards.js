@@ -336,7 +336,7 @@ export const fetchSearchCards = (
   search: string,
   offset: number,
   limit: number
-) => fetchCards(token, host, '/api/v1/contents', offset, limit, {fullText: search});
+) => fetchCards(token, host, '/api/v2/contents', offset, limit, {fullText: search});
 
 export default {
   fetchCards,
