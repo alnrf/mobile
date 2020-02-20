@@ -46,7 +46,8 @@ describe('Home', () => {
     const result = mapStateToProps(store);
     const expected: ConnectedStateProps = {
       isFetching: false,
-      isFocused: false
+      isFocused: false,
+      isSearchVisible: false
     };
     expect(expected).toEqual(result);
   });

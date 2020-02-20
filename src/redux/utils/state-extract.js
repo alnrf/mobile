@@ -151,6 +151,8 @@ export const getSections = (state: StoreState) => state.catalog.entities.section
 
 export const getSectionsRef = (state: StoreState) => state.catalog.sectionsRef || [];
 
+export const getSearchRef = (state: StoreState) => state.catalog.searchRef;
+
 export const getCards = (state: StoreState) => state.catalog.entities.cards;
 
 export const getHeroRef = (state: StoreState): string | void | null => state.catalog.heroRef;

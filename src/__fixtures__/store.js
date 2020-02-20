@@ -85,6 +85,7 @@ export const createCatalogState = ({
   cards = []
 }: {
   heroRef?: string,
+  searchRef?: Array<string | void>,
   sections?: Array<Section | void>,
   cards?: Array<DisciplineCard | ChapterCard>
 }): CatalogState => ({
@@ -92,6 +93,10 @@ export const createCatalogState = ({
   sectionsRef:
     sections && sections.length > 1
       ? sections.map(section => (section ? section.key : undefined))
+      : undefined,
+  searchRef:
+    cards && cards.length > 1
+      ? cards.map(card => (card ? card.universalRef : undefined))
       : undefined,
   entities: {
     sections: sections.reduce((result, section) => {

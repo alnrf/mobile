@@ -35,12 +35,16 @@ const styles = StyleSheet.create({
   }
 });
 
-type Props = {|
-  ...WithLayoutProps,
+export type OwnProps = {|
   cards?: Array<DisciplineCard | ChapterCard | void>,
   onCardPress: (DisciplineCard | ChapterCard) => void,
   onScroll?: ScrollEvent => void,
   testID?: string
+|};
+
+type Props = {|
+  ...WithLayoutProps,
+  ...OwnProps
 |};
 
 const CatalogSearch = ({

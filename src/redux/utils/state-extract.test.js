@@ -58,6 +58,7 @@ import {
   getSections,
   getSectionsRef,
   getCards,
+  getSearchRef,
   getHeroRef,
   getHero,
   isErrorVisible,
@@ -859,6 +860,45 @@ describe('State-extract', () => {
       };
 
       expect(result).toEqual(expected);
+    });
+  });
+
+  describe('getSearchRef', () => {
+    it('should get search ref', () => {
+      const levelCard = createCardLevel({
+        ref: 'mod_10B',
+        status: 'isActive',
+        label: 'Fake level',
+        level: 'advanced'
+      });
+      const disciplineCard = createDisciplineCard({
+        ref: 'dis1',
+        completion: 0,
+        levels: [levelCard],
+        title: 'First discipline'
+      });
+      const chapterCard = createChapterCard({
+        ref: 'cha1',
+        completion: 0,
+        status: CARD_STATUS.ACTIVE,
+        title: 'First chapter'
+      });
+      const state = createState({
+        cards: [disciplineCard, chapterCard].concat([undefined])
+      });
+
+      const result = getSearchRef(state);
+      const expected = ['dis1', 'cha1', undefined];
+
+      expect(result).toEqual(expected);
+    });
+
+    it('should get undefined', () => {
+      const state = createState({});
+
+      const result = getSearchRef(state);
+
+      expect(result).toBeUndefined;
     });
   });
 

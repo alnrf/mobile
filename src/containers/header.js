@@ -14,7 +14,10 @@ import {
   getSearchValue
 } from '../redux/utils/state-extract';
 import {toggle as _toggleSearch, edit as _editSearch} from '../redux/actions/ui/search';
-import {fetchCards as _fetchCards} from '../redux/actions/catalog/cards/fetch/search';
+import {
+  fetchCards as _fetchCards,
+  DEFAULT_LIMIT
+} from '../redux/actions/catalog/cards/fetch/search';
 import {signOut as _signOut} from '../redux/actions/authentication';
 
 export type ConnectedStateProps = {|
@@ -38,7 +41,6 @@ export type Props = {|
 
 export const SEARCH_DEBOUNCE_DURATION = 500;
 export const SEARCH_MIN_LENGTH = 2;
-export const SEARCH_ITEMS = 16;
 
 class Header extends React.PureComponent<Props> {
   props: Props;
@@ -70,7 +72,7 @@ class Header extends React.PureComponent<Props> {
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
         if (this.searchValue === value) {
-          this.props.fetchCards(value, 0, SEARCH_ITEMS, true);
+          this.props.fetchCards(value, 0, DEFAULT_LIMIT, true);
         }
       }, SEARCH_DEBOUNCE_DURATION);
     }

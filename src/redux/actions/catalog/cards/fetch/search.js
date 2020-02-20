@@ -13,7 +13,7 @@ export const FETCH_REQUEST = '@@cards/FETCH_SEARCH_REQUEST';
 export const FETCH_SUCCESS = '@@cards/FETCH_SEARCH_SUCCESS';
 export const FETCH_ERROR = '@@cards/FETCH_SEARCH_ERROR';
 
-export const DEFAULT_LIMIT = 5;
+export const DEFAULT_LIMIT = 16;
 
 export type FetchRequestAction = {|
   type: '@@cards/FETCH_SEARCH_REQUEST',

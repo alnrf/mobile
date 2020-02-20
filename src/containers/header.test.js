@@ -7,6 +7,7 @@ import translations from '../translations';
 import {createStoreState} from '../__fixtures__/store';
 import {createProgression} from '../__fixtures__/progression';
 import {ENGINE, CONTENT_TYPE} from '../const';
+import {DEFAULT_LIMIT} from '../redux/actions/catalog/cards/fetch/search';
 
 jest.useFakeTimers();
 
@@ -68,7 +69,7 @@ describe('Header', () => {
   });
 
   it('should handle onSearchInputChange', () => {
-    const {Component: Header, SEARCH_DEBOUNCE_DURATION, SEARCH_ITEMS} = require('./header');
+    const {Component: Header, SEARCH_DEBOUNCE_DURATION} = require('./header');
 
     const fakeCallback = jest.fn();
     const editSearch = jest.fn();
@@ -107,9 +108,9 @@ describe('Header', () => {
     expect(editSearch).toHaveBeenCalledWith('foobar');
 
     expect(fetchCards).toHaveBeenCalledTimes(3);
-    expect(fetchCards).toHaveBeenCalledWith('foo', 0, SEARCH_ITEMS, true);
-    expect(fetchCards).toHaveBeenCalledWith('fooba', 0, SEARCH_ITEMS, true);
-    expect(fetchCards).toHaveBeenCalledWith('foobar', 0, SEARCH_ITEMS, true);
+    expect(fetchCards).toHaveBeenCalledWith('foo', 0, DEFAULT_LIMIT, true);
+    expect(fetchCards).toHaveBeenCalledWith('fooba', 0, DEFAULT_LIMIT, true);
+    expect(fetchCards).toHaveBeenCalledWith('foobar', 0, DEFAULT_LIMIT, true);
   });
 
   it('should handle onLogoLongPress', () => {
