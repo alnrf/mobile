@@ -87,7 +87,7 @@ export const createCatalogState = ({
   heroRef?: string,
   searchRef?: Array<string | void>,
   sections?: Array<Section | void>,
-  cards?: Array<DisciplineCard | ChapterCard>
+  cards?: Array<DisciplineCard | ChapterCard | void>
 }): CatalogState => ({
   heroRef,
   sectionsRef:

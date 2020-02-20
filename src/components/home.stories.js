@@ -59,7 +59,7 @@ if (__TEST__) {
             onCardPress={handleCardPress}
             isFetching={false}
             isFocused={false}
-            isSearchVisible={false}
+            isSearchVisible
           />
         </TestContextProvider>
       );

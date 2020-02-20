@@ -11,13 +11,16 @@ import type {ConnectedStateProps} from './catalog-search';
 
 jest.useFakeTimers();
 
-const cards: Array<DisciplineCard | ChapterCard> = ['foo', 'bar', 'baz', 'qux', 'quux'].map(ref =>
-  createChapterCard({
-    ref,
-    completion: 0,
-    title: 'Fake chapter',
-    status: CARD_STATUS.ACTIVE
-  })
+const cardsRef = ['foo', 'bar', 'baz', 'qux', 'quux', undefined];
+const cards: Array<DisciplineCard | ChapterCard | void> = cardsRef.map(
+  ref =>
+    ref &&
+    createChapterCard({
+      ref,
+      completion: 0,
+      title: 'Fake chapter',
+      status: CARD_STATUS.ACTIVE
+    })
 );
 
 describe('CatalogSearch', () => {
