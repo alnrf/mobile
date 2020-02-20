@@ -57,54 +57,44 @@ const styles = StyleSheet.create({
   }
 });
 
-class Home extends React.PureComponent<Props> {
-  props: Props;
-
-  renderVersion = () => <Version style={styles.version} />;
-
-  render() {
-    const {onCardPress, isFetching, isFocused, isSearchVisible, testID} = this.props;
-
-    if (isFetching) {
-      return (
-        <View style={styles.loaderContainer} testID={testID}>
-          <Loader />
-        </View>
-      );
-    }
-
+const Home = ({onCardPress, isFetching, isFocused, isSearchVisible, testID}: Props) => {
+  if (isFetching) {
     return (
-      <View style={styles.container} testID={testID}>
-        <Gradient
-          height={HEADER_HEIGHT + theme.spacing.small}
-          colors={[theme.colors.white]}
-          transparencyPosition="bottom"
-          style={styles.gradient}
-        />
-        {isSearchVisible ? (
-          <CatalogSearch
-            onCardPress={onCardPress}
-            containerStyle={styles.catalog}
-            testID="catalog-search"
-          >
-            {this.renderVersion()}
-          </CatalogSearch>
-        ) : (
-          <Catalog
-            onCardPress={onCardPress}
-            containerStyle={styles.catalog}
-            isFocused={isFocused}
-            testID="catalog"
-          >
-            {this.renderVersion()}
-          </Catalog>
-        )}
-        <Box style={styles.header}>
-          <Header height={HEADER_HEIGHT} />
-        </Box>
+      <View style={styles.loaderContainer} testID={testID}>
+        <Loader />
       </View>
     );
   }
-}
+
+  return (
+    <View style={styles.container} testID={testID}>
+      <Gradient
+        height={HEADER_HEIGHT + theme.spacing.small}
+        colors={[theme.colors.white]}
+        transparencyPosition="bottom"
+        style={styles.gradient}
+      />
+      {isSearchVisible ? (
+        <CatalogSearch
+          onCardPress={onCardPress}
+          containerStyle={styles.catalog}
+          testID="catalog-search"
+        />
+      ) : (
+        <Catalog
+          onCardPress={onCardPress}
+          containerStyle={styles.catalog}
+          isFocused={isFocused}
+          testID="catalog"
+        >
+          <Version style={styles.version} />
+        </Catalog>
+      )}
+      <Box style={styles.header}>
+        <Header height={HEADER_HEIGHT} />
+      </Box>
+    </View>
+  );
+};
 
 export default Home;
