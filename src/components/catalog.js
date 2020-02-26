@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const SEPARATOR_SIZE = 'small';
+const SEPARATOR_SIZE = 'base';
 export const SEPARATOR_HEIGHT = theme.spacing[SEPARATOR_SIZE];
 export const HERO_HEIGHT = _HERO_HEIGHT;
 const PLACEHOLDER_LENGTH = 3;

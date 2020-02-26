@@ -8,11 +8,12 @@ import translations from '../translations';
 import withLayout from '../containers/with-layout';
 import type {WithLayoutProps} from '../containers/with-layout';
 import type {DisciplineCard, ChapterCard} from '../layer/data/_types';
-import CatalogItems, {ITEM_WIDTH} from './catalog-items';
+import CatalogItems, {ITEM_OFFSET, ITEM_WIDTH} from './catalog-items';
 import Space from './space';
 import Text from './text';
 
 const LIST_HORIZONTAL_OFFSET = theme.spacing.micro;
+const LIST_VERTICAL_OFFSET = theme.spacing.base - ITEM_OFFSET;
 
 const styles = StyleSheet.create({
   container: {
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
   },
   content: {
     alignItems: 'center',
-    paddingVertical: theme.spacing.small,
+    paddingVertical: LIST_VERTICAL_OFFSET,
     paddingHorizontal: LIST_HORIZONTAL_OFFSET
   },
   noResults: {
@@ -39,6 +40,7 @@ export type OwnProps = {|
   cards?: Array<DisciplineCard | ChapterCard | void>,
   onCardPress: (DisciplineCard | ChapterCard) => void,
   onScroll?: ScrollEvent => void,
+  onScrollBeginDrag?: ScrollEvent => void,
   testID?: string
 |};
 
@@ -52,6 +54,7 @@ const CatalogSearch = ({
   cards,
   onCardPress,
   onScroll,
+  onScrollBeginDrag,
   testID = 'catalog-search'
 }: Props) => {
   const numColumns = layout
@@ -73,6 +76,7 @@ const CatalogSearch = ({
           cards={cards}
           onCardPress={onCardPress}
           onScroll={onScroll}
+          onScrollBeginDrag={onScrollBeginDrag}
           numColumns={numColumns}
           style={styles.content}
           testID={`${testID}-items`}

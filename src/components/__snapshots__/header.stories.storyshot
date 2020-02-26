@@ -103,7 +103,7 @@ exports[`Storyshots Header Default 1`] = `
         },
         Object {
           "alignItems": "flex-end",
-          "paddingRight": 32,
+          "paddingRight": 24,
         },
       ]
     }
@@ -255,7 +255,7 @@ exports[`Storyshots Header Default 1`] = `
 </View>
 `;
 
-exports[`Storyshots Header Focused 1`] = `
+exports[`Storyshots Header Search visible 1`] = `
 <View
   style={
     Array [
@@ -284,11 +284,7 @@ exports[`Storyshots Header Focused 1`] = `
           Object {
             "paddingLeft": 24,
           },
-          Object {
-            "paddingTop": 24,
-            "position": "absolute",
-            "top": 0,
-          },
+          false,
           false,
         ]
       }
@@ -640,6 +636,8 @@ exports[`Storyshots Header Focused 1`] = `
       />
       <TextInput
         allowFontScaling={true}
+        autoCapitalize="none"
+        autoCorrect={false}
         onChangeText={[Function]}
         placeholder="Search"
         placeholderTextColor="#90A4AE"
@@ -688,11 +686,7 @@ exports[`Storyshots Header Searching 1`] = `
           Object {
             "paddingLeft": 24,
           },
-          Object {
-            "paddingTop": 24,
-            "position": "absolute",
-            "top": 0,
-          },
+          false,
           false,
         ]
       }
@@ -1044,6 +1038,8 @@ exports[`Storyshots Header Searching 1`] = `
       />
       <TextInput
         allowFontScaling={true}
+        autoCapitalize="none"
+        autoCorrect={false}
         onChangeText={[Function]}
         placeholder="Search"
         placeholderTextColor="#90A4AE"
@@ -1107,11 +1103,7 @@ exports[`Storyshots Header With search value 1`] = `
           Object {
             "paddingLeft": 24,
           },
-          Object {
-            "paddingTop": 24,
-            "position": "absolute",
-            "top": 0,
-          },
+          false,
           false,
         ]
       }
@@ -1463,6 +1455,8 @@ exports[`Storyshots Header With search value 1`] = `
       />
       <TextInput
         allowFontScaling={true}
+        autoCapitalize="none"
+        autoCorrect={false}
         onChangeText={[Function]}
         placeholder="Search"
         placeholderTextColor="#90A4AE"

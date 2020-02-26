@@ -63,10 +63,18 @@ exports[`Storyshots CatalogSection Default 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "height": 12,
+        "width": 12,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       Object {
-        "height": 237,
+        "height": 213,
         "paddingHorizontal": 4,
       }
     }
@@ -121,8 +129,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -504,8 +511,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -887,8 +893,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -1270,8 +1275,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -1653,8 +1657,7 @@ exports[`Storyshots CatalogSection Default 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -2091,10 +2094,18 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "height": 12,
+        "width": 12,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       Object {
-        "height": 237,
+        "height": 213,
         "paddingHorizontal": 4,
       }
     }
@@ -2174,8 +2185,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -2557,8 +2567,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -2940,8 +2949,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -3323,8 +3331,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -3706,8 +3713,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -4089,8 +4095,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -4472,8 +4477,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -4855,8 +4859,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -5238,8 +5241,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -5621,8 +5623,7 @@ exports[`Storyshots CatalogSection Empty cards 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -6020,10 +6021,18 @@ exports[`Storyshots CatalogSection With content 1`] = `
   >
     Some content
   </Text>
+  <View
+    style={
+      Object {
+        "height": 12,
+        "width": 12,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       Object {
-        "height": 237,
+        "height": 213,
         "paddingHorizontal": 4,
       }
     }
@@ -6229,8 +6238,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -6702,8 +6710,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -7182,8 +7189,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -7565,8 +7571,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -7948,8 +7953,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -8331,8 +8335,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -8714,8 +8717,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9097,8 +9099,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9480,8 +9481,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9863,8 +9863,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >

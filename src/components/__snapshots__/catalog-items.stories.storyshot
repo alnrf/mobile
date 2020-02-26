@@ -88,8 +88,7 @@ exports[`Storyshots CatalogItems Placeholders (grid) 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -460,8 +459,7 @@ exports[`Storyshots CatalogItems Placeholders (grid) 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -844,8 +842,7 @@ exports[`Storyshots CatalogItems Placeholders (grid) 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -1216,8 +1213,7 @@ exports[`Storyshots CatalogItems Placeholders (grid) 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -1600,8 +1596,7 @@ exports[`Storyshots CatalogItems Placeholders (grid) 1`] = `
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -2028,8 +2023,7 @@ exports[`Storyshots CatalogItems Placeholders 1`] = `
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -2411,8 +2405,7 @@ exports[`Storyshots CatalogItems Placeholders 1`] = `
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -2794,8 +2787,7 @@ exports[`Storyshots CatalogItems Placeholders 1`] = `
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -3177,8 +3169,7 @@ exports[`Storyshots CatalogItems Placeholders 1`] = `
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -3560,8 +3551,7 @@ exports[`Storyshots CatalogItems Placeholders 1`] = `
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -4246,8 +4236,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -4708,8 +4697,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -5189,8 +5177,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -5658,8 +5645,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -6139,8 +6125,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -6511,8 +6496,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -6895,8 +6879,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -7267,8 +7250,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -7651,8 +7633,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -8023,8 +8004,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -8407,8 +8387,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -8779,8 +8758,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9163,8 +9141,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9535,8 +9512,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -9919,8 +9895,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -10291,8 +10266,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -10675,8 +10649,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -11047,8 +11020,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -11431,8 +11403,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -11803,8 +11774,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         <View
           style={
             Object {
-              "marginHorizontal": 4,
-              "marginVertical": 16,
+              "margin": 4,
             }
           }
         >
@@ -12497,8 +12467,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -12970,8 +12939,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -13450,8 +13418,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -13930,8 +13897,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -14410,8 +14376,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -14793,8 +14758,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -15176,8 +15140,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -15559,8 +15522,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -15942,8 +15904,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >
@@ -16325,8 +16286,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "marginHorizontal": 4,
-            "marginVertical": 16,
+            "margin": 4,
           }
         }
       >

@@ -146,6 +146,8 @@ exports[`Storyshots SearchInput Default 1`] = `
   />
   <TextInput
     allowFontScaling={true}
+    autoCapitalize="none"
+    autoCorrect={false}
     onChangeText={[Function]}
     placeholder="Search"
     placeholderTextColor="#90A4AE"
@@ -309,6 +311,8 @@ exports[`Storyshots SearchInput Fetching 1`] = `
   />
   <TextInput
     allowFontScaling={true}
+    autoCapitalize="none"
+    autoCorrect={false}
     onChangeText={[Function]}
     placeholder="Search"
     placeholderTextColor="#90A4AE"
@@ -487,6 +491,8 @@ exports[`Storyshots SearchInput With text 1`] = `
   />
   <TextInput
     allowFontScaling={true}
+    autoCapitalize="none"
+    autoCorrect={false}
     onChangeText={[Function]}
     placeholder="Search"
     placeholderTextColor="#90A4AE"

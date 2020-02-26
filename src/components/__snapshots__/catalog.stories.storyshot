@@ -135,8 +135,8 @@ exports[`Storyshots Catalog Default 1`] = `
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -207,10 +207,18 @@ exports[`Storyshots Catalog Default 1`] = `
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -265,8 +273,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -648,8 +655,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -1031,8 +1037,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -1414,8 +1419,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -1797,8 +1801,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -2173,8 +2176,8 @@ exports[`Storyshots Catalog Default 1`] = `
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -2245,10 +2248,18 @@ exports[`Storyshots Catalog Default 1`] = `
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -2303,8 +2314,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -2686,8 +2696,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -3069,8 +3078,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -3452,8 +3460,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -3835,8 +3842,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -4211,8 +4217,8 @@ exports[`Storyshots Catalog Default 1`] = `
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -4283,10 +4289,18 @@ exports[`Storyshots Catalog Default 1`] = `
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -4341,8 +4355,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -4724,8 +4737,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -5107,8 +5119,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -5490,8 +5501,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -5873,8 +5883,7 @@ exports[`Storyshots Catalog Default 1`] = `
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -6412,8 +6421,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -6484,10 +6493,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -6542,8 +6559,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -6925,8 +6941,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -7308,8 +7323,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -7691,8 +7705,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -8074,8 +8087,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -8450,8 +8462,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -8522,10 +8534,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -8580,8 +8600,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -8963,8 +8982,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -9346,8 +9364,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -9729,8 +9746,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -10112,8 +10128,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -10488,8 +10503,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -10560,10 +10575,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -10618,8 +10641,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -11001,8 +11023,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -11384,8 +11405,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -11767,8 +11787,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -12150,8 +12169,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -12708,8 +12726,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -12734,10 +12752,18 @@ Pol P.!
         >
           Recommandés pour vous
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -12792,8 +12818,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -13175,8 +13200,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -13558,8 +13582,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -13941,8 +13964,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -14324,8 +14346,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -14700,8 +14721,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -14726,10 +14747,18 @@ Pol P.!
         >
           Les plus populaires
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -14784,8 +14813,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -15167,8 +15195,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -15550,8 +15577,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -15933,8 +15959,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -16316,8 +16341,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -16880,8 +16904,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -16906,10 +16930,18 @@ Pol P.!
         >
           Recommandés pour vous
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -17087,8 +17119,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -17560,8 +17591,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -18154,8 +18184,8 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -18180,10 +18210,18 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         >
           Les plus populaires
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -18361,8 +18399,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -18962,8 +18999,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -19591,8 +19627,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -19663,10 +19699,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -19721,8 +19765,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -20104,8 +20147,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -20487,8 +20529,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -20870,8 +20911,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -21253,8 +21293,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -21629,8 +21668,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -21701,10 +21740,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -21759,8 +21806,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -22142,8 +22188,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -22525,8 +22570,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -22908,8 +22952,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -23291,8 +23334,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -23667,8 +23709,8 @@ Pol P.!
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -23739,10 +23781,18 @@ Pol P.!
             </View>
           </View>
         </View>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -23797,8 +23847,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -24180,8 +24229,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -24563,8 +24611,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -24946,8 +24993,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -25329,8 +25375,7 @@ Pol P.!
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -26100,8 +26145,8 @@ exports[`Storyshots Catalog With hero 1`] = `
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -26126,10 +26171,18 @@ exports[`Storyshots Catalog With hero 1`] = `
         >
           Recommandés pour vous
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -26307,8 +26360,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -26780,8 +26832,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -27374,8 +27425,8 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
       <View
         style={
           Object {
-            "height": 16,
-            "width": 16,
+            "height": 24,
+            "width": 24,
           }
         }
       />
@@ -27400,10 +27451,18 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
         >
           Les plus populaires
         </Text>
+        <View
+          style={
+            Object {
+              "height": 12,
+              "width": 12,
+            }
+          }
+        />
         <RCTScrollView
           contentContainerStyle={
             Object {
-              "height": 237,
+              "height": 213,
               "paddingHorizontal": 4,
             }
           }
@@ -27581,8 +27640,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >
@@ -28182,8 +28240,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
               <View
                 style={
                   Object {
-                    "marginHorizontal": 4,
-                    "marginVertical": 16,
+                    "margin": 4,
                   }
                 }
               >

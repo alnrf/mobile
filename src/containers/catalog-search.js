@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react';
+import {Keyboard} from 'react-native';
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
 
@@ -22,7 +23,8 @@ export type OwnProps = $Diff<
   CatalogSearchProps,
   {|
     cards: $PropertyType<CatalogSearchProps, 'cards'>,
-    onScroll: $PropertyType<CatalogSearchProps, 'onScroll'>
+    onScroll: $PropertyType<CatalogSearchProps, 'onScroll'>,
+    onScrollBeginDrag: $PropertyType<CatalogSearchProps, 'onScrollBeginDrag'>
   |}
 >;
 
@@ -57,6 +59,9 @@ class CatalogSearch extends React.Component<Props> {
     // @todo infinite scroll
   };
 
+  // to remove the keyboard when scrolling
+  handleScrollBeginDrag = () => Keyboard.dismiss();
+
   render() {
     const {
       /* eslint-disable no-unused-vars */
@@ -66,7 +71,13 @@ class CatalogSearch extends React.Component<Props> {
       /* eslint-enable no-unused-vars */
       ...remainingProps
     } = this.props;
-    return <CatalogSearchComponent {...remainingProps} onScroll={this.handleScroll} />;
+    return (
+      <CatalogSearchComponent
+        {...remainingProps}
+        onScroll={this.handleScroll}
+        onScrollBeginDrag={this.handleScrollBeginDrag}
+      />
+    );
   }
 }
 

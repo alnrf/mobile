@@ -11,16 +11,14 @@ import CatalogItem, {
   HEIGHT as CATALOG_ITEM_HEIGHT
 } from './catalog-item';
 
-export const ITEM_VERTICAL_OFFSET = theme.spacing.small;
-export const ITEM_HORIZONTAL_OFFSET = theme.spacing.micro;
-export const ITEM_WIDTH = CATALOG_ITEM_WIDTH + ITEM_HORIZONTAL_OFFSET * 2;
-export const ITEM_HEIGHT = CATALOG_ITEM_HEIGHT + ITEM_VERTICAL_OFFSET * 2;
+export const ITEM_OFFSET = theme.spacing.micro;
+export const ITEM_WIDTH = CATALOG_ITEM_WIDTH + ITEM_OFFSET * 2;
+export const ITEM_HEIGHT = CATALOG_ITEM_HEIGHT + ITEM_OFFSET * 2;
 
 const styles = StyleSheet.create({
   item: {
     // to see the shadow
-    marginHorizontal: ITEM_HORIZONTAL_OFFSET,
-    marginVertical: ITEM_VERTICAL_OFFSET
+    margin: ITEM_OFFSET
   },
   card: {
     flex: 0,
@@ -35,6 +33,7 @@ type Props = {|
   cards?: Array<DisciplineCard | ChapterCard | void>,
   onCardPress?: (DisciplineCard | ChapterCard) => void,
   onScroll?: ScrollEvent => void,
+  onScrollBeginDrag?: ScrollEvent => void,
   placeholderLength?: number,
   numColumns?: number,
   style?: ViewStyleProp,
@@ -84,6 +83,7 @@ class CatalogItems extends React.PureComponent<Props> {
     const {
       cards,
       onScroll,
+      onScrollBeginDrag,
       placeholderLength = 0,
       numColumns,
       style,
@@ -103,6 +103,7 @@ class CatalogItems extends React.PureComponent<Props> {
         contentContainerStyle={style}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
+        onScrollBeginDrag={onScrollBeginDrag}
         onScroll={onScroll}
         scrollEnabled={Boolean(onScroll)}
         horizontal={!numColumns}
