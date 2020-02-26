@@ -39,8 +39,8 @@ class CatalogSearch extends React.Component<Props> {
 
   shouldComponentUpdate = ({cards: nextCards, ...nextProps}: Props) => {
     const {cards, ...props} = this.props;
-    const cardsCount = cards && cards.filter(Boolean).length;
-    const nextCardsCount = nextCards && nextCards.filter(Boolean).length;
+    const cardsRef = cards && cards.filter(Boolean).map(card => card.universalRef);
+    const nextCardsRef = nextCards && nextCards.filter(Boolean).map(card => card.universalRef);
     const completion =
       cards && cards.reduce((total, card) => total + ((card && card.completion) || 0), 0);
     const nextCompletion =
@@ -48,9 +48,9 @@ class CatalogSearch extends React.Component<Props> {
 
     return (
       typeof cards !== typeof nextCards ||
-      // For performance purpose only (prevent useless render)
-      cardsCount !== nextCardsCount ||
       completion !== nextCompletion ||
+      // For performance purpose only (prevent useless render)
+      !isEqual(cardsRef, nextCardsRef) ||
       !isEqual(props, nextProps)
     );
   };
