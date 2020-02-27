@@ -4,12 +4,14 @@ import type {Action as FetchSectionsCardsAction} from '../actions/catalog/cards/
 import type {Action as FetchSearchCardsAction} from '../actions/catalog/cards/fetch/search';
 import type {Action as SelectCardAction} from '../actions/catalog/cards/select';
 import type {Action as RefreshCardAction} from '../actions/catalog/cards/refresh';
+import type {Action as ClearAction} from '../actions/catalog/cards/clear';
 import type {Action as SectionsAction} from '../actions/catalog/sections';
 import type {Action as HeroAction} from '../actions/catalog/hero';
 import {FETCH_SUCCESS as FETCH_SECTIONS_SUCCESS} from '../actions/catalog/sections';
 import {FETCH_SUCCESS as FETCH_SECTIONS_CARDS_SUCCESS} from '../actions/catalog/cards/fetch/sections';
 import {FETCH_SUCCESS as FETCH_SEARCH_CARDS_SUCCESS} from '../actions/catalog/cards/fetch/search';
 import {REFRESH as REFRESH_CARD} from '../actions/catalog/cards/refresh';
+import {CLEAR_SEARCH} from '../actions/catalog/cards/clear';
 import {FETCH_SUCCESS as FETCH_HERO_SUCCESS} from '../actions/catalog/hero';
 import type {DisciplineCard, ChapterCard} from '../../layer/data/_types';
 import type {SupportedLanguage} from '../../translations/_types';
@@ -119,6 +121,7 @@ const reducer = (
     | FetchSectionsCardsAction
     | FetchSearchCardsAction
     | RefreshCardAction
+    | ClearAction
     | SelectCardAction
     | SectionsAction
     | HeroAction
@@ -210,6 +213,13 @@ const reducer = (
             }
           }
         }
+      };
+    }
+
+    case CLEAR_SEARCH: {
+      return {
+        ...state,
+        searchRef: undefined
       };
     }
 

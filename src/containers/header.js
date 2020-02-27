@@ -18,6 +18,7 @@ import {
   fetchCards as _fetchCards,
   DEFAULT_LIMIT
 } from '../redux/actions/catalog/cards/fetch/search';
+import {clearSearch as _clearSearch} from '../redux/actions/catalog/cards/clear';
 import {signOut as _signOut} from '../redux/actions/authentication';
 
 export type ConnectedStateProps = {|
@@ -30,7 +31,8 @@ type ConnectedDispatchProps = {|
   toggleSearch: typeof _toggleSearch,
   editSearch: typeof _editSearch,
   fetchCards: typeof _fetchCards,
-  signOut: typeof _signOut
+  signOut: typeof _signOut,
+  clearSearch: typeof _clearSearch
 |};
 
 export type Props = {|
@@ -62,6 +64,10 @@ class Header extends React.PureComponent<Props> {
 
   handleSearchToggle = (value: boolean) => {
     this.props.toggleSearch(value);
+
+    if (!value) {
+      this.handleSearchInputChange('');
+    }
   };
 
   handleSearchInputChange = (value: string) => {
@@ -76,6 +82,10 @@ class Header extends React.PureComponent<Props> {
         }
       }, SEARCH_DEBOUNCE_DURATION);
     }
+
+    if (value.length === 0) {
+      this.props.clearSearch();
+    }
   };
 
   render() {
@@ -85,6 +95,7 @@ class Header extends React.PureComponent<Props> {
       editSearch,
       fetchCards,
       signOut,
+      clearSearch,
       /* eslint-enable no-unused-vars */
       isSearchFetching,
       isSearchVisible,
@@ -115,7 +126,8 @@ const mapDispatchToProps: ConnectedDispatchProps = {
   toggleSearch: _toggleSearch,
   editSearch: _editSearch,
   fetchCards: _fetchCards,
-  signOut: _signOut
+  signOut: _signOut,
+  clearSearch: _clearSearch
 };
 
 export {Header as Component};

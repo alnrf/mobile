@@ -7,11 +7,13 @@ import {FETCH_SUCCESS as FETCH_SECTIONS_CARDS_SUCCESS} from '../actions/catalog/
 import {FETCH_SUCCESS as FETCH_SEARCH_CARDS_SUCCESS} from '../actions/catalog/cards/fetch/search';
 import {FETCH_SUCCESS as FETCH_HERO_SUCCESS} from '../actions/catalog/hero';
 import {REFRESH as REFRESH_CARD} from '../actions/catalog/cards/refresh';
+import {CLEAR_SEARCH} from '../actions/catalog/cards/clear';
 import type {Action as SectionsAction} from '../actions/catalog/sections';
 import type {Action as FetchSectionsCardsAction} from '../actions/catalog/cards/fetch/sections';
 import type {Action as FetchSearchCardsAction} from '../actions/catalog/cards/fetch/search';
 import type {Action as SelectAction} from '../actions/catalog/cards/select';
 import type {Action as RefreshAction} from '../actions/catalog/cards/refresh';
+import type {Action as ClearAction} from '../actions/catalog/cards/clear';
 import type {Action as FetchHeroAction} from '../actions/catalog/hero';
 import reducer, {reduceCards, reduceSections, reduceCardsRef, reduceSectionsRef} from './catalog';
 import type {State} from './catalog';
@@ -22,6 +24,7 @@ type Action =
   | FetchSearchCardsAction
   | SelectAction
   | RefreshAction
+  | ClearAction
   | FetchHeroAction;
 
 const dis1 = createDisciplineCard({
@@ -384,6 +387,31 @@ describe('Catalog', () => {
               [language]: updateDis1
             }
           },
+          sections: {}
+        }
+      };
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe(CLEAR_SEARCH, () => {
+    it('Default', () => {
+      const initialState = {
+        searchRef: ['foo', 'bar', 'baz'],
+        entities: {
+          cards: {},
+          sections: {}
+        }
+      };
+
+      const action: Action = {
+        type: CLEAR_SEARCH
+      };
+      const result = reducer(initialState, action);
+      const expected: State = {
+        entities: {
+          searchRef: undefined,
+          cards: {},
           sections: {}
         }
       };

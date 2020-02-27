@@ -42,30 +42,64 @@ describe('Header', () => {
     });
   });
 
-  it('should handle onSearchToggle', () => {
-    const {Component: Header} = require('./header');
+  describe('onSearchToggle', () => {
+    it('should handle event', () => {
+      const {Component: Header} = require('./header');
 
-    const fakeCallback = jest.fn();
-    const toggleSearch = jest.fn();
-    const value = true;
+      const fakeCallback = jest.fn();
+      const clearSearch = jest.fn();
+      const toggleSearch = jest.fn();
+      const value = true;
 
-    const component = renderer.create(
-      <Header
-        isSearchVisible={false}
-        isSearchFetching={false}
-        signOut={fakeCallback}
-        toggleSearch={toggleSearch}
-        editSearch={fakeCallback}
-        fetchCards={fakeCallback}
-        height={42}
-      />
-    );
+      const component = renderer.create(
+        <Header
+          isSearchVisible={false}
+          isSearchFetching={false}
+          signOut={fakeCallback}
+          toggleSearch={toggleSearch}
+          editSearch={fakeCallback}
+          fetchCards={fakeCallback}
+          clearSearch={clearSearch}
+          height={42}
+        />
+      );
 
-    const header = component.root.find(el => el.props.testID === 'header');
-    header.props.onSearchToggle(value);
+      const header = component.root.find(el => el.props.testID === 'header');
+      header.props.onSearchToggle(value);
 
-    expect(toggleSearch).toHaveBeenCalledTimes(1);
-    expect(toggleSearch).toHaveBeenCalledWith(value);
+      expect(toggleSearch).toHaveBeenCalledTimes(1);
+      expect(toggleSearch).toHaveBeenCalledWith(value);
+      expect(clearSearch).toHaveBeenCalledTimes(0);
+    });
+
+    it('should handle event and clear results', () => {
+      const {Component: Header} = require('./header');
+
+      const fakeCallback = jest.fn();
+      const clearSearch = jest.fn();
+      const toggleSearch = jest.fn();
+      const value = false;
+
+      const component = renderer.create(
+        <Header
+          isSearchVisible={false}
+          isSearchFetching={false}
+          signOut={fakeCallback}
+          toggleSearch={toggleSearch}
+          editSearch={fakeCallback}
+          fetchCards={fakeCallback}
+          clearSearch={clearSearch}
+          height={42}
+        />
+      );
+
+      const header = component.root.find(el => el.props.testID === 'header');
+      header.props.onSearchToggle(value);
+
+      expect(toggleSearch).toHaveBeenCalledTimes(1);
+      expect(toggleSearch).toHaveBeenCalledWith(value);
+      expect(clearSearch).toHaveBeenCalledTimes(1);
+    });
   });
 
   it('should handle onSearchInputChange', () => {
@@ -74,6 +108,7 @@ describe('Header', () => {
     const fakeCallback = jest.fn();
     const editSearch = jest.fn();
     const fetchCards = jest.fn();
+    const clearSearch = jest.fn();
 
     const component = renderer.create(
       <Header
@@ -83,6 +118,7 @@ describe('Header', () => {
         toggleSearch={fakeCallback}
         editSearch={editSearch}
         fetchCards={fetchCards}
+        clearSearch={clearSearch}
         height={42}
       />
     );
@@ -98,19 +134,23 @@ describe('Header', () => {
     jest.advanceTimersByTime(SEARCH_DEBOUNCE_DURATION);
     header.props.onSearchInputChange('foobar');
     jest.advanceTimersByTime(SEARCH_DEBOUNCE_DURATION);
+    header.props.onSearchInputChange('');
 
-    expect(editSearch).toHaveBeenCalledTimes(6);
+    expect(editSearch).toHaveBeenCalledTimes(7);
     expect(editSearch).toHaveBeenCalledWith('f');
     expect(editSearch).toHaveBeenCalledWith('fo');
     expect(editSearch).toHaveBeenCalledWith('foo');
     expect(editSearch).toHaveBeenCalledWith('foob');
     expect(editSearch).toHaveBeenCalledWith('fooba');
     expect(editSearch).toHaveBeenCalledWith('foobar');
+    expect(editSearch).toHaveBeenCalledWith('');
 
     expect(fetchCards).toHaveBeenCalledTimes(3);
     expect(fetchCards).toHaveBeenCalledWith('foo', 0, DEFAULT_LIMIT, true);
     expect(fetchCards).toHaveBeenCalledWith('fooba', 0, DEFAULT_LIMIT, true);
     expect(fetchCards).toHaveBeenCalledWith('foobar', 0, DEFAULT_LIMIT, true);
+
+    expect(clearSearch).toHaveBeenCalledTimes(1);
   });
 
   it('should handle onLogoLongPress', () => {
@@ -130,6 +170,7 @@ describe('Header', () => {
         toggleSearch={fakeCallback}
         editSearch={fakeCallback}
         fetchCards={fakeCallback}
+        clearSearch={fakeCallback}
         height={42}
       />
     );
