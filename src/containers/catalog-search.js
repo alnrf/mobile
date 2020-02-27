@@ -76,6 +76,7 @@ class CatalogSearch extends React.Component<Props> {
         {...remainingProps}
         onScroll={this.handleScroll}
         onScrollBeginDrag={this.handleScrollBeginDrag}
+        testID="catalog-search"
       />
     );
   }
