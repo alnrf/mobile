@@ -8,6 +8,7 @@ exports[`Storyshots CatalogSearch Default 1`] = `
       "flexGrow": 1,
     }
   }
+  testID="catalog-search"
 />
 `;
 
@@ -19,6 +20,7 @@ exports[`Storyshots CatalogSearch No results 1`] = `
       "flexGrow": 1,
     }
   }
+  testID="catalog-search-no-results"
 >
   <View
     style={
@@ -85,6 +87,7 @@ exports[`Storyshots CatalogSearch With cards 1`] = `
       "flexGrow": 1,
     }
   }
+  testID="catalog-search-with-cards"
 >
   <RCTScrollView
     contentContainerStyle={

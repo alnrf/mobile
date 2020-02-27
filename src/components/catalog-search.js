@@ -62,7 +62,7 @@ const CatalogSearch = ({
     : undefined;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID={testID}>
       {cards && cards.length === 0 ? (
         <View style={styles.content}>
           <Space type="xlarge" />

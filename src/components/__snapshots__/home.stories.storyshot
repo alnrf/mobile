@@ -6793,6 +6793,7 @@ exports[`Storyshots Home Search visible 1`] = `
         "flexGrow": 1,
       }
     }
+    testID="catalog-search"
   />
   <View
     style={

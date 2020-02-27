@@ -10,6 +10,13 @@ const defaultPermissions: DetoxDevicePermissionsType = {
   microphone: 'YES'
 };
 
+const getDevicePixelPerPoint = (): number => 2;
+
+const getDeviceDimensions = (): {width: number, height: number} => ({
+  width: 750 / getDevicePixelPerPoint(),
+  height: 1334 / getDevicePixelPerPoint()
+});
+
 export const reloadApp = async (
   additionalPermissions?: DetoxDevicePermissionsType = defaultPermissions,
   newInstance?: boolean = false
@@ -79,6 +86,19 @@ export const tapCardOnSection = async (testID: string, index: number) => {
   await element(by.id(testID)).scrollTo('left');
   await element(by.id(testID)).scroll(offsetX, 'right');
   await element(by.id(testID)).tapAtPoint({x: offsetX + ITEM_HEIGHT / 2, y: ITEM_WIDTH / 2});
+};
+
+export const tapCardOnSearch = async (index: number) => {
+  const {width} = getDeviceDimensions();
+  const columns = 2;
+  const offsetY = ITEM_HEIGHT * (parseInt(index / columns, 10) - 1) + 1; // Scroll amount must be positive and greater than zero
+  await waitForExist('catalog-search-items');
+  await element(by.id('catalog-search-items')).scrollTo('top');
+  await element(by.id('catalog-search-items')).scroll(offsetY, 'down');
+  await element(by.id('catalog-search-items')).tapAtPoint({
+    x: width / 2 - ITEM_WIDTH / 2 + ITEM_WIDTH * ((index - 1) % columns),
+    y: offsetY + ITEM_HEIGHT / 2
+  });
 };
 
 export const longPress = async (testID: string) => {

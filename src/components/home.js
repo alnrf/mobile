@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     right: 0
   },
   catalog: {
-    flexGrow: 1
+    flex: 1
   },
   version: {
     color: theme.colors.gray.medium,

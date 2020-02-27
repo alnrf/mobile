@@ -25,7 +25,7 @@
     "start:android:release": "npm run start:android -- --variant=release",
     "prebuild:ios:cmd": "npm run -s xcode:check",
     "build:ios:cmd": "cd ios && export RCT_NO_LAUNCH_PACKAGER=1 && xcodebuild -workspace Coorpacademy.xcworkspace -scheme Coorpacademy -derivedDataPath build",
-    "build:iphonesimulator:debug": "REACT_NATIVE_FLAVOR=E2E npm run build:ios:cmd -- -configuration Debug -sdk iphonesimulator | xcpretty",
+    "build:iphonesimulator:debug": "REACT_NATIVE_FLAVOR=E2E npm run build:ios:cmd -- -configuration Debug -sdk iphonesimulator",
     "prebuild:iphonesimulator:release": "REACT_NATIVE_FLAVOR=E2E npm run -s generate:bundle:ios",
     "build:iphonesimulator:release": "REACT_NATIVE_FLAVOR=E2E npm run build:ios:cmd -- -configuration Release -sdk iphonesimulator | xcpretty",
     "build:androidemulator:debug": "cd android && export REACT_NATIVE_FLAVOR=E2E && ./gradlew assembleDebug assembleAndroidTest  -DtestBuildType=debug && cd ..",
