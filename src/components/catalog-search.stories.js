@@ -83,7 +83,7 @@ if (__TEST__) {
       );
 
       const catalogItem = component.root.find(
-        el => el.props.testID === 'catalog-search-items-bar' && el.props.analyticsID === 'card'
+        el => el.props.testID === 'catalog-search-items-item-bar' && el.props.analyticsID === 'card'
       );
       catalogItem.props.onPress();
 

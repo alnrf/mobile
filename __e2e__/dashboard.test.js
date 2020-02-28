@@ -21,13 +21,13 @@ describe('Dashboard', () => {
     });
 
     it('should fetch cards', async () => {
-      await waitForExist('catalog-section-recommended-item-adaptive-dis-1');
-      await waitForExist('catalog-section-recommended-item-basic-dis-1');
+      await waitForExist('catalog-section-recommended-items-item-adaptive-dis-1');
+      await waitForExist('catalog-section-recommended-items-item-basic-dis-1');
     });
 
     it('should prepare more placeholders for the next cards', async () => {
-      await waitForExist('catalog-section-recommended-item-6-placeholder');
-      await waitForExist('catalog-section-recommended-item-9-placeholder');
+      await waitForExist('catalog-section-recommended-items-item-6-placeholder');
+      await waitForExist('catalog-section-recommended-items-item-9-placeholder');
     });
   });
 

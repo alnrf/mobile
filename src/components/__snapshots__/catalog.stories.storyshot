@@ -328,7 +328,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -369,7 +369,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -407,7 +407,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -416,7 +416,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -710,7 +710,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -751,7 +751,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -789,7 +789,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -798,7 +798,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -1092,7 +1092,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -1133,7 +1133,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -1171,7 +1171,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -1180,7 +1180,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -1474,7 +1474,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -1515,7 +1515,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -1553,7 +1553,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -1562,7 +1562,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -1856,7 +1856,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -1897,7 +1897,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -1935,7 +1935,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -1944,7 +1944,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -2369,7 +2369,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -2410,7 +2410,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -2448,7 +2448,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -2457,7 +2457,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -2751,7 +2751,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -2792,7 +2792,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -2830,7 +2830,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -2839,7 +2839,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -3133,7 +3133,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -3174,7 +3174,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -3212,7 +3212,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -3221,7 +3221,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -3515,7 +3515,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -3556,7 +3556,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -3594,7 +3594,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -3603,7 +3603,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -3897,7 +3897,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -3938,7 +3938,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -3976,7 +3976,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -3985,7 +3985,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -4410,7 +4410,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -4451,7 +4451,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -4489,7 +4489,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -4498,7 +4498,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -4792,7 +4792,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -4833,7 +4833,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -4871,7 +4871,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -4880,7 +4880,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -5174,7 +5174,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -5215,7 +5215,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -5253,7 +5253,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -5262,7 +5262,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -5556,7 +5556,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -5597,7 +5597,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -5635,7 +5635,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -5644,7 +5644,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -5938,7 +5938,7 @@ exports[`Storyshots Catalog Default 1`] = `
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -5979,7 +5979,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -6017,7 +6017,7 @@ exports[`Storyshots Catalog Default 1`] = `
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -6026,7 +6026,7 @@ exports[`Storyshots Catalog Default 1`] = `
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -6614,7 +6614,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -6655,7 +6655,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -6693,7 +6693,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -6702,7 +6702,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -6996,7 +6996,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -7037,7 +7037,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -7075,7 +7075,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -7084,7 +7084,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -7378,7 +7378,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -7419,7 +7419,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -7457,7 +7457,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -7466,7 +7466,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -7760,7 +7760,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -7801,7 +7801,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -7839,7 +7839,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -7848,7 +7848,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -8142,7 +8142,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -8183,7 +8183,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -8221,7 +8221,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -8230,7 +8230,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -8655,7 +8655,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -8696,7 +8696,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -8734,7 +8734,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -8743,7 +8743,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -9037,7 +9037,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -9078,7 +9078,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -9116,7 +9116,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -9125,7 +9125,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -9419,7 +9419,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -9460,7 +9460,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -9498,7 +9498,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -9507,7 +9507,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -9801,7 +9801,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -9842,7 +9842,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -9880,7 +9880,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -9889,7 +9889,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -10183,7 +10183,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -10224,7 +10224,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -10262,7 +10262,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -10271,7 +10271,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -10696,7 +10696,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -10737,7 +10737,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -10775,7 +10775,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -10784,7 +10784,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -11078,7 +11078,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -11119,7 +11119,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -11157,7 +11157,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -11166,7 +11166,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -11460,7 +11460,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -11501,7 +11501,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -11539,7 +11539,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -11548,7 +11548,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -11842,7 +11842,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -11883,7 +11883,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -11921,7 +11921,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -11930,7 +11930,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -12224,7 +12224,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -12265,7 +12265,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -12303,7 +12303,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -12312,7 +12312,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -12873,7 +12873,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-0-placeholder"
+                      testID="catalog-section-recommended-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -12914,7 +12914,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-0-placeholder-image"
+                          testID="catalog-section-recommended-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -12952,7 +12952,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-0-placeholder-image-gradient"
+                          testID="catalog-section-recommended-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -12961,7 +12961,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-recommended-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -13255,7 +13255,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-1-placeholder"
+                      testID="catalog-section-recommended-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -13296,7 +13296,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-1-placeholder-image"
+                          testID="catalog-section-recommended-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -13334,7 +13334,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-1-placeholder-image-gradient"
+                          testID="catalog-section-recommended-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -13343,7 +13343,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-recommended-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -13637,7 +13637,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-2-placeholder"
+                      testID="catalog-section-recommended-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -13678,7 +13678,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-2-placeholder-image"
+                          testID="catalog-section-recommended-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -13716,7 +13716,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-2-placeholder-image-gradient"
+                          testID="catalog-section-recommended-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -13725,7 +13725,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-recommended-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -14019,7 +14019,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-3-placeholder"
+                      testID="catalog-section-recommended-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -14060,7 +14060,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-3-placeholder-image"
+                          testID="catalog-section-recommended-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -14098,7 +14098,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-3-placeholder-image-gradient"
+                          testID="catalog-section-recommended-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -14107,7 +14107,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-recommended-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -14401,7 +14401,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-4-placeholder"
+                      testID="catalog-section-recommended-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -14442,7 +14442,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-4-placeholder-image"
+                          testID="catalog-section-recommended-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -14480,7 +14480,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-4-placeholder-image-gradient"
+                          testID="catalog-section-recommended-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -14489,7 +14489,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-recommended-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -14868,7 +14868,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-0-placeholder"
+                      testID="catalog-section-most-popular-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -14909,7 +14909,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-0-placeholder-image"
+                          testID="catalog-section-most-popular-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -14947,7 +14947,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-0-placeholder-image-gradient"
+                          testID="catalog-section-most-popular-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -14956,7 +14956,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-most-popular-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -15250,7 +15250,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-1-placeholder"
+                      testID="catalog-section-most-popular-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -15291,7 +15291,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-1-placeholder-image"
+                          testID="catalog-section-most-popular-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -15329,7 +15329,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-1-placeholder-image-gradient"
+                          testID="catalog-section-most-popular-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -15338,7 +15338,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-most-popular-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -15632,7 +15632,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-2-placeholder"
+                      testID="catalog-section-most-popular-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -15673,7 +15673,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-2-placeholder-image"
+                          testID="catalog-section-most-popular-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -15711,7 +15711,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-2-placeholder-image-gradient"
+                          testID="catalog-section-most-popular-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -15720,7 +15720,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-most-popular-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -16014,7 +16014,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-3-placeholder"
+                      testID="catalog-section-most-popular-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -16055,7 +16055,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-3-placeholder-image"
+                          testID="catalog-section-most-popular-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -16093,7 +16093,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-3-placeholder-image-gradient"
+                          testID="catalog-section-most-popular-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -16102,7 +16102,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-most-popular-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -16396,7 +16396,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-4-placeholder"
+                      testID="catalog-section-most-popular-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -16437,7 +16437,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-4-placeholder-image"
+                          testID="catalog-section-most-popular-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -16475,7 +16475,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-4-placeholder-image-gradient"
+                          testID="catalog-section-most-popular-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -16484,7 +16484,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-most-popular-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -17174,7 +17174,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-foo"
+                      testID="catalog-section-recommended-items-item-foo"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -17220,7 +17220,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-foo-image"
+                          testID="catalog-section-recommended-items-item-foo-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -17258,7 +17258,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-foo-image-gradient"
+                          testID="catalog-section-recommended-items-item-foo-image-gradient"
                         >
                           <Text
                             style={
@@ -17278,7 +17278,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-recommended-items-foo-content-author"
+                            testID="author-catalog-section-recommended-items-item-foo-content-author"
                           />
                           <View
                             style={
@@ -17287,7 +17287,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-foo-content-footer"
+                            testID="catalog-section-recommended-items-item-foo-content-footer"
                           >
                             <View
                               style={
@@ -17320,7 +17320,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-recommended-items-foo-content-footer"
+                              testID="title-catalog-section-recommended-items-item-foo-content-footer"
                             >
                               Fake discipline
                             </Text>
@@ -17357,7 +17357,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-recommended-items-foo-content-footer"
+                                testID="subtitle-catalog-section-recommended-items-item-foo-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -17393,7 +17393,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-recommended-items-foo-content-footer"
+                                testID="certified-catalog-section-recommended-items-item-foo-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -17546,7 +17546,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-recommended-items-foo-content-footer"
+                              testID="progress-bar-catalog-section-recommended-items-item-foo-content-footer"
                             >
                               <View
                                 style={
@@ -17646,7 +17646,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-bar"
+                      testID="catalog-section-recommended-items-item-bar"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -17692,7 +17692,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-bar-image"
+                          testID="catalog-section-recommended-items-item-bar-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -17730,7 +17730,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-bar-image-gradient"
+                          testID="catalog-section-recommended-items-item-bar-image-gradient"
                         >
                           <Text
                             style={
@@ -17750,7 +17750,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-recommended-items-bar-content-author"
+                            testID="author-catalog-section-recommended-items-item-bar-content-author"
                           />
                           <View
                             style={
@@ -17759,7 +17759,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-bar-content-footer"
+                            testID="catalog-section-recommended-items-item-bar-content-footer"
                           >
                             <View
                               style={
@@ -17792,7 +17792,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="infinite-catalog-section-recommended-items-bar-content-footer"
+                                testID="infinite-catalog-section-recommended-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={26}
                                 vbWidth={26}
@@ -17920,7 +17920,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-recommended-items-bar-content-footer"
+                              testID="title-catalog-section-recommended-items-item-bar-content-footer"
                             >
                               Fake chapter
                             </Text>
@@ -17957,7 +17957,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-recommended-items-bar-content-footer"
+                                testID="subtitle-catalog-section-recommended-items-item-bar-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -17993,7 +17993,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-recommended-items-bar-content-footer"
+                                testID="certified-catalog-section-recommended-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -18146,7 +18146,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-recommended-items-bar-content-footer"
+                              testID="progress-bar-catalog-section-recommended-items-item-bar-content-footer"
                             >
                               <View
                                 style={
@@ -18454,7 +18454,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-bar"
+                      testID="catalog-section-most-popular-items-item-bar"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -18500,7 +18500,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-bar-image"
+                          testID="catalog-section-most-popular-items-item-bar-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -18538,7 +18538,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-bar-image-gradient"
+                          testID="catalog-section-most-popular-items-item-bar-image-gradient"
                         >
                           <Text
                             style={
@@ -18558,7 +18558,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-most-popular-items-bar-content-author"
+                            testID="author-catalog-section-most-popular-items-item-bar-content-author"
                           />
                           <View
                             style={
@@ -18567,7 +18567,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-bar-content-footer"
+                            testID="catalog-section-most-popular-items-item-bar-content-footer"
                           >
                             <View
                               style={
@@ -18600,7 +18600,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="infinite-catalog-section-most-popular-items-bar-content-footer"
+                                testID="infinite-catalog-section-most-popular-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={26}
                                 vbWidth={26}
@@ -18728,7 +18728,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-most-popular-items-bar-content-footer"
+                              testID="title-catalog-section-most-popular-items-item-bar-content-footer"
                             >
                               Fake chapter
                             </Text>
@@ -18765,7 +18765,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-most-popular-items-bar-content-footer"
+                                testID="subtitle-catalog-section-most-popular-items-item-bar-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -18801,7 +18801,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-most-popular-items-bar-content-footer"
+                                testID="certified-catalog-section-most-popular-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -18954,7 +18954,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-most-popular-items-bar-content-footer"
+                              testID="progress-bar-catalog-section-most-popular-items-item-bar-content-footer"
                             >
                               <View
                                 style={
@@ -19054,7 +19054,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-foo"
+                      testID="catalog-section-most-popular-items-item-foo"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -19100,7 +19100,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-foo-image"
+                          testID="catalog-section-most-popular-items-item-foo-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -19138,7 +19138,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-foo-image-gradient"
+                          testID="catalog-section-most-popular-items-item-foo-image-gradient"
                         >
                           <Text
                             style={
@@ -19158,7 +19158,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-most-popular-items-foo-content-author"
+                            testID="author-catalog-section-most-popular-items-item-foo-content-author"
                           />
                           <View
                             style={
@@ -19167,7 +19167,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-foo-content-footer"
+                            testID="catalog-section-most-popular-items-item-foo-content-footer"
                           >
                             <View
                               style={
@@ -19200,7 +19200,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-most-popular-items-foo-content-footer"
+                              testID="title-catalog-section-most-popular-items-item-foo-content-footer"
                             >
                               Fake discipline
                             </Text>
@@ -19237,7 +19237,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-most-popular-items-foo-content-footer"
+                                testID="subtitle-catalog-section-most-popular-items-item-foo-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -19273,7 +19273,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-most-popular-items-foo-content-footer"
+                                testID="certified-catalog-section-most-popular-items-item-foo-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -19426,7 +19426,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-most-popular-items-foo-content-footer"
+                              testID="progress-bar-catalog-section-most-popular-items-item-foo-content-footer"
                             >
                               <View
                                 style={
@@ -19820,7 +19820,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -19861,7 +19861,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -19899,7 +19899,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -19908,7 +19908,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -20202,7 +20202,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -20243,7 +20243,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -20281,7 +20281,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -20290,7 +20290,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -20584,7 +20584,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -20625,7 +20625,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -20663,7 +20663,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -20672,7 +20672,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -20966,7 +20966,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -21007,7 +21007,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -21045,7 +21045,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -21054,7 +21054,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -21348,7 +21348,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -21389,7 +21389,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -21427,7 +21427,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -21436,7 +21436,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -21861,7 +21861,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -21902,7 +21902,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -21940,7 +21940,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -21949,7 +21949,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -22243,7 +22243,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -22284,7 +22284,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -22322,7 +22322,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -22331,7 +22331,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -22625,7 +22625,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -22666,7 +22666,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -22704,7 +22704,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -22713,7 +22713,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -23007,7 +23007,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -23048,7 +23048,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -23086,7 +23086,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -23095,7 +23095,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -23389,7 +23389,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -23430,7 +23430,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -23468,7 +23468,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -23477,7 +23477,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -23902,7 +23902,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -23943,7 +23943,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -23981,7 +23981,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -23990,7 +23990,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -24284,7 +24284,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -24325,7 +24325,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -24363,7 +24363,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -24372,7 +24372,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -24666,7 +24666,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -24707,7 +24707,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -24745,7 +24745,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -24754,7 +24754,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -25048,7 +25048,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -25089,7 +25089,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -25127,7 +25127,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -25136,7 +25136,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -25430,7 +25430,7 @@ Pol P.!
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder"
+                      testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -25471,7 +25471,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -25509,7 +25509,7 @@ Pol P.!
                               undefined,
                             ]
                           }
-                          testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image-gradient"
+                          testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image-gradient"
                         >
                           <View
                             style={
@@ -25518,7 +25518,7 @@ Pol P.!
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-content-footer-placeholder"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-content-footer-placeholder"
                           >
                             <View
                               style={
@@ -26415,7 +26415,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-foo"
+                      testID="catalog-section-recommended-items-item-foo"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -26461,7 +26461,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-foo-image"
+                          testID="catalog-section-recommended-items-item-foo-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -26499,7 +26499,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-foo-image-gradient"
+                          testID="catalog-section-recommended-items-item-foo-image-gradient"
                         >
                           <Text
                             style={
@@ -26519,7 +26519,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-recommended-items-foo-content-author"
+                            testID="author-catalog-section-recommended-items-item-foo-content-author"
                           />
                           <View
                             style={
@@ -26528,7 +26528,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-foo-content-footer"
+                            testID="catalog-section-recommended-items-item-foo-content-footer"
                           >
                             <View
                               style={
@@ -26561,7 +26561,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-recommended-items-foo-content-footer"
+                              testID="title-catalog-section-recommended-items-item-foo-content-footer"
                             >
                               Fake discipline
                             </Text>
@@ -26598,7 +26598,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-recommended-items-foo-content-footer"
+                                testID="subtitle-catalog-section-recommended-items-item-foo-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -26634,7 +26634,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-recommended-items-foo-content-footer"
+                                testID="certified-catalog-section-recommended-items-item-foo-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -26787,7 +26787,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-recommended-items-foo-content-footer"
+                              testID="progress-bar-catalog-section-recommended-items-item-foo-content-footer"
                             >
                               <View
                                 style={
@@ -26887,7 +26887,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-recommended-items-bar"
+                      testID="catalog-section-recommended-items-item-bar"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -26933,7 +26933,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-bar-image"
+                          testID="catalog-section-recommended-items-item-bar-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -26971,7 +26971,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-recommended-items-bar-image-gradient"
+                          testID="catalog-section-recommended-items-item-bar-image-gradient"
                         >
                           <Text
                             style={
@@ -26991,7 +26991,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-recommended-items-bar-content-author"
+                            testID="author-catalog-section-recommended-items-item-bar-content-author"
                           />
                           <View
                             style={
@@ -27000,7 +27000,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-recommended-items-bar-content-footer"
+                            testID="catalog-section-recommended-items-item-bar-content-footer"
                           >
                             <View
                               style={
@@ -27033,7 +27033,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="infinite-catalog-section-recommended-items-bar-content-footer"
+                                testID="infinite-catalog-section-recommended-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={26}
                                 vbWidth={26}
@@ -27161,7 +27161,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-recommended-items-bar-content-footer"
+                              testID="title-catalog-section-recommended-items-item-bar-content-footer"
                             >
                               Fake chapter
                             </Text>
@@ -27198,7 +27198,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-recommended-items-bar-content-footer"
+                                testID="subtitle-catalog-section-recommended-items-item-bar-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -27234,7 +27234,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-recommended-items-bar-content-footer"
+                                testID="certified-catalog-section-recommended-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -27387,7 +27387,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-recommended-items-bar-content-footer"
+                              testID="progress-bar-catalog-section-recommended-items-item-bar-content-footer"
                             >
                               <View
                                 style={
@@ -27695,7 +27695,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-bar"
+                      testID="catalog-section-most-popular-items-item-bar"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -27741,7 +27741,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-bar-image"
+                          testID="catalog-section-most-popular-items-item-bar-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -27779,7 +27779,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-bar-image-gradient"
+                          testID="catalog-section-most-popular-items-item-bar-image-gradient"
                         >
                           <Text
                             style={
@@ -27799,7 +27799,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-most-popular-items-bar-content-author"
+                            testID="author-catalog-section-most-popular-items-item-bar-content-author"
                           />
                           <View
                             style={
@@ -27808,7 +27808,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-bar-content-footer"
+                            testID="catalog-section-most-popular-items-item-bar-content-footer"
                           >
                             <View
                               style={
@@ -27841,7 +27841,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="infinite-catalog-section-most-popular-items-bar-content-footer"
+                                testID="infinite-catalog-section-most-popular-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={26}
                                 vbWidth={26}
@@ -27969,7 +27969,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-most-popular-items-bar-content-footer"
+                              testID="title-catalog-section-most-popular-items-item-bar-content-footer"
                             >
                               Fake chapter
                             </Text>
@@ -28006,7 +28006,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-most-popular-items-bar-content-footer"
+                                testID="subtitle-catalog-section-most-popular-items-item-bar-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -28042,7 +28042,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-most-popular-items-bar-content-footer"
+                                testID="certified-catalog-section-most-popular-items-item-bar-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -28195,7 +28195,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-most-popular-items-bar-content-footer"
+                              testID="progress-bar-catalog-section-most-popular-items-item-bar-content-footer"
                             >
                               <View
                                 style={
@@ -28295,7 +28295,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "width": 168,
                         }
                       }
-                      testID="catalog-section-most-popular-items-foo"
+                      testID="catalog-section-most-popular-items-item-foo"
                     >
                       <View
                         accessibilityIgnoresInvertColors={true}
@@ -28341,7 +28341,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-foo-image"
+                          testID="catalog-section-most-popular-items-item-foo-image"
                         />
                         <BVLinearGradient
                           colors={
@@ -28379,7 +28379,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               undefined,
                             ]
                           }
-                          testID="catalog-section-most-popular-items-foo-image-gradient"
+                          testID="catalog-section-most-popular-items-item-foo-image-gradient"
                         >
                           <Text
                             style={
@@ -28399,7 +28399,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 ],
                               ]
                             }
-                            testID="author-catalog-section-most-popular-items-foo-content-author"
+                            testID="author-catalog-section-most-popular-items-item-foo-content-author"
                           />
                           <View
                             style={
@@ -28408,7 +28408,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                 "justifyContent": "flex-end",
                               }
                             }
-                            testID="catalog-section-most-popular-items-foo-content-footer"
+                            testID="catalog-section-most-popular-items-item-foo-content-footer"
                           >
                             <View
                               style={
@@ -28441,7 +28441,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   ],
                                 ]
                               }
-                              testID="title-catalog-section-most-popular-items-foo-content-footer"
+                              testID="title-catalog-section-most-popular-items-item-foo-content-footer"
                             >
                               Fake discipline
                             </Text>
@@ -28478,7 +28478,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     ],
                                   ]
                                 }
-                                testID="subtitle-catalog-section-most-popular-items-foo-content-footer"
+                                testID="subtitle-catalog-section-most-popular-items-item-foo-content-footer"
                               >
                                 A good guy with blue eyes
                               </Text>
@@ -28514,7 +28514,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                     },
                                   ]
                                 }
-                                testID="certified-catalog-section-most-popular-items-foo-content-footer"
+                                testID="certified-catalog-section-most-popular-items-item-foo-content-footer"
                                 tintColor="#FFFFFF"
                                 vbHeight={24}
                                 vbWidth={24}
@@ -28667,7 +28667,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                                   false,
                                 ]
                               }
-                              testID="progress-bar-catalog-section-most-popular-items-foo-content-footer"
+                              testID="progress-bar-catalog-section-most-popular-items-item-foo-content-footer"
                             >
                               <View
                                 style={

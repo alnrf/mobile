@@ -49,7 +49,7 @@ class CatalogItems extends React.PureComponent<Props> {
       // $FlowFixMe union type
       (item && item.universalRef && item.universalRef.replace(/_/g, '-')) || `${index}-placeholder`;
 
-    return `${testID}-${suffix}`;
+    return `${testID}-item-${suffix}`;
   };
 
   getItemLayout = (

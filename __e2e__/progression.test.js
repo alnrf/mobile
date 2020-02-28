@@ -19,7 +19,7 @@ describe('Progression bar', () => {
   });
 
   it('should open a question see a progression bar', async () => {
-    await waitForExist('catalog-section-recommended-item-basic-dis-1');
+    await waitForExist('catalog-section-recommended-items-item-basic-dis-1');
     await tapCardOnSection('catalog-section-recommended-items', 2);
     await weExpect(element(by.id('progression-bar-1'))).toBeVisible();
     await weExpect(element(by.id('progression-label'))).toBeVisible();
@@ -42,7 +42,7 @@ describe('Progression bar', () => {
         by
           .type('RCTView')
           .and(by.id('progression-bar-0.041666666666666664'))
-          .withAncestor(by.id('catalog-section-recommended-item-basic-dis-1'))
+          .withAncestor(by.id('catalog-section-recommended-items-item-basic-dis-1'))
       )
     ).toBeVisible();
   });
@@ -59,7 +59,7 @@ describe('Progression bar', () => {
           by
             .type('RCTView')
             .and(by.id('progression-bar-0.041666666666666664'))
-            .withAncestor(by.id('catalog-section-recommended-item-basic-dis-1'))
+            .withAncestor(by.id('catalog-section-recommended-items-item-basic-dis-1'))
         )
       ).toBeVisible();
     });

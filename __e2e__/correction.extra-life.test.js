@@ -17,7 +17,7 @@ describe('Correction: extra-life', () => {
   beforeAll(async () => {
     await reloadApp();
     await bypassAuthentication();
-    await waitForExist('catalog-section-recommended-item-basic-dis-1');
+    await waitForExist('catalog-section-recommended-items-item-basic-dis-1');
     await tapCardOnSection('catalog-section-recommended-items', 2);
     await waitForExist('question');
   });

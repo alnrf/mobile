@@ -396,7 +396,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -437,7 +437,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -475,7 +475,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -484,7 +484,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-items-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-item-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -778,7 +778,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -819,7 +819,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -857,7 +857,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -866,7 +866,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-items-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-item-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1160,7 +1160,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1201,7 +1201,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -1239,7 +1239,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -1248,7 +1248,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-items-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-item-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1542,7 +1542,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1583,7 +1583,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -1621,7 +1621,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -1630,7 +1630,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-items-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-item-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -1924,7 +1924,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder"
+                        testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -1965,7 +1965,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -2003,7 +2003,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2012,7 +2012,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-0-placeholder-items-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-0-placeholder-items-item-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -2437,7 +2437,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -2478,7 +2478,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -2516,7 +2516,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2525,7 +2525,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-items-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-item-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -2819,7 +2819,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -2860,7 +2860,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -2898,7 +2898,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -2907,7 +2907,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-items-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-item-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3201,7 +3201,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -3242,7 +3242,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -3280,7 +3280,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -3289,7 +3289,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-items-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-item-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3583,7 +3583,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -3624,7 +3624,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -3662,7 +3662,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -3671,7 +3671,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-items-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-item-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -3965,7 +3965,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder"
+                        testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -4006,7 +4006,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4044,7 +4044,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4053,7 +4053,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-1-placeholder-items-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-1-placeholder-items-item-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -4478,7 +4478,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -4519,7 +4519,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4557,7 +4557,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4566,7 +4566,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-items-0-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-item-0-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -4860,7 +4860,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -4901,7 +4901,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -4939,7 +4939,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -4948,7 +4948,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-items-1-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-item-1-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -5242,7 +5242,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -5283,7 +5283,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -5321,7 +5321,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -5330,7 +5330,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-items-2-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-item-2-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -5624,7 +5624,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -5665,7 +5665,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -5703,7 +5703,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -5712,7 +5712,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-items-3-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-item-3-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={
@@ -6006,7 +6006,7 @@ Pol P.!
                             "width": 168,
                           }
                         }
-                        testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder"
+                        testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder"
                       >
                         <View
                           accessibilityIgnoresInvertColors={true}
@@ -6047,7 +6047,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image"
                           />
                           <BVLinearGradient
                             colors={
@@ -6085,7 +6085,7 @@ Pol P.!
                                 undefined,
                               ]
                             }
-                            testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-image-gradient"
+                            testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-image-gradient"
                           >
                             <View
                               style={
@@ -6094,7 +6094,7 @@ Pol P.!
                                   "justifyContent": "flex-end",
                                 }
                               }
-                              testID="catalog-section-catalog-section-2-placeholder-items-4-placeholder-content-footer-placeholder"
+                              testID="catalog-section-catalog-section-2-placeholder-items-item-4-placeholder-content-footer-placeholder"
                             >
                               <View
                                 style={

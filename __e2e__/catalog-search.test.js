@@ -9,8 +9,8 @@ import {
   tapCardOnSearch
 } from './utils';
 
-const thirdCard = 'catalog-search-items-with-image-context-dis-1';
-const fourthCard = 'catalog-search-items-with-video-context-dis-2';
+const thirdCard = 'catalog-search-items-item-with-image-context-dis-1';
+const fourthCard = 'catalog-search-items-item-with-video-context-dis-2';
 
 const openSearch = async () => {
   await waitForVisible('search-icon');

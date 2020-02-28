@@ -455,7 +455,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-foo"
+                testID="catalog-search-with-cards-items-item-foo"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -501,7 +501,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-foo-image"
+                    testID="catalog-search-with-cards-items-item-foo-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -539,7 +539,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-foo-image-gradient"
+                    testID="catalog-search-with-cards-items-item-foo-image-gradient"
                   >
                     <Text
                       style={
@@ -559,7 +559,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-search-with-cards-items-foo-content-author"
+                      testID="author-catalog-search-with-cards-items-item-foo-content-author"
                     />
                     <View
                       style={
@@ -568,7 +568,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-foo-content-footer"
+                      testID="catalog-search-with-cards-items-item-foo-content-footer"
                     >
                       <View
                         style={
@@ -601,7 +601,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-search-with-cards-items-foo-content-footer"
+                        testID="title-catalog-search-with-cards-items-item-foo-content-footer"
                       >
                         Discipline card
                       </Text>
@@ -638,7 +638,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-search-with-cards-items-foo-content-footer"
+                          testID="subtitle-catalog-search-with-cards-items-item-foo-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -674,7 +674,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="certified-catalog-search-with-cards-items-foo-content-footer"
+                          testID="certified-catalog-search-with-cards-items-item-foo-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={24}
                           vbWidth={24}
@@ -827,7 +827,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-search-with-cards-items-foo-content-footer"
+                        testID="progress-bar-catalog-search-with-cards-items-item-foo-content-footer"
                       >
                         <View
                           style={
@@ -920,7 +920,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-bar"
+                testID="catalog-search-with-cards-items-item-bar"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -966,7 +966,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-bar-image"
+                    testID="catalog-search-with-cards-items-item-bar-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1004,7 +1004,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-bar-image-gradient"
+                    testID="catalog-search-with-cards-items-item-bar-image-gradient"
                   >
                     <View
                       style={
@@ -1042,7 +1042,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="catalog-search-with-cards-items-bar-badge"
+                          testID="catalog-search-with-cards-items-item-bar-badge"
                         >
                           New
                         </Text>
@@ -1066,7 +1066,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-search-with-cards-items-bar-content-author"
+                      testID="author-catalog-search-with-cards-items-item-bar-content-author"
                     >
                       A GOOD GUY WITH BLUE EYES
                        CREATION
@@ -1078,7 +1078,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-bar-content-footer"
+                      testID="catalog-search-with-cards-items-item-bar-content-footer"
                     >
                       <View
                         style={
@@ -1111,7 +1111,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="infinite-catalog-search-with-cards-items-bar-content-footer"
+                          testID="infinite-catalog-search-with-cards-items-item-bar-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={26}
                           vbWidth={26}
@@ -1239,7 +1239,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-search-with-cards-items-bar-content-footer"
+                        testID="title-catalog-search-with-cards-items-item-bar-content-footer"
                       >
                         Chapter card
                       </Text>
@@ -1276,7 +1276,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-search-with-cards-items-bar-content-footer"
+                          testID="subtitle-catalog-search-with-cards-items-item-bar-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -1299,7 +1299,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-search-with-cards-items-bar-content-footer"
+                        testID="progress-bar-catalog-search-with-cards-items-item-bar-content-footer"
                       >
                         <View
                           style={
@@ -1392,7 +1392,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-baz"
+                testID="catalog-search-with-cards-items-item-baz"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -1438,7 +1438,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-baz-image"
+                    testID="catalog-search-with-cards-items-item-baz-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1476,7 +1476,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-baz-image-gradient"
+                    testID="catalog-search-with-cards-items-item-baz-image-gradient"
                   >
                     <View
                       style={
@@ -1514,7 +1514,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="catalog-search-with-cards-items-baz-badge"
+                          testID="catalog-search-with-cards-items-item-baz-badge"
                         >
                           New
                         </Text>
@@ -1538,7 +1538,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-search-with-cards-items-baz-content-author"
+                      testID="author-catalog-search-with-cards-items-item-baz-content-author"
                     >
                       A GOOD GUY WITH BLUE EYES
                        CREATION
@@ -1550,7 +1550,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-baz-content-footer"
+                      testID="catalog-search-with-cards-items-item-baz-content-footer"
                     >
                       <View
                         style={
@@ -1583,7 +1583,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="infinite-catalog-search-with-cards-items-baz-content-footer"
+                          testID="infinite-catalog-search-with-cards-items-item-baz-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={26}
                           vbWidth={26}
@@ -1711,7 +1711,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-search-with-cards-items-baz-content-footer"
+                        testID="title-catalog-search-with-cards-items-item-baz-content-footer"
                       >
                         Chapter card
                       </Text>
@@ -1748,7 +1748,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-search-with-cards-items-baz-content-footer"
+                          testID="subtitle-catalog-search-with-cards-items-item-baz-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -1771,7 +1771,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-search-with-cards-items-baz-content-footer"
+                        testID="progress-bar-catalog-search-with-cards-items-item-baz-content-footer"
                       >
                         <View
                           style={
@@ -1864,7 +1864,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-qux"
+                testID="catalog-search-with-cards-items-item-qux"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -1910,7 +1910,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-qux-image"
+                    testID="catalog-search-with-cards-items-item-qux-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -1948,7 +1948,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-qux-image-gradient"
+                    testID="catalog-search-with-cards-items-item-qux-image-gradient"
                   >
                     <View
                       style={
@@ -1986,7 +1986,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="catalog-search-with-cards-items-qux-badge"
+                          testID="catalog-search-with-cards-items-item-qux-badge"
                         >
                           New
                         </Text>
@@ -2010,7 +2010,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           ],
                         ]
                       }
-                      testID="author-catalog-search-with-cards-items-qux-content-author"
+                      testID="author-catalog-search-with-cards-items-item-qux-content-author"
                     >
                       A GOOD GUY WITH BLUE EYES
                        CREATION
@@ -2022,7 +2022,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-qux-content-footer"
+                      testID="catalog-search-with-cards-items-item-qux-content-footer"
                     >
                       <View
                         style={
@@ -2055,7 +2055,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               },
                             ]
                           }
-                          testID="infinite-catalog-search-with-cards-items-qux-content-footer"
+                          testID="infinite-catalog-search-with-cards-items-item-qux-content-footer"
                           tintColor="#FFFFFF"
                           vbHeight={26}
                           vbWidth={26}
@@ -2183,7 +2183,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             ],
                           ]
                         }
-                        testID="title-catalog-search-with-cards-items-qux-content-footer"
+                        testID="title-catalog-search-with-cards-items-item-qux-content-footer"
                       >
                         Chapter card
                       </Text>
@@ -2220,7 +2220,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                               ],
                             ]
                           }
-                          testID="subtitle-catalog-search-with-cards-items-qux-content-footer"
+                          testID="subtitle-catalog-search-with-cards-items-item-qux-content-footer"
                         >
                           A good guy with blue eyes
                         </Text>
@@ -2243,7 +2243,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                             false,
                           ]
                         }
-                        testID="progress-bar-catalog-search-with-cards-items-qux-content-footer"
+                        testID="progress-bar-catalog-search-with-cards-items-item-qux-content-footer"
                       >
                         <View
                           style={
@@ -2336,7 +2336,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-4-placeholder"
+                testID="catalog-search-with-cards-items-item-4-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -2377,7 +2377,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-4-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-4-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -2415,7 +2415,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-4-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-4-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -2424,7 +2424,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-4-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-4-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -2711,7 +2711,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-5-placeholder"
+                testID="catalog-search-with-cards-items-item-5-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -2752,7 +2752,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-5-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-5-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -2790,7 +2790,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-5-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-5-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -2799,7 +2799,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-5-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-5-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -3086,7 +3086,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-6-placeholder"
+                testID="catalog-search-with-cards-items-item-6-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3127,7 +3127,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-6-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-6-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3165,7 +3165,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-6-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-6-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3174,7 +3174,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-6-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-6-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -3461,7 +3461,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-7-placeholder"
+                testID="catalog-search-with-cards-items-item-7-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3502,7 +3502,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-7-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-7-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3540,7 +3540,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-7-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-7-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3549,7 +3549,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-7-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-7-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -3836,7 +3836,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-8-placeholder"
+                testID="catalog-search-with-cards-items-item-8-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -3877,7 +3877,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-8-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-8-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -3915,7 +3915,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-8-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-8-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -3924,7 +3924,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-8-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-8-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
@@ -4211,7 +4211,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                     "width": 168,
                   }
                 }
-                testID="catalog-search-with-cards-items-9-placeholder"
+                testID="catalog-search-with-cards-items-item-9-placeholder"
               >
                 <View
                   accessibilityIgnoresInvertColors={true}
@@ -4252,7 +4252,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-9-placeholder-image"
+                    testID="catalog-search-with-cards-items-item-9-placeholder-image"
                   />
                   <BVLinearGradient
                     colors={
@@ -4290,7 +4290,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                         undefined,
                       ]
                     }
-                    testID="catalog-search-with-cards-items-9-placeholder-image-gradient"
+                    testID="catalog-search-with-cards-items-item-9-placeholder-image-gradient"
                   >
                     <View
                       style={
@@ -4299,7 +4299,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           "justifyContent": "flex-end",
                         }
                       }
-                      testID="catalog-search-with-cards-items-9-placeholder-content-footer-placeholder"
+                      testID="catalog-search-with-cards-items-item-9-placeholder-content-footer-placeholder"
                     >
                       <View
                         style={
