@@ -6678,7 +6678,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           <View
                             style={
                               Object {
-                                "backgroundColor": "#00B0FF",
+                                "backgroundColor": "#3EC483",
                                 "borderBottomRightRadius": 1,
                                 "borderTopRightRadius": 1,
                                 "height": 2,
@@ -7157,7 +7157,7 @@ Vous rédigez un mail de la plus haute importante et bloquez – encore ! – su
                           <View
                             style={
                               Object {
-                                "backgroundColor": "#00B0FF",
+                                "backgroundColor": "#3EC483",
                                 "borderBottomRightRadius": 1,
                                 "borderTopRightRadius": 1,
                                 "height": 2,
