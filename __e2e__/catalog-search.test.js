@@ -20,8 +20,8 @@ const openSearch = async () => {
 
 const makeSearch = async () => {
   await element(by.id('search-input-field')).typeText('ia');
-  await waitForVisible(thirdCard);
-  await waitForVisible(fourthCard);
+  await waitForExist(thirdCard);
+  await waitForExist(fourthCard);
 };
 
 describe('CatalogSearch', () => {
